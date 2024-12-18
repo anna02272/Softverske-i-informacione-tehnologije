@@ -1,0 +1,7 @@
+D:\POP-vezbe\Vezbe01\obj\Debug\Vezbe01.csprojAssemblyReference.cache
+D:\POP-vezbe\Vezbe01\obj\Debug\Vezbe01.csproj.CoreCompileInputs.cache
+D:\POP-vezbe\Vezbe01\bin\Debug\Vezbe01.exe.config
+D:\POP-vezbe\Vezbe01\bin\Debug\Vezbe01.exe
+D:\POP-vezbe\Vezbe01\bin\Debug\Vezbe01.pdb
+D:\POP-vezbe\Vezbe01\obj\Debug\Vezbe01.exe
+D:\POP-vezbe\Vezbe01\obj\Debug\Vezbe01.pdb

@@ -1,0 +1,19 @@
+CREATE TABLE [dbo].[Korisnici]
+(
+[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+[Ime] VARCHAR(20) NOT NULL,
+[Prezime] VARCHAR(20) NOT NULL,
+[Jmbg] VARCHAR(20) NOT NULL,
+[Email] VARCHAR(20) NOT NULL,
+[Lozinka] VARCHAR(20) NOT NULL,
+[Pol] VARCHAR(20) NOT NULL,
+[TipKorisnika] VARCHAR(20) NOT NULL,
+[Aktivan] BIT NOT NULL
+)
+
+CREATE TABLE [dbo].[Profesori]
+(
+[Id] INT NOT NULL PRIMARY KEY,
+CONSTRAINT FK_Korisnici_Profesori
+FOREIGN KEY (ID) REFERENCES dbo.Korisnici (ID)
+)

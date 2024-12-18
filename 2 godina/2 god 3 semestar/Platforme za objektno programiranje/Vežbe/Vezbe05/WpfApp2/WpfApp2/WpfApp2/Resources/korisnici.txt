@@ -1,0 +1,3 @@
+Pera;Peric;pera@gmail.com;peki;121346;MUSKI;ADMINISTRATOR;True
+mika;Mikic;mika@gmail.com;zika;121346;ZENSKI;PROFESOR;True
+mihajlo;;mihajlo@gmail.com;;;MUSKI;PROFESOR;True
