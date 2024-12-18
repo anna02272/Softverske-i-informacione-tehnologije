@@ -1,0 +1,11 @@
+pera income 1200
+jova income 40000
+pera withdrawal 362
+ana income 500
+sava withdrawal 5000
+marija income 25000
+ana withdrawal 16320
+jova withdrawal 150
+ana withdrawal 9640
+pera income 800
+sava income 1500
