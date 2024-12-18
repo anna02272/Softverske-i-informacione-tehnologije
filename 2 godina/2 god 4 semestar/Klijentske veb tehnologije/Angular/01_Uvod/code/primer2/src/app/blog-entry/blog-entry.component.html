@@ -1,0 +1,6 @@
+<div [app-emphasize]="'.title, .entry'" [color]="'#e6ffff'">
+    <h3 class="title">{{blogEntry.title}}</h3>
+    <div>{{blogEntry.description}}</div>
+    <div class="entry">{{blogEntry.entry}}</div>
+    <app-comment-list [comments]="blogEntry.comments"></app-comment-list>
+</div>

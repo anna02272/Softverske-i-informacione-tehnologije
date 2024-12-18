@@ -1,0 +1,21 @@
+{
+  "name": "proba",
+  "version": "1.0.0",
+  "description": "proba",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "proba"
+  ],
+  "author": "Milan Segedinac",
+  "license": "ISC",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1"
+  }
+}

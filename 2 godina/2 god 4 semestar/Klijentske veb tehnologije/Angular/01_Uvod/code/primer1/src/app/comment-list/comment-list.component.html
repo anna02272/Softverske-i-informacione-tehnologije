@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let comment of comments; let i = index">
+    <!-- <span><b>{{i}}</b></span> -->
+    <app-comment [comment]="comment"></app-comment>
+  </li>
+</ul>
