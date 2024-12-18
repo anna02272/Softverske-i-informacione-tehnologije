@@ -1,0 +1,2 @@
+1;naziv;namena;opis
+2;naziv2;namena2;opis2

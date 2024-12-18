@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang = "en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<base th:href = "@{/}">
+<title>Dodaj knjigu</title>
+<link rel = "stylesheet" type="text/css" href = "css/StiloviTabela.css">
+<link rel = "stylesheet" type="text/css" href = "css/StiloviHorizontalniMeni.css">
+<link>
+</head>
+<body>
+	<ul>
+		<li>
+			<a href = "knjige">Knjige</a>
+		</li>
+		<li>
+			<a href = "clanskeKarte">Clanske karte</a>
+		</li>
+		<li>
+			<a href = "korisnici">Korisnici</a>
+		</li>
+	</ul>
+	
+	
+	<form method="post" action="add">
+		<table>
+			<caption>Knjiga</caption>
+			<tr>
+				<th>Naziv</th>
+				<td>
+					<input type = "text" name = "naziv">
+				</td>
+			</tr>
+			<tr>
+				<th>Reg. br.</th>
+				<td>
+					<input type = "text" name = "registarskiBroj">
+				</td>
+			</tr>
+			<tr>
+				<th>Jezik</th>
+				<td>
+					<input type = "text" name = "jezik">
+				</td>
+			</tr>
+			<tr>
+				<th>Br.Stranica</th>
+				<td>
+					<input type = "text" name = "brojStranica">
+					
+				</td>
+				<tr>
+				<td> <input type ="submit" value = "Dodaj"/> </td>
+				</tr>
+			</tr>
+		</table>
+	</form>
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>    
+ <html>    
+ <head>    
+ 	<meta charset="UTF-8">    
+ 	<base href="bURL">    
+ 	<title>Dodaj clansku kartu</title>    
+ 	<link rel="stylesheet" type="text/css" href="css/StiloviForma.css"/>    
+ 	<link rel="stylesheet" type="text/css" href="css/StiloviHorizontalniMeni.css"/>
+ 	<script src="webjars/jquery/3.2.1/jquery.js" type="text/javascript"></script>
+	<script src="webjars/jquery-ui/1.12.1/jquery-ui.min.js"></script>
+	<script src="js/dodavanjeClanskeKarte.js" type="text/javascript"></script>
+ </head>    
+ <body>    
+ 	<ul>    
+ 		<li><a href="knjige">Knjige</a></li>    
+ 		<li><a href="clanskeKarte">Clanske karte</a></li>    
+ 		<li><a href="korisnici">Korisnici</a></li>    
+ 	</ul>    
+ 	<form id = "dodavanjeClanskeKarte" method="post" action="add">    
+ 		<table>    
+ 			<caption>Clanska karta</caption>    
+ 			<tr><th>Registarski broj:</th><td><input type="text" value="" name="registarskiBroj"/></td></tr>   
+ 			<tr><th>Korisnik:</th><td><select name = "idKorisnika"></select></td></tr>     
+ 			<tr><th></th><td><input type="submit" value="Dodaj"/></td>    
+ 		</table>    
+ 	</form>   
+ 	<br/>  
+ </body>  
+ </html>  		
