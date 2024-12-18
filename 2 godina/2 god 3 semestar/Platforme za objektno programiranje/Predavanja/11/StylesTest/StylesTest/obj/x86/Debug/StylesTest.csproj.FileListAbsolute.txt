@@ -1,0 +1,78 @@
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\StylesTest\bin\Debug\StylesTest.exe
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\StylesTest\bin\Debug\StylesTest.pdb
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\StylesTest\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\StylesTest\obj\x86\Debug\MainWindow.baml
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\StylesTest\obj\x86\Debug\MainWindow.g.cs
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\StylesTest\obj\x86\Debug\App.g.cs
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\StylesTest\obj\x86\Debug\StylesTest_MarkupCompile.cache
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\StylesTest\obj\x86\Debug\StylesTest.g.resources
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\StylesTest\obj\x86\Debug\StylesTest.Properties.Resources.resources
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\StylesTest\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\StylesTest\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\StylesTest\obj\x86\Debug\StylesTest.exe
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\StylesTest\obj\x86\Debug\StylesTest.pdb
+E:\Fakultet\Nastava\Platforme za OP\Source\StylesTest\StylesTest\bin\Debug\StylesTest.exe
+E:\Fakultet\Nastava\Platforme za OP\Source\StylesTest\StylesTest\bin\Debug\StylesTest.pdb
+E:\Fakultet\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Fakultet\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\MainWindow.baml
+E:\Fakultet\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\MainWindow.g.cs
+E:\Fakultet\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\App.g.cs
+E:\Fakultet\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest_MarkupCompile.cache
+E:\Fakultet\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest.g.resources
+E:\Fakultet\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest.Properties.Resources.resources
+E:\Fakultet\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Fakultet\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Fakultet\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest.exe
+E:\Fakultet\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest.exe
+d:\GoogleDrive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\bin\Debug\StylesTest.exe
+d:\GoogleDrive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\bin\Debug\StylesTest.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\MainWindow.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\MainWindow.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\App.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest_MarkupCompile.cache
+d:\GoogleDrive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest.g.resources
+d:\GoogleDrive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest.Properties.Resources.resources
+d:\GoogleDrive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest.csproj.GenerateResource.Cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\bin\Debug\StylesTest.exe
+e:\GoogleDrive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\bin\Debug\StylesTest.pdb
+e:\GoogleDrive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest.csprojAssemblyReference.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\MainWindow.baml
+e:\GoogleDrive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\MainWindow.g.cs
+e:\GoogleDrive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\App.g.cs
+e:\GoogleDrive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest_MarkupCompile.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest.g.resources
+e:\GoogleDrive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest.Properties.Resources.resources
+e:\GoogleDrive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest.csproj.GenerateResource.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest.csproj.CoreCompileInputs.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest.exe
+e:\GoogleDrive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest.pdb
+g:\My Drive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\bin\Debug\StylesTest.exe
+g:\My Drive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\bin\Debug\StylesTest.pdb
+g:\My Drive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest.csprojAssemblyReference.cache
+g:\My Drive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\MainWindow.baml
+g:\My Drive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\MainWindow.g.cs
+g:\My Drive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\App.g.cs
+g:\My Drive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest_MarkupCompile.cache
+g:\My Drive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest.g.resources
+g:\My Drive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest.Properties.Resources.resources
+g:\My Drive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest.csproj.GenerateResource.cache
+g:\My Drive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest.csproj.CoreCompileInputs.cache
+g:\My Drive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest.exe
+g:\My Drive\Nastava\Platforme za OP\Source\StylesTest\StylesTest\obj\x86\Debug\StylesTest.pdb
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\StylesTest\StylesTest\bin\Debug\StylesTest.exe.config
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\StylesTest\StylesTest\bin\Debug\StylesTest.exe
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\StylesTest\StylesTest\bin\Debug\StylesTest.pdb
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\StylesTest\StylesTest\obj\x86\Debug\StylesTest.csproj.AssemblyReference.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\StylesTest\StylesTest\obj\x86\Debug\StylesTest.csproj.SuggestedBindingRedirects.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\StylesTest\StylesTest\obj\x86\Debug\MainWindow.baml
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\StylesTest\StylesTest\obj\x86\Debug\MainWindow.g.cs
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\StylesTest\StylesTest\obj\x86\Debug\App.g.cs
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\StylesTest\StylesTest\obj\x86\Debug\StylesTest_MarkupCompile.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\StylesTest\StylesTest\obj\x86\Debug\StylesTest.g.resources
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\StylesTest\StylesTest\obj\x86\Debug\StylesTest.Properties.Resources.resources
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\StylesTest\StylesTest\obj\x86\Debug\StylesTest.csproj.GenerateResource.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\StylesTest\StylesTest\obj\x86\Debug\StylesTest.csproj.CoreCompileInputs.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\StylesTest\StylesTest\obj\x86\Debug\StylesTest.exe
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\StylesTest\StylesTest\obj\x86\Debug\StylesTest.pdb

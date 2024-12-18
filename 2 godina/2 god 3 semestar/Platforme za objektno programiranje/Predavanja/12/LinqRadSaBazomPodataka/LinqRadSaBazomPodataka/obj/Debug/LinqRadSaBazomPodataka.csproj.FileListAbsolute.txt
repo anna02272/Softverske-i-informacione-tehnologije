@@ -1,0 +1,35 @@
+D:\Fakultet\Nastava\Objektno-orijentisano programiranje u NET okruzenju\Source code\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\obj\Debug\ResolveAssemblyReference.cache
+D:\Fakultet\Nastava\Objektno-orijentisano programiranje u NET okruzenju\Source code\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\bin\Debug\LinqRadSaBazomPodataka.exe
+D:\Fakultet\Nastava\Objektno-orijentisano programiranje u NET okruzenju\Source code\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\bin\Debug\LinqRadSaBazomPodataka.pdb
+D:\Fakultet\Nastava\Objektno-orijentisano programiranje u NET okruzenju\Source code\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\obj\Debug\LinqRadSaBazomPodataka.exe
+D:\Fakultet\Nastava\Objektno-orijentisano programiranje u NET okruzenju\Source code\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\obj\Debug\LinqRadSaBazomPodataka.pdb
+D:\Fakultet\Nastava\Objektno-orijentisano programiranje u NET okruzenju\Source code\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\bin\Debug\LinqRadSaBazomPodataka.exe.config
+E:\Fakultet\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\bin\Debug\LinqRadSaBazomPodataka.exe.config
+E:\Fakultet\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\obj\Debug\LinqRadSaBazomPodataka.exe
+E:\Fakultet\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\obj\Debug\LinqRadSaBazomPodataka.pdb
+E:\Fakultet\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\bin\Debug\LinqRadSaBazomPodataka.exe
+E:\Fakultet\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\bin\Debug\LinqRadSaBazomPodataka.pdb
+E:\Fakultet\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Goran\Google Drive\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\bin\Debug\LinqRadSaBazomPodataka.exe.config
+C:\Users\Goran\Google Drive\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\obj\Debug\LinqRadSaBazomPodataka.exe
+C:\Users\Goran\Google Drive\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\obj\Debug\LinqRadSaBazomPodataka.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\bin\Debug\LinqRadSaBazomPodataka.exe.config
+d:\GoogleDrive\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\obj\Debug\LinqRadSaBazomPodataka.exe
+d:\GoogleDrive\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\obj\Debug\LinqRadSaBazomPodataka.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\bin\Debug\LinqRadSaBazomPodataka.exe
+d:\GoogleDrive\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\bin\Debug\LinqRadSaBazomPodataka.pdb
+D:\GoogleDrive\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\obj\Debug\LinqRadSaBazomPodataka.csprojResolveAssemblyReference.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\bin\Debug\LinqRadSaBazomPodataka.exe.config
+e:\GoogleDrive\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\bin\Debug\LinqRadSaBazomPodataka.exe
+e:\GoogleDrive\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\bin\Debug\LinqRadSaBazomPodataka.pdb
+e:\GoogleDrive\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\obj\Debug\LinqRadSaBazomPodataka.csprojAssemblyReference.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\obj\Debug\LinqRadSaBazomPodataka.csproj.CoreCompileInputs.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\obj\Debug\LinqRadSaBazomPodataka.exe
+e:\GoogleDrive\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\obj\Debug\LinqRadSaBazomPodataka.pdb
+g:\My Drive\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\bin\Debug\LinqRadSaBazomPodataka.exe.config
+g:\My Drive\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\bin\Debug\LinqRadSaBazomPodataka.exe
+g:\My Drive\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\bin\Debug\LinqRadSaBazomPodataka.pdb
+g:\My Drive\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\obj\Debug\LinqRadSaBazomPodataka.csprojAssemblyReference.cache
+g:\My Drive\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\obj\Debug\LinqRadSaBazomPodataka.csproj.CoreCompileInputs.cache
+g:\My Drive\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\obj\Debug\LinqRadSaBazomPodataka.exe
+g:\My Drive\Nastava\Platforme za OP\Source\LinqRadSaBazomPodataka\LinqRadSaBazomPodataka\obj\Debug\LinqRadSaBazomPodataka.pdb

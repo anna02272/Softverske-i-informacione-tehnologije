@@ -1,0 +1,21 @@
+﻿<Window x:Class="PrimerWpf.WGrid"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WGrid" Height="322.5" Width="353.5">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height= "50"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.ColumnSpan="2" Content="Unos podataka o studentu"/>
+        <Label Grid.Row="1" Grid.Column="0" Content="Ime:"/>
+        <TextBox Grid.Column="1" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="7,4,0,0" Name="tbIme" VerticalAlignment="Top" Width="120" />
+        <Label Grid.Row="2" Grid.Column="0" Content="Prezime:"/>
+        <TextBox Grid.Column="1" Grid.Row="2" Height="23" HorizontalAlignment="Left" Margin="7,2,0,0" Name="tbPrezime" VerticalAlignment="Top" Width="120" />
+    </Grid>
+</Window>

@@ -1,0 +1,12 @@
+﻿<Window x:Class="PrimerWpf.WMedia"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WMedia" Height="406" Width="699">
+    <Grid>
+        <MediaElement Margin="23,25,12,61" Name="meMovie" Source="c:\\tmp\\pop_file_example.wmv" LoadedBehavior="Manual"/>
+        <Button Content="Play" Height="23" HorizontalAlignment="Left" Margin="23,0,0,32" Name="btnStart" VerticalAlignment="Bottom" Width="75" Click="btnStart_Click" />
+        <Button Content="Pause" Height="23" HorizontalAlignment="Left" Margin="104,0,0,32" Name="btnPause" VerticalAlignment="Bottom" Width="75" Click="btnPause_Click" />
+        <Button Content="Stop" Height="23" HorizontalAlignment="Left" Margin="185,0,0,32" Name="btnStop" VerticalAlignment="Bottom" Width="75" Click="btnStop_Click" />
+        <Button Content="Ubrzaj" Height="23" HorizontalAlignment="Left" Margin="266,0,0,32" Name="btnUbrzaj" VerticalAlignment="Bottom" Width="75" Click="btnUbrzaj_Click" />
+    </Grid>
+</Window>

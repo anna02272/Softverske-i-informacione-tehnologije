@@ -1,0 +1,23 @@
+﻿<Window x:Class="PrimerWpf.WOptionFields"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WOptionFields" Height="604" Width="462">
+    <Grid>
+        <CheckBox Content="Potvrđujem" Height="16" HorizontalAlignment="Left" Margin="12,12,0,0" Name="cbPrihvatam" VerticalAlignment="Top" FlowDirection="LeftToRight" />
+        <Button Content="Prikaži izbor" Height="23" HorizontalAlignment="Left" Margin="15,34,0,0" Name="btnTestCheckBox" VerticalAlignment="Top" Width="75" Click="btnTestCheckBox_Click" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="12,90,0,0" Name="cbGradovi" VerticalAlignment="Top" Width="131" >
+            <ComboBoxItem Content="Novi Sad"/>
+            <ComboBoxItem Content="Beograd"/>
+            <ComboBoxItem Content="Niš"/>
+        </ComboBox>
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="12,134,0,0" Name="cbStudenti" VerticalAlignment="Top" Width="131" />
+        <Button Content="Prikazi selektovanog studenta" Height="23" HorizontalAlignment="Left" Margin="12,163,0,0" Name="btnComboSelected" VerticalAlignment="Top" Width="180" Click="btnComboSelected_Click" />
+        <Button Content="Prikazi selektovanu vrednost" Height="23" HorizontalAlignment="Left" Margin="15,192,0,0" Name="btnSelectedValue" VerticalAlignment="Top" Width="177" Click="btnSelectedValue_Click" />
+        <RadioButton Content="Muski" Height="16" Margin="19,265,380,0" Name="rbMuski" VerticalAlignment="Top" IsChecked="True" GroupName="rgPol" />
+        <Label Content="Izaberite pol" Height="28" HorizontalAlignment="Left" Margin="18,238,0,0" Name="lbPol" VerticalAlignment="Top" />
+        <RadioButton Content="Zenski" Height="16" HorizontalAlignment="Left" Margin="110,265,0,0" Name="rbZenski" VerticalAlignment="Top" GroupName="rgPol" FlowDirection="RightToLeft" />
+        <Label Content="Lista" Height="28" HorizontalAlignment="Left" Margin="18,296,0,0" Name="lbListBox" VerticalAlignment="Top" />
+        <ListBox Height="158" HorizontalAlignment="Left" Margin="27,321,0,0" Name="lbStudenti" VerticalAlignment="Top" Width="217" SelectionMode="Multiple" />
+        <Button Content="Prikazi selektovane" Margin="0,0,35,21" Name="btnSelectedItems" Click="btnSelectedItems_Click" HorizontalAlignment="Right" Width="119" Height="23" VerticalAlignment="Bottom" />
+    </Grid>
+</Window>

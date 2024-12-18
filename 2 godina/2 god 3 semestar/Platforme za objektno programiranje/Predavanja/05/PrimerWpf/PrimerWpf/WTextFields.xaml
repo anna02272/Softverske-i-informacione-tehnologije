@@ -1,0 +1,9 @@
+﻿<Window x:Class="PrimerWpf.WTextFields"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WTextFields" Height="300" Width="300">
+    <Grid>
+        <Label Content="Obična labela" Height="28" HorizontalAlignment="Left" Margin="12,13,0,0" Name="lbLabela" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" />
+        <TextBlock Height="203" HorizontalAlignment="Left" Margin="12,46,0,0" Name="tbTextBlock" Text="Blok teksta" VerticalAlignment="Top" TextWrapping="Wrap" Width="254" />
+    </Grid>
+</Window>

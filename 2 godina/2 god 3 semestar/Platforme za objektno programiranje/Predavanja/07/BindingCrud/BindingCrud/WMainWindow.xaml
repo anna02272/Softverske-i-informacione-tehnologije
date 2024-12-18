@@ -1,0 +1,9 @@
+﻿<Window x:Class="Crud.WMainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WMainWindow" Height="300" Width="300">
+    <Grid>
+        <Button Content="Fakulteti" Height="23" HorizontalAlignment="Left" Margin="12,31,0,0" Name="btnFakulteti" VerticalAlignment="Top" Width="75" Click="btnFakulteti_Click" />
+        <Button Content="Gradovi" Height="23" HorizontalAlignment="Left" Margin="12,79,0,0" Name="btnGradovi" VerticalAlignment="Top" Width="75" Click="btnGradovi_Click" />
+    </Grid>
+</Window>

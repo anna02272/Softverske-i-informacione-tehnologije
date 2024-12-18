@@ -1,0 +1,10 @@
+﻿<Window x:Class="PrimerWpf.WDataGrid"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WDataGrid" Height="300" Width="300">
+    <Grid>
+        <DataGrid AutoGenerateColumns="True" Name="dgStudenti" Margin="12,30,12,88" AlternatingRowBackground="#FFF5EFEF" CanUserResizeRows="True">            
+        </DataGrid>
+        <Button Content="Prikaži selektovani" Height="23" HorizontalAlignment="Right" Margin="0,0,12,51" Name="btnSelected" VerticalAlignment="Bottom" Width="110" Click="btnSelected_Click" />
+    </Grid>
+</Window>

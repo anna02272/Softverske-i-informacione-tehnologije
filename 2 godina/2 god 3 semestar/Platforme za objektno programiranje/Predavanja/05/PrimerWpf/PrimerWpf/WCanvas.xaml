@@ -1,0 +1,12 @@
+﻿<Window x:Class="PrimerWpf.WCanvas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WCanvas" Height="300" Width="300">
+    <Canvas>
+        <Label Content="Unos podataka o studentu" Canvas.Left="10" Canvas.Top="10"/>
+        <Label Content="Ime:" Canvas.Left="10" Canvas.Top="50"/>
+        <TextBox Canvas.Left="100" Canvas.Top="50" HorizontalAlignment="Left" Name="tbIme" VerticalAlignment="Top" Width="120" />
+        <Label Content="Prezime:" Canvas.Left="10" Canvas.Top="90"/>
+        <TextBox Canvas.Left="100" Canvas.Top="94" Height="23" HorizontalAlignment="Left" Name="tbPrezime" VerticalAlignment="Top" Width="120" />
+    </Canvas>
+</Window>

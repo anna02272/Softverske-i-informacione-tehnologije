@@ -1,0 +1,17 @@
+D:\GoogleDrive\Nastava\Platforme za OP\Source\Sintaksa\Sintaksa\bin\Debug\Sintaksa.exe
+D:\GoogleDrive\Nastava\Platforme za OP\Source\Sintaksa\Sintaksa\bin\Debug\Sintaksa.pdb
+D:\GoogleDrive\Nastava\Platforme za OP\Source\Sintaksa\Sintaksa\obj\x86\Debug\Sintaksa.exe
+D:\GoogleDrive\Nastava\Platforme za OP\Source\Sintaksa\Sintaksa\obj\x86\Debug\Sintaksa.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\Sintaksa\Sintaksa\obj\x86\Debug\Sintaksa.csprojResolveAssemblyReference.cache
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Sintaksa\Sintaksa\bin\Debug\Sintaksa.exe
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Sintaksa\Sintaksa\bin\Debug\Sintaksa.pdb
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Sintaksa\Sintaksa\obj\x86\Debug\Sintaksa.csprojAssemblyReference.cache
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Sintaksa\Sintaksa\obj\x86\Debug\Sintaksa.csproj.CoreCompileInputs.cache
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Sintaksa\Sintaksa\obj\x86\Debug\Sintaksa.exe
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Sintaksa\Sintaksa\obj\x86\Debug\Sintaksa.pdb
+G:\My Drive\Nastava\Platforme za OP\Source\Sintaksa\Sintaksa\bin\Debug\Sintaksa.exe
+G:\My Drive\Nastava\Platforme za OP\Source\Sintaksa\Sintaksa\bin\Debug\Sintaksa.pdb
+G:\My Drive\Nastava\Platforme za OP\Source\Sintaksa\Sintaksa\obj\x86\Debug\Sintaksa.csprojAssemblyReference.cache
+G:\My Drive\Nastava\Platforme za OP\Source\Sintaksa\Sintaksa\obj\x86\Debug\Sintaksa.csproj.CoreCompileInputs.cache
+G:\My Drive\Nastava\Platforme za OP\Source\Sintaksa\Sintaksa\obj\x86\Debug\Sintaksa.exe
+G:\My Drive\Nastava\Platforme za OP\Source\Sintaksa\Sintaksa\obj\x86\Debug\Sintaksa.pdb

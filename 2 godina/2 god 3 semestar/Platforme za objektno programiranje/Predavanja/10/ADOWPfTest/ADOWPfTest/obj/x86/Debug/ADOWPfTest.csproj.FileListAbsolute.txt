@@ -1,0 +1,75 @@
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\bin\Debug\ADOWPfTest.exe
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\bin\Debug\ADOWPfTest.pdb
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Debug\FakultetiWindow.baml
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Debug\MainWindow.baml
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Debug\StudentiWindow.baml
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Debug\FakultetiWindow.g.cs
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Debug\MainWindow.g.cs
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Debug\StudentiWindow.g.cs
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Debug\App.g.cs
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Debug\ADOWPfTest_MarkupCompile.cache
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Debug\ADOWPfTest.g.resources
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Debug\ADOWPfTest.Properties.Resources.resources
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Debug\ADOWPfTest.exe
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Debug\ADOWPfTest.pdb
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\bin\Debug\ADOWPfTest.exe
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\bin\Debug\ADOWPfTest.pdb
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\FakultetiWindow.baml
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\MainWindow.baml
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\FakultetiWindow.g.cs
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\MainWindow.g.cs
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\App.g.cs
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest_MarkupCompile.cache
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest.g.resources
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest.Properties.Resources.resources
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest.exe
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest.exe
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\bin\Debug\ADOWPfTest.exe
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\bin\Debug\ADOWPfTest.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\FakultetiWindow.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\MainWindow.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\FakultetiWindow.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\MainWindow.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\App.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest_MarkupCompile.cache
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest.g.resources
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest.Properties.Resources.resources
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest.csproj.GenerateResource.Cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\bin\Debug\ADOWPfTest.exe
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\bin\Debug\ADOWPfTest.pdb
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest.csprojAssemblyReference.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\FakultetiWindow.baml
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\MainWindow.baml
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\FakultetiWindow.g.cs
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\MainWindow.g.cs
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\App.g.cs
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest_MarkupCompile.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest.g.resources
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest.Properties.Resources.resources
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest.csproj.GenerateResource.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest.csproj.CoreCompileInputs.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest.exe
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest.pdb
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\bin\Debug\ADOWPfTest.exe
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\bin\Debug\ADOWPfTest.pdb
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest.csprojAssemblyReference.cache
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\FakultetiWindow.baml
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\MainWindow.baml
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\FakultetiWindow.g.cs
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\MainWindow.g.cs
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\App.g.cs
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest_MarkupCompile.cache
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest.g.resources
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest.Properties.Resources.resources
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest.csproj.GenerateResource.cache
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest.csproj.CoreCompileInputs.cache
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest.exe
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Debug\ADOWPfTest.pdb

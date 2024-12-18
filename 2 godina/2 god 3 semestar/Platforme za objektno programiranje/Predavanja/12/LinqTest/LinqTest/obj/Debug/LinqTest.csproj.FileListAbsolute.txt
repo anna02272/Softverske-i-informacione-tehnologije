@@ -1,0 +1,32 @@
+D:\Fakultet\Nastava\Objektno-orijentisano programiranje u NET okruzenju\Source code\LinqTest\LinqTest\bin\Debug\LinqTest.exe
+D:\Fakultet\Nastava\Objektno-orijentisano programiranje u NET okruzenju\Source code\LinqTest\LinqTest\bin\Debug\LinqTest.pdb
+D:\Fakultet\Nastava\Objektno-orijentisano programiranje u NET okruzenju\Source code\LinqTest\LinqTest\obj\Debug\ResolveAssemblyReference.cache
+D:\Fakultet\Nastava\Objektno-orijentisano programiranje u NET okruzenju\Source code\LinqTest\LinqTest\obj\Debug\LinqTest.exe
+D:\Fakultet\Nastava\Objektno-orijentisano programiranje u NET okruzenju\Source code\LinqTest\LinqTest\obj\Debug\LinqTest.pdb
+E:\Fakultet\Nastava\Platforme za OP\Source\LinqTest\LinqTest\obj\Debug\LinqTest.exe
+E:\Fakultet\Nastava\Platforme za OP\Source\LinqTest\LinqTest\obj\Debug\LinqTest.pdb
+E:\Fakultet\Nastava\Platforme za OP\Source\LinqTest\LinqTest\bin\Debug\LinqTest.exe
+E:\Fakultet\Nastava\Platforme za OP\Source\LinqTest\LinqTest\bin\Debug\LinqTest.pdb
+E:\Fakultet\Nastava\Platforme za OP\Source\LinqTest\LinqTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Goran\Google Drive\Nastava\Platforme za OP\Source\LinqTest\LinqTest\obj\Debug\LinqTest.exe
+C:\Users\Goran\Google Drive\Nastava\Platforme za OP\Source\LinqTest\LinqTest\obj\Debug\LinqTest.pdb
+C:\Users\Goran\Google Drive\Nastava\Platforme za OP\Source\LinqTest\LinqTest\bin\Debug\LinqTest.exe
+C:\Users\Goran\Google Drive\Nastava\Platforme za OP\Source\LinqTest\LinqTest\bin\Debug\LinqTest.pdb
+C:\Users\Goran\Google Drive\Nastava\Platforme za OP\Source\LinqTest\LinqTest\obj\Debug\LinqTest.csprojResolveAssemblyReference.cache
+d:\GoogleDrive\Nastava\Platforme za OP\Source\LinqTest\LinqTest\obj\Debug\LinqTest.exe
+d:\GoogleDrive\Nastava\Platforme za OP\Source\LinqTest\LinqTest\obj\Debug\LinqTest.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\LinqTest\LinqTest\bin\Debug\LinqTest.exe
+d:\GoogleDrive\Nastava\Platforme za OP\Source\LinqTest\LinqTest\bin\Debug\LinqTest.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\LinqTest\LinqTest\obj\Debug\LinqTest.csprojResolveAssemblyReference.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\LinqTest\LinqTest\bin\Debug\LinqTest.exe
+e:\GoogleDrive\Nastava\Platforme za OP\Source\LinqTest\LinqTest\bin\Debug\LinqTest.pdb
+e:\GoogleDrive\Nastava\Platforme za OP\Source\LinqTest\LinqTest\obj\Debug\LinqTest.csprojAssemblyReference.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\LinqTest\LinqTest\obj\Debug\LinqTest.csproj.CoreCompileInputs.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\LinqTest\LinqTest\obj\Debug\LinqTest.exe
+e:\GoogleDrive\Nastava\Platforme za OP\Source\LinqTest\LinqTest\obj\Debug\LinqTest.pdb
+G:\My Drive\Nastava\Platforme za OP\Source\LinqTest\LinqTest\bin\Debug\LinqTest.exe
+G:\My Drive\Nastava\Platforme za OP\Source\LinqTest\LinqTest\bin\Debug\LinqTest.pdb
+G:\My Drive\Nastava\Platforme za OP\Source\LinqTest\LinqTest\obj\Debug\LinqTest.csprojAssemblyReference.cache
+G:\My Drive\Nastava\Platforme za OP\Source\LinqTest\LinqTest\obj\Debug\LinqTest.csproj.CoreCompileInputs.cache
+G:\My Drive\Nastava\Platforme za OP\Source\LinqTest\LinqTest\obj\Debug\LinqTest.exe
+G:\My Drive\Nastava\Platforme za OP\Source\LinqTest\LinqTest\obj\Debug\LinqTest.pdb

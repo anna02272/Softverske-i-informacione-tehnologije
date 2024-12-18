@@ -1,0 +1,8 @@
+﻿<Window x:Class="ADOWpfTest4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Content="Fakulteti" Height="34" HorizontalAlignment="Left" Margin="21,18,0,0" Name="btnFakulteti" VerticalAlignment="Top" Width="94" FontSize="20" Click="btnFakulteti_Click" />
+    </Grid>
+</Window>

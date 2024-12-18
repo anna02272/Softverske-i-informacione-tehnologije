@@ -1,0 +1,96 @@
+﻿<Window x:Class="ValidationTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:ValidationTest"
+        Title="MainWindow" Height="468" Width="525">
+    <Window.Resources>
+        <!-- Sablon koji opisuje kako se text box prikazuje u slucaju greske pri validaciji -->
+        <ControlTemplate x:Key="TextBoxErrorTemplate">
+            <DockPanel LastChildFill="True">
+                <!-- Uzvicnici se prikazuju sa desne strane -->
+                <TextBlock DockPanel.Dock="Right" Foreground="Orange" FontSize="12pt">!!!</TextBlock>
+                <!-- Okvir ce popuniti preostali prostor u panelu (jer je lastchildfill postavljen na true) -->
+                <Border BorderBrush="Green" BorderThickness="1">
+                    <!-- AdornedElementPlaceholder predstavlja element na koji se template odnosi.
+                        U ovom slucaju to je text box. Prikazuje se unutar bordera-->
+                    <AdornedElementPlaceholder />
+                </Border>
+            </DockPanel>
+        </ControlTemplate>
+        <!-- Konverter za prebacivanje greske pri validaciji u tekstualnu vrednost -->
+        <local:ValidatorConverter x:Key="converter" />
+    </Window.Resources>
+    <Grid>
+        <GroupBox Header="Podaci o studentu" Height="376" HorizontalAlignment="Left" Margin="12,12,0,0" Name="gbPodaci" VerticalAlignment="Top" Width="462">
+            <Grid Width="482">
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="10,13,0,0" Name="lbIme" Text="Ime" VerticalAlignment="Top" />
+                <TextBox Text="{Binding Path=Ime}" Height="23" HorizontalAlignment="Left" Margin="79,10,0,0" Name="tbIme" VerticalAlignment="Top" Width="120" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="10,42,0,0" Name="lbPrezime" Text="Prezime" VerticalAlignment="Top" />
+                <TextBox Text="{Binding Path=Prezime}" Height="23" HorizontalAlignment="Left" Margin="79,39,0,0" Name="tbPrezime" VerticalAlignment="Top" Width="120" />
+                <TextBlock  Height="23" HorizontalAlignment="Left" Margin="10,71,0,0" Name="lbGodinaUpisa" Text="Godina upisa" VerticalAlignment="Top" />
+                <!-- Za godinu upisa primer validacije u slucaju izuzetka. Ako se unesu slova, nije ih moguce konvertovati u broj, pa validacija ne prolazi, jer se pojavljuje izuzetak-->
+                <TextBox Text="{Binding Path=GodinaUpisa, ValidatesOnExceptions=True}" Height="23" HorizontalAlignment="Left" Margin="79,68,0,0" Name="tbGodinaUpisa" VerticalAlignment="Top" Width="120" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="10,100,0,0" Name="lbEmail1" Text="E-mail 1" VerticalAlignment="Top" />
+                <!-- Validacija Email adrese putem klase EMailValidationRule. Default prikaz nevalidnog podatka - okvir textboxa postaje crven -->
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="79,97,0,0" Name="tbEmail1" VerticalAlignment="Top" Width="120" >
+                    <TextBox.Text>
+                        <Binding Path="Email1">
+                            <Binding.ValidationRules>
+                                <local:EMailValidationRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="10,129,0,0" Name="lbEmail2" Text="E-mail 2" VerticalAlignment="Top" />
+                <!-- Validacija Email adrese putem klase EMailValidationRule. 
+                     Izmenjen prikaz nevalidnog podatka - tri uzvicnika pored text boxa -->
+                <TextBox Validation.ErrorTemplate="{StaticResource ResourceKey=TextBoxErrorTemplate}" Height="23" HorizontalAlignment="Left" Margin="79,126,0,0" Name="tbEmail2" VerticalAlignment="Top" Width="120">
+                    <TextBox.Text>
+                        <Binding Path="Email2">
+                            <Binding.ValidationRules>
+                                <local:EMailValidationRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="10,158,0,0" Name="lbEmail3" Text="E-mail 3" VerticalAlignment="Top" />
+                <!-- Validacija Email adrese putem klase EMailValidationRule. 
+                     Izmenjen prikaz nevalidnog podatka - Ispod text boxa poruka o gresci pri validaciji -->
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="79,155,0,0" Name="tbEmail3" VerticalAlignment="Top" Width="120">
+                    <TextBox.Text>
+                        <!-- Ovde je ilustrovano i kako se validacija vrsi vec pri unosu vrednosti, a ne tek pri gubljenju fokusa -->
+                        <Binding Path="Email3" UpdateSourceTrigger="PropertyChanged"> 
+                            <Binding.ValidationRules>
+                                <local:EMailValidationRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <!-- Labela za prikaz poruke o gresci. 
+                     Prikazuje gresku koju posalje objekat klase EmailValidationRule. 
+                     Konvertuje ValidationError objekat u string putem klase ValidatorConverter -->
+                <TextBlock Margin="79,185,0,0" Foreground="Red" FontWeight="Bold" 
+                           Text="{Binding ElementName=tbEmail3, Path=(Validation.Errors), Converter={StaticResource ResourceKey=converter}}" 
+                           HorizontalAlignment="Left" Width="377" Height="23" VerticalAlignment="Top" />
+                <!-- Labela za prikaz poruke o gresci. 
+                     Prikazuje gresku koju posalje objekat klase EmailValidationRule. 
+                     Poruka se prikazuje bez konvertera - direktnim preuzimanjem stringa iz ValidationError objekta -->
+                <TextBlock Margin="79,215,0,0" Foreground="Red" FontWeight="Bold" 
+                           Text="{Binding ElementName=tbEmail3, Path=(Validation.Errors).CurrentItem.ErrorContent }" 
+                           HorizontalAlignment="Left" Width="377" Height="23" VerticalAlignment="Top" />
+                
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="10,293,0,0" Name="lbEmail4" Text="E-mail 4" VerticalAlignment="Top" />
+                <!-- Validacija putem IDataErrorInfo -->
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="79,290,0,0" Name="tbEmail4" VerticalAlignment="Top" Width="120">
+                    <Binding Path="Email4" ValidatesOnDataErrors="True">                        
+                    </Binding>
+                </TextBox>
+                <!-- TextBlock prikazuje poruku o gresci ako vrednost u polju E-mail 4 nije validna -->
+                <TextBlock Margin="79,324,0,0" Foreground="Red" FontWeight="Bold" 
+                           Text="{Binding ElementName=tbEmail4, Path=(Validation.Errors).CurrentItem.ErrorContent}" 
+                           HorizontalAlignment="Left" Width="377" Height="23" VerticalAlignment="Top" />
+                <CheckBox IsChecked="{Binding Path=NotifyViaEmail}" Content="Notify via Email?" Height="16" HorizontalAlignment="Left" Margin="79,259,0,0" Name="cbNotify" VerticalAlignment="Top" IsEnabled="True" FlowDirection="LeftToRight" />
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

@@ -1,0 +1,14 @@
+﻿<Window x:Class="PrimerWpf.WTreeView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WTreeView" Height="300" Width="300">
+    <Grid>
+        <TreeView Height="200" Name="tvFileSystem" Width="193">
+            <TreeViewItem Header="Program files" IsExpanded="True">
+                <TreeViewItem Header="Office" />
+                <TreeViewItem Header="Test" />
+            </TreeViewItem>
+            <TreeViewItem Header="Windows" />
+        </TreeView>
+    </Grid>
+</Window>

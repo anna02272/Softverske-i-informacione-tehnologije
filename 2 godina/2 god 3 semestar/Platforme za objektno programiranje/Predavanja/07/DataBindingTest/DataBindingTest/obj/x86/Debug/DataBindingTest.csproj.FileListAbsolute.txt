@@ -1,0 +1,65 @@
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\DataBindingTest\bin\Debug\DataBindingTest.exe
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\DataBindingTest\bin\Debug\DataBindingTest.pdb
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\DataBindingTest\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\DataBindingTest\obj\x86\Debug\MainWindow.baml
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\DataBindingTest\obj\x86\Debug\MainWindow.g.cs
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\DataBindingTest\obj\x86\Debug\App.g.cs
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\DataBindingTest\obj\x86\Debug\DataBindingTest_MarkupCompile.cache
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\DataBindingTest\obj\x86\Debug\DataBindingTest.g.resources
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\DataBindingTest\obj\x86\Debug\DataBindingTest.Properties.Resources.resources
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\DataBindingTest\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\DataBindingTest\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\DataBindingTest\obj\x86\Debug\DataBindingTest.exe
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\DataBindingTest\obj\x86\Debug\DataBindingTest.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.exe
+d:\GoogleDrive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\bin\Debug\DataBindingTest.exe
+d:\GoogleDrive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\bin\Debug\DataBindingTest.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\MainWindow.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\MainWindow.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\App.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest_MarkupCompile.cache
+d:\GoogleDrive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.g.resources
+d:\GoogleDrive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.Properties.Resources.resources
+d:\GoogleDrive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.csproj.GenerateResource.Cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\bin\Debug\DataBindingTest.exe
+e:\GoogleDrive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\bin\Debug\DataBindingTest.pdb
+e:\GoogleDrive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.csprojAssemblyReference.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\MainWindow.baml
+e:\GoogleDrive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\MainWindow.g.cs
+e:\GoogleDrive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\App.g.cs
+e:\GoogleDrive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest_MarkupCompile.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.g.resources
+e:\GoogleDrive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.Properties.Resources.resources
+e:\GoogleDrive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.csproj.GenerateResource.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.csproj.CoreCompileInputs.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.exe
+e:\GoogleDrive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.pdb
+g:\My Drive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\bin\Debug\DataBindingTest.exe
+g:\My Drive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\bin\Debug\DataBindingTest.pdb
+g:\My Drive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.csprojAssemblyReference.cache
+g:\My Drive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\MainWindow.baml
+g:\My Drive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\MainWindow.g.cs
+g:\My Drive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\App.g.cs
+g:\My Drive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest_MarkupCompile.cache
+g:\My Drive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.g.resources
+g:\My Drive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.Properties.Resources.resources
+g:\My Drive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.csproj.GenerateResource.cache
+g:\My Drive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.csproj.CoreCompileInputs.cache
+g:\My Drive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.exe
+g:\My Drive\Nastava\Platforme za OP\Source\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.pdb
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\07\DataBindingTest\DataBindingTest\bin\Debug\DataBindingTest.exe.config
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\07\DataBindingTest\DataBindingTest\bin\Debug\DataBindingTest.exe
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\07\DataBindingTest\DataBindingTest\bin\Debug\DataBindingTest.pdb
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\07\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.csproj.AssemblyReference.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\07\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.csproj.SuggestedBindingRedirects.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\07\DataBindingTest\DataBindingTest\obj\x86\Debug\MainWindow.baml
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\07\DataBindingTest\DataBindingTest\obj\x86\Debug\MainWindow.g.cs
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\07\DataBindingTest\DataBindingTest\obj\x86\Debug\App.g.cs
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\07\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest_MarkupCompile.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\07\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.g.resources
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\07\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.Properties.Resources.resources
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\07\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.csproj.GenerateResource.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\07\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.csproj.CoreCompileInputs.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\07\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.exe
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\07\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.pdb

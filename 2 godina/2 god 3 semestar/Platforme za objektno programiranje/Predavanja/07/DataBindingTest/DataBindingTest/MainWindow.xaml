@@ -1,0 +1,51 @@
+﻿<Window x:Class="DataBindingTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="723" Width="545">
+    <Grid>
+        <DataGrid AutoGenerateColumns="False" Height="146" HorizontalAlignment="Left" Margin="12,153,0,0" Name="dgStudenti" VerticalAlignment="Top" Width="214" CanUserAddRows="True">
+        </DataGrid>
+        <TextBox Text="{Binding Path=Ime}" Height="23" HorizontalAlignment="Left" Margin="15,29,0,0" Name="tbStudent" VerticalAlignment="Top" Width="211" />
+        <Button Content="Test binding" Height="23" HorizontalAlignment="Left" Margin="15,85,0,0" Name="btnTest" VerticalAlignment="Top" Width="75" Click="btnTest_Click" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="15,58,0,0" Name="tbStudentProgramski" VerticalAlignment="Top" Width="211" />
+        <Button Content="Spisak studenata" Height="23" HorizontalAlignment="Left" Margin="15,303,0,0" Name="btnSadrzajKolekcije" VerticalAlignment="Top" Width="146" Click="btnSadrzajKolekcije_Click" />
+        <Button Content="Dodaj studenta u kolekciju" Height="23" HorizontalAlignment="Left" Margin="15,332,0,0" Name="btnAddStudent" VerticalAlignment="Top" Width="146" Click="btnAddStudent_Click" />
+        <GroupBox Header="Selektovani student u gridu" Height="100" HorizontalAlignment="Left" Margin="257,12,0,0" Name="gbSelectedStudent" VerticalAlignment="Top" Width="200">
+            <Grid>
+                <Label Content="Ime:" Height="28" Margin="6,6,0,0" Name="lbIme" VerticalAlignment="Top" HorizontalAlignment="Left" Width="33" />
+                <Label Content="{Binding ElementName=dgStudenti, Path=SelectedItem.Ime}" Height="28" Margin="45,6,0,0" Name="lbImeStudenta" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                <Label Content="Prezime:" Height="28" Margin="6,40,0,0" Name="lbPrezime" VerticalAlignment="Top" HorizontalAlignment="Left" Width="60" />
+                <Label Content="{Binding ElementName=dgStudenti, Path=SelectedItem.Prezime}" Height="28" HorizontalAlignment="Left" Margin="72,40,0,0" Name="lbPrezimeStudenta" VerticalAlignment="Top" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Pogled" Height="125" HorizontalAlignment="Left" Margin="257,119,0,0" Name="gbView" VerticalAlignment="Top" Width="200">
+            <Grid>
+                <ListView Margin="6,6,6,7" Name="lvStudenti" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Selektovani student u pogledu" Height="100" HorizontalAlignment="Left" Margin="263,248,0,0" Name="gbSelectedStudentView" VerticalAlignment="Top" Width="200">
+            <Grid>
+                <Label Content="Ime:" Height="28" HorizontalAlignment="Left" Margin="6,6,0,0" Name="lbImeView" VerticalAlignment="Top" Width="33" />
+                <Label Content="" Height="28" HorizontalAlignment="Left" Margin="45,6,0,0" Name="lbImeStudentaView" VerticalAlignment="Top" />
+                <Label Content="Prezime:" Height="28" HorizontalAlignment="Left" Margin="6,40,0,0" Name="lbPrezimeView" VerticalAlignment="Top" Width="60" />
+                <Label Content="" Height="28" HorizontalAlignment="Left" Margin="72,40,0,0" Name="lbPrezimeStudentaView" VerticalAlignment="Top" />
+            </Grid>
+        </GroupBox>
+        <Label Content="DataGrid sa automatskim kolonama" Height="28" HorizontalAlignment="Left" Margin="15,119,0,0" Name="lbAutomatskeKolone" VerticalAlignment="Top" />
+        <DataGrid AutoGenerateColumns="False" CanUserAddRows="True" Height="204" HorizontalAlignment="Left" Margin="18,390,0,0" Name="dgStudentiManual" VerticalAlignment="Top" Width="214">
+        </DataGrid>
+        <Label Content="DataGrid sa ručno definisanim kolonama" Height="28" HorizontalAlignment="Left" Margin="15,359,0,0" Name="lbRucnoKolone" VerticalAlignment="Top" />
+        <Label Content="DataGrid sa grupisanim podacima" Height="28" HorizontalAlignment="Left" Margin="257,359,0,0" Name="lbGroup" VerticalAlignment="Top" />
+        <DataGrid AutoGenerateColumns="True" CanUserAddRows="True" Height="204" HorizontalAlignment="Left" Margin="263,393,0,0" Name="dgGroup" VerticalAlignment="Top" Width="214">
+            <DataGrid.GroupStyle>
+                <GroupStyle>
+                    <GroupStyle.Panel>
+                        <ItemsPanelTemplate>
+                            <StackPanel IsItemsHost="True" />
+                        </ItemsPanelTemplate>
+                    </GroupStyle.Panel>
+                </GroupStyle>
+            </DataGrid.GroupStyle>
+        </DataGrid>
+    </Grid>
+</Window>

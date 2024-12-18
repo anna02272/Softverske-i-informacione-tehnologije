@@ -1,0 +1,90 @@
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWpfTest4\bin\Debug\ADOWpfTest4.exe
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWpfTest4\bin\Debug\ADOWpfTest4.pdb
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWpfTest4\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWpfTest4\obj\x86\Debug\FakultetiWindow.baml
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWpfTest4\obj\x86\Debug\MainWindow.baml
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWpfTest4\obj\x86\Debug\FakultetiWindow.g.cs
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWpfTest4\obj\x86\Debug\MainWindow.g.cs
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWpfTest4\obj\x86\Debug\App.g.cs
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4_MarkupCompile.cache
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.g.resources
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.Properties.Resources.resources
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWpfTest4\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWpfTest4\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.exe
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.pdb
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.exe
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.pdb
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\bin\Debug\ADOWpfTest4.exe
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\bin\Debug\ADOWpfTest4.pdb
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\FakultetiWindow.baml
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\MainWindow.baml
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\FakultetiWindow.g.cs
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\MainWindow.g.cs
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\App.g.cs
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4_MarkupCompile.cache
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.g.resources
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.Properties.Resources.resources
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.exe
+D:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\bin\Debug\ADOWpfTest4.exe
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\bin\Debug\ADOWpfTest4.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\FakultetiWindow.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\MainWindow.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\FakultetiWindow.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\MainWindow.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\App.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4_MarkupCompile.cache
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.g.resources
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.Properties.Resources.resources
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.csproj.GenerateResource.Cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\bin\Debug\ADOWpfTest4.exe
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\bin\Debug\ADOWpfTest4.pdb
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.csprojAssemblyReference.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\FakultetiWindow.baml
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\MainWindow.baml
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\FakultetiWindow.g.cs
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\MainWindow.g.cs
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\App.g.cs
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4_MarkupCompile.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.g.resources
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.Properties.Resources.resources
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.csproj.GenerateResource.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.csproj.CoreCompileInputs.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.exe
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.pdb
+G:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\bin\Debug\ADOWpfTest4.exe
+G:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\bin\Debug\ADOWpfTest4.pdb
+G:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.csprojAssemblyReference.cache
+G:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\FakultetiWindow.baml
+G:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\MainWindow.baml
+G:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\FakultetiWindow.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\MainWindow.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\App.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4_MarkupCompile.cache
+G:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.g.resources
+G:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.Properties.Resources.resources
+G:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.csproj.GenerateResource.cache
+G:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.csproj.CoreCompileInputs.cache
+G:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.exe
+G:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.pdb
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\10\ADOWpfTest4\ADOWpfTest4\bin\Debug\ADOWpfTest4.exe.config
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\10\ADOWpfTest4\ADOWpfTest4\bin\Debug\ADOWpfTest4.exe
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\10\ADOWpfTest4\ADOWpfTest4\bin\Debug\ADOWpfTest4.pdb
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\10\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.csproj.AssemblyReference.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\10\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.csproj.SuggestedBindingRedirects.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\10\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\FakultetiWindow.baml
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\10\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\MainWindow.baml
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\10\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\FakultetiWindow.g.cs
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\10\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\MainWindow.g.cs
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\10\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\App.g.cs
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\10\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4_MarkupCompile.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\10\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.g.resources
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\10\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.Properties.Resources.resources
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\10\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.csproj.GenerateResource.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\10\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.csproj.CoreCompileInputs.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\10\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.exe
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\10\ADOWpfTest4\ADOWpfTest4\obj\x86\Debug\ADOWpfTest4.pdb

@@ -1,0 +1,19 @@
+D:\GoogleDrive\Nastava\Platforme za OP\Source\Metode\Metode\bin\Debug\Metode.exe
+D:\GoogleDrive\Nastava\Platforme za OP\Source\Metode\Metode\bin\Debug\Metode.pdb
+D:\GoogleDrive\Nastava\Platforme za OP\Source\Metode\Metode\obj\x86\Debug\Metode.exe
+D:\GoogleDrive\Nastava\Platforme za OP\Source\Metode\Metode\obj\x86\Debug\Metode.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\Metode\Metode\obj\x86\Debug\Metode.csprojResolveAssemblyReference.cache
+G:\My Drive\Nastava\Platforme za OP\Source\Metode\Metode\bin\Debug\Metode.exe
+G:\My Drive\Nastava\Platforme za OP\Source\Metode\Metode\bin\Debug\Metode.pdb
+G:\My Drive\Nastava\Platforme za OP\Source\Metode\Metode\obj\x86\Debug\Metode.csprojAssemblyReference.cache
+G:\My Drive\Nastava\Platforme za OP\Source\Metode\Metode\obj\x86\Debug\Metode.csproj.CoreCompileInputs.cache
+G:\My Drive\Nastava\Platforme za OP\Source\Metode\Metode\obj\x86\Debug\Metode.exe
+G:\My Drive\Nastava\Platforme za OP\Source\Metode\Metode\obj\x86\Debug\Metode.pdb
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\08\Metode\Metode\bin\Debug\Metode.exe.config
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\08\Metode\Metode\bin\Debug\Metode.exe
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\08\Metode\Metode\bin\Debug\Metode.pdb
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\08\Metode\Metode\obj\x86\Debug\Metode.csproj.AssemblyReference.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\08\Metode\Metode\obj\x86\Debug\Metode.csproj.SuggestedBindingRedirects.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\08\Metode\Metode\obj\x86\Debug\Metode.csproj.CoreCompileInputs.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\08\Metode\Metode\obj\x86\Debug\Metode.exe
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\08\Metode\Metode\obj\x86\Debug\Metode.pdb

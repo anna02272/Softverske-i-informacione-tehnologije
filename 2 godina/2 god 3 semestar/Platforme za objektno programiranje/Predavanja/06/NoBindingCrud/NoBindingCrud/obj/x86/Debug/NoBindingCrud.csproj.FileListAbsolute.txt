@@ -1,0 +1,42 @@
+D:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\FakultetEditWindow.baml
+D:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\FakultetiWindow.baml
+D:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\FakultetEditWindow.g.cs
+D:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\FakultetiWindow.g.cs
+D:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\App.g.cs
+D:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\NoBindingCrud_MarkupCompile.cache
+D:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\NoBindingCrud.g.resources
+D:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\Crud.Properties.Resources.resources
+D:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\NoBindingCrud.csproj.GenerateResource.Cache
+D:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\bin\Debug\NoBindingCrud.exe
+D:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\bin\Debug\NoBindingCrud.pdb
+D:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\NoBindingCrud.exe
+D:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\NoBindingCrud.pdb
+e:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\bin\Debug\NoBindingCrud.exe
+e:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\bin\Debug\NoBindingCrud.pdb
+e:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\FakultetEditWindow.baml
+e:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\FakultetiWindow.baml
+e:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\FakultetEditWindow.g.cs
+e:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\FakultetiWindow.g.cs
+e:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\App.g.cs
+e:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\NoBindingCrud_MarkupCompile.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\NoBindingCrud.g.resources
+e:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\Crud.Properties.Resources.resources
+e:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\NoBindingCrud.csproj.GenerateResource.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\NoBindingCrud.csproj.CoreCompileInputs.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\NoBindingCrud.exe
+e:\GoogleDrive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\NoBindingCrud.pdb
+g:\My Drive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\bin\Debug\NoBindingCrud.exe
+g:\My Drive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\bin\Debug\NoBindingCrud.pdb
+g:\My Drive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\NoBindingCrud.csprojAssemblyReference.cache
+g:\My Drive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\FakultetEditWindow.baml
+g:\My Drive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\FakultetiWindow.baml
+g:\My Drive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\FakultetEditWindow.g.cs
+g:\My Drive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\FakultetiWindow.g.cs
+g:\My Drive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\App.g.cs
+g:\My Drive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\NoBindingCrud_MarkupCompile.cache
+g:\My Drive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\NoBindingCrud.g.resources
+g:\My Drive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\Crud.Properties.Resources.resources
+g:\My Drive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\NoBindingCrud.csproj.GenerateResource.cache
+g:\My Drive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\NoBindingCrud.csproj.CoreCompileInputs.cache
+g:\My Drive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\NoBindingCrud.exe
+g:\My Drive\Nastava\Platforme za OP\Source\NoBindingCrud\NoBindingCrud\obj\x86\Debug\NoBindingCrud.pdb

@@ -1,0 +1,139 @@
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\bin\Debug\PrimerWpf.exe
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WDialogs.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WListView.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\MainWindow.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WButton.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WCanvas.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WDataGrid.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WDockPanel.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WGrid.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WGroup.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WMedia.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WMenu.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WOptionFields.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WStackPanel.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WTextBox.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WTextFields.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WTreeView.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WWrapPanel.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WDialogs.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WListView.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\MainWindow.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WButton.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WCanvas.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WDataGrid.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WDockPanel.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WGrid.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WGroup.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WMedia.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WMenu.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WOptionFields.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WStackPanel.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WTextBox.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WTextFields.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WTreeView.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WWrapPanel.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\App.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\PrimerWpf_MarkupCompile.cache
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\PrimerWpf.g.resources
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\PrimerWpf.Properties.Resources.resources
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\PrimerWpf.csproj.GenerateResource.Cache
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\PrimerWpf.exe
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\PrimerWpf.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\bin\Debug\PrimerWpf.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WCalendar.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WCalendar.g.cs
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\bin\Debug\PrimerWpf.exe
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\bin\Debug\PrimerWpf.pdb
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\PrimerWpf.csprojAssemblyReference.cache
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WCalendar.baml
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WDialogs.baml
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WListView.baml
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\MainWindow.baml
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WButton.baml
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WCanvas.baml
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WDataGrid.baml
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WDockPanel.baml
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WGrid.baml
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WGroup.baml
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WMedia.baml
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WMenu.baml
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WOptionFields.baml
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WStackPanel.baml
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WTextBox.baml
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WTextFields.baml
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WTreeView.baml
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WWrapPanel.baml
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WCalendar.g.cs
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WDialogs.g.cs
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WListView.g.cs
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\MainWindow.g.cs
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WButton.g.cs
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WCanvas.g.cs
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WDataGrid.g.cs
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WDockPanel.g.cs
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WGrid.g.cs
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WGroup.g.cs
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WMedia.g.cs
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WMenu.g.cs
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WOptionFields.g.cs
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WStackPanel.g.cs
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WTextBox.g.cs
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WTextFields.g.cs
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WTreeView.g.cs
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WWrapPanel.g.cs
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\App.g.cs
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\PrimerWpf_MarkupCompile.cache
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\PrimerWpf.g.resources
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\PrimerWpf.Properties.Resources.resources
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\PrimerWpf.csproj.GenerateResource.cache
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\PrimerWpf.csproj.CoreCompileInputs.cache
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\PrimerWpf.exe
+E:\GoogleDrive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\PrimerWpf.pdb
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\bin\Debug\PrimerWpf.exe
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\bin\Debug\PrimerWpf.pdb
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\PrimerWpf.csprojAssemblyReference.cache
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WCalendar.baml
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WDialogs.baml
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WListView.baml
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\MainWindow.baml
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WButton.baml
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WCanvas.baml
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WDataGrid.baml
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WDockPanel.baml
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WGrid.baml
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WGroup.baml
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WMedia.baml
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WMenu.baml
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WOptionFields.baml
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WStackPanel.baml
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WTextBox.baml
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WTextFields.baml
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WTreeView.baml
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WWrapPanel.baml
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WCalendar.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WDialogs.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WListView.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\MainWindow.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WButton.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WCanvas.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WDataGrid.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WDockPanel.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WGrid.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WGroup.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WMedia.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WMenu.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WOptionFields.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WStackPanel.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WTextBox.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WTextFields.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WTreeView.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\WWrapPanel.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\App.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\PrimerWpf_MarkupCompile.cache
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\PrimerWpf.g.resources
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\PrimerWpf.Properties.Resources.resources
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\PrimerWpf.csproj.GenerateResource.cache
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\PrimerWpf.csproj.CoreCompileInputs.cache
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\PrimerWpf.exe
+G:\My Drive\Nastava\Platforme za OP\Source\PrimerWpf\PrimerWpf\obj\x86\Debug\PrimerWpf.pdb

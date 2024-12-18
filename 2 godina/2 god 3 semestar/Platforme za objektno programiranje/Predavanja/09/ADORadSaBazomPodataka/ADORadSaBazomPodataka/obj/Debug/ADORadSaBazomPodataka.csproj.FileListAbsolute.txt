@@ -1,0 +1,44 @@
+D:\Fakultet\Nastava\Objektno-orijentisano programiranje u NET okruzenju\Source code\ADORadSaBazomPodataka\ADORadSaBazomPodataka\obj\Debug\ResolveAssemblyReference.cache
+D:\Fakultet\Nastava\Objektno-orijentisano programiranje u NET okruzenju\Source code\ADORadSaBazomPodataka\ADORadSaBazomPodataka\bin\Debug\ADORadSaBazomPodataka.exe
+D:\Fakultet\Nastava\Objektno-orijentisano programiranje u NET okruzenju\Source code\ADORadSaBazomPodataka\ADORadSaBazomPodataka\bin\Debug\ADORadSaBazomPodataka.pdb
+D:\Fakultet\Nastava\Objektno-orijentisano programiranje u NET okruzenju\Source code\ADORadSaBazomPodataka\ADORadSaBazomPodataka\obj\Debug\ADORadSaBazomPodataka.exe
+D:\Fakultet\Nastava\Objektno-orijentisano programiranje u NET okruzenju\Source code\ADORadSaBazomPodataka\ADORadSaBazomPodataka\obj\Debug\ADORadSaBazomPodataka.pdb
+E:\Fakultet\Nastava\OO programiranje u NET okruzenju\Source code\ADORadSaBazomPodataka\ADORadSaBazomPodataka\bin\Debug\ADORadSaBazomPodataka.exe.config
+E:\Fakultet\Nastava\OO programiranje u NET okruzenju\Source code\ADORadSaBazomPodataka\ADORadSaBazomPodataka\obj\Debug\ADORadSaBazomPodataka.exe
+E:\Fakultet\Nastava\OO programiranje u NET okruzenju\Source code\ADORadSaBazomPodataka\ADORadSaBazomPodataka\obj\Debug\ADORadSaBazomPodataka.pdb
+E:\Fakultet\Nastava\OO programiranje u NET okruzenju\Source code\ADORadSaBazomPodataka\ADORadSaBazomPodataka\bin\Debug\ADORadSaBazomPodataka.exe
+E:\Fakultet\Nastava\OO programiranje u NET okruzenju\Source code\ADORadSaBazomPodataka\ADORadSaBazomPodataka\bin\Debug\ADORadSaBazomPodataka.pdb
+E:\Fakultet\Nastava\OO programiranje u NET okruzenju\Source code\ADORadSaBazomPodataka\ADORadSaBazomPodataka\obj\Debug\ResolveAssemblyReference.cache
+E:\Fakultet\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\bin\Debug\ADORadSaBazomPodataka.exe.config
+E:\Fakultet\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\obj\Debug\ADORadSaBazomPodataka.exe
+E:\Fakultet\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\obj\Debug\ADORadSaBazomPodataka.pdb
+E:\Fakultet\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\bin\Debug\ADORadSaBazomPodataka.exe
+E:\Fakultet\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\bin\Debug\ADORadSaBazomPodataka.pdb
+E:\Fakultet\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\obj\Debug\ResolveAssemblyReference.cache
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\bin\Debug\ADORadSaBazomPodataka.exe.config
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\obj\Debug\ADORadSaBazomPodataka.exe
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\obj\Debug\ADORadSaBazomPodataka.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\bin\Debug\ADORadSaBazomPodataka.exe
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\bin\Debug\ADORadSaBazomPodataka.pdb
+D:\GoogleDrive\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\obj\Debug\ADORadSaBazomPodataka.csprojResolveAssemblyReference.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\bin\Debug\ADORadSaBazomPodataka.exe.config
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\bin\Debug\ADORadSaBazomPodataka.exe
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\bin\Debug\ADORadSaBazomPodataka.pdb
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\obj\Debug\ADORadSaBazomPodataka.csprojAssemblyReference.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\obj\Debug\ADORadSaBazomPodataka.csproj.CoreCompileInputs.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\obj\Debug\ADORadSaBazomPodataka.exe
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\obj\Debug\ADORadSaBazomPodataka.pdb
+C:\Users\Korisnik\Downloads\ADORadSaBazomPodataka\ADORadSaBazomPodataka\ADORadSaBazomPodataka\bin\Debug\ADORadSaBazomPodataka.exe.config
+C:\Users\Korisnik\Downloads\ADORadSaBazomPodataka\ADORadSaBazomPodataka\ADORadSaBazomPodataka\bin\Debug\ADORadSaBazomPodataka.exe
+C:\Users\Korisnik\Downloads\ADORadSaBazomPodataka\ADORadSaBazomPodataka\ADORadSaBazomPodataka\bin\Debug\ADORadSaBazomPodataka.pdb
+C:\Users\Korisnik\Downloads\ADORadSaBazomPodataka\ADORadSaBazomPodataka\ADORadSaBazomPodataka\obj\Debug\ADORadSaBazomPodataka.csprojAssemblyReference.cache
+C:\Users\Korisnik\Downloads\ADORadSaBazomPodataka\ADORadSaBazomPodataka\ADORadSaBazomPodataka\obj\Debug\ADORadSaBazomPodataka.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Downloads\ADORadSaBazomPodataka\ADORadSaBazomPodataka\ADORadSaBazomPodataka\obj\Debug\ADORadSaBazomPodataka.exe
+C:\Users\Korisnik\Downloads\ADORadSaBazomPodataka\ADORadSaBazomPodataka\ADORadSaBazomPodataka\obj\Debug\ADORadSaBazomPodataka.pdb
+g:\My Drive\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\bin\Debug\ADORadSaBazomPodataka.exe.config
+g:\My Drive\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\bin\Debug\ADORadSaBazomPodataka.exe
+g:\My Drive\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\bin\Debug\ADORadSaBazomPodataka.pdb
+g:\My Drive\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\obj\Debug\ADORadSaBazomPodataka.csprojAssemblyReference.cache
+g:\My Drive\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\obj\Debug\ADORadSaBazomPodataka.csproj.CoreCompileInputs.cache
+g:\My Drive\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\obj\Debug\ADORadSaBazomPodataka.exe
+g:\My Drive\Nastava\Platforme za OP\Source\ADORadSaBazomPodataka\ADORadSaBazomPodataka\obj\Debug\ADORadSaBazomPodataka.pdb

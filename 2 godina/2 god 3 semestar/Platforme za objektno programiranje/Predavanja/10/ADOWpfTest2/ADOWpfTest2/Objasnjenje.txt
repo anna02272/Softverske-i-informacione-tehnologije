@@ -1,0 +1,7 @@
+﻿Aplikacija predstavlja primer WPF aplikacije koja podatke 
+perzistira u relacionoj bazi podataka koriscenjem ADO .NET 
+tehnologije.
+Kao memorijska reprezentacija podataka koriste se entiteti (klase)
+ kreirane u skladu sa tabelama u bazi podataka.
+Za prikaz i azuriranje podataka koristi se WPF DataGrid. 
+Podaci se i unose i menjaju direktno u DataGrid komponenti. 

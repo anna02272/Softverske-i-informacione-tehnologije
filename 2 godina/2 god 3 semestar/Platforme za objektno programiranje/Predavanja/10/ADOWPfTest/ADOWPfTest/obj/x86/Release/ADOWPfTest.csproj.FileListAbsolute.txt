@@ -1,0 +1,32 @@
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Release\MainWindow.baml
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Release\StudentiWindow.baml
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Release\MainWindow.g.cs
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Release\StudentiWindow.g.cs
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Release\App.g.cs
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Release\ADOWPfTest_MarkupCompile.cache
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Release\ADOWPfTest.g.resources
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Release\ADOWPfTest.Properties.Resources.resources
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\bin\Release\ADOWPfTest.exe
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\bin\Release\ADOWPfTest.pdb
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Release\ADOWPfTest.exe
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Release\ADOWPfTest.pdb
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Release\FakultetiWindow.baml
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ADOWPfTest\obj\x86\Release\FakultetiWindow.g.cs
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Release\ADOWPfTest.exe
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Release\ADOWPfTest.pdb
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\bin\Release\ADOWPfTest.exe
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\bin\Release\ADOWPfTest.pdb
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Release\ResolveAssemblyReference.cache
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Release\FakultetiWindow.baml
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Release\MainWindow.baml
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Release\FakultetiWindow.g.cs
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Release\MainWindow.g.cs
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Release\App.g.cs
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Release\ADOWPfTest_MarkupCompile.cache
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Release\ADOWPfTest.g.resources
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Release\ADOWPfTest.Properties.Resources.resources
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Release\GenerateResource.read.1.tlog
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWPfTest\ADOWPfTest\obj\x86\Release\GenerateResource.write.1.tlog

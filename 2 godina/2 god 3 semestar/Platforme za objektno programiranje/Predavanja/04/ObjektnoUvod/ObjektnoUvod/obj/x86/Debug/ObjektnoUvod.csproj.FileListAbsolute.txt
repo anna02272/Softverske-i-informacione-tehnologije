@@ -1,0 +1,17 @@
+D:\GoogleDrive\Nastava\Platforme za OP\Source\ObjektnoUvod\ObjektnoUvod\bin\Debug\ObjektnoUvod.exe
+D:\GoogleDrive\Nastava\Platforme za OP\Source\ObjektnoUvod\ObjektnoUvod\bin\Debug\ObjektnoUvod.pdb
+D:\GoogleDrive\Nastava\Platforme za OP\Source\ObjektnoUvod\ObjektnoUvod\obj\x86\Debug\ObjektnoUvod.exe
+D:\GoogleDrive\Nastava\Platforme za OP\Source\ObjektnoUvod\ObjektnoUvod\obj\x86\Debug\ObjektnoUvod.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ObjektnoUvod\ObjektnoUvod\obj\x86\Debug\ObjektnoUvod.csprojResolveAssemblyReference.cache
+E:\GoogleDrive\Nastava\Platforme za OP\Source\ObjektnoUvod\ObjektnoUvod\bin\Debug\ObjektnoUvod.exe
+E:\GoogleDrive\Nastava\Platforme za OP\Source\ObjektnoUvod\ObjektnoUvod\bin\Debug\ObjektnoUvod.pdb
+E:\GoogleDrive\Nastava\Platforme za OP\Source\ObjektnoUvod\ObjektnoUvod\obj\x86\Debug\ObjektnoUvod.csprojAssemblyReference.cache
+E:\GoogleDrive\Nastava\Platforme za OP\Source\ObjektnoUvod\ObjektnoUvod\obj\x86\Debug\ObjektnoUvod.csproj.CoreCompileInputs.cache
+E:\GoogleDrive\Nastava\Platforme za OP\Source\ObjektnoUvod\ObjektnoUvod\obj\x86\Debug\ObjektnoUvod.exe
+E:\GoogleDrive\Nastava\Platforme za OP\Source\ObjektnoUvod\ObjektnoUvod\obj\x86\Debug\ObjektnoUvod.pdb
+G:\My Drive\Nastava\Platforme za OP\Source\ObjektnoUvod\ObjektnoUvod\bin\Debug\ObjektnoUvod.exe
+G:\My Drive\Nastava\Platforme za OP\Source\ObjektnoUvod\ObjektnoUvod\bin\Debug\ObjektnoUvod.pdb
+G:\My Drive\Nastava\Platforme za OP\Source\ObjektnoUvod\ObjektnoUvod\obj\x86\Debug\ObjektnoUvod.csprojAssemblyReference.cache
+G:\My Drive\Nastava\Platforme za OP\Source\ObjektnoUvod\ObjektnoUvod\obj\x86\Debug\ObjektnoUvod.csproj.CoreCompileInputs.cache
+G:\My Drive\Nastava\Platforme za OP\Source\ObjektnoUvod\ObjektnoUvod\obj\x86\Debug\ObjektnoUvod.exe
+G:\My Drive\Nastava\Platforme za OP\Source\ObjektnoUvod\ObjektnoUvod\obj\x86\Debug\ObjektnoUvod.pdb

@@ -1,0 +1,61 @@
+d:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\BindingCrud.exe
+d:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\BindingCrud.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\bin\Debug\BindingCrud.exe
+d:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\bin\Debug\BindingCrud.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\FakultetEditWindow.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\FakultetiWindow.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\Gradovi.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\WMainWindow.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\FakultetEditWindow.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\FakultetiWindow.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\Gradovi.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\WMainWindow.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\App.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\BindingCrud_MarkupCompile.cache
+d:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\BindingCrud.g.resources
+d:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\BindingCrud.Properties.Resources.resources
+d:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\BindingCrud.csproj.GenerateResource.Cache
+d:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\DepartmanAddWindow.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\DepartmanAddWindow.g.cs
+e:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\bin\Debug\BindingCrud.exe
+e:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\bin\Debug\BindingCrud.pdb
+e:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\BindingCrud.csprojAssemblyReference.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\DepartmanAddWindow.baml
+e:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\FakultetEditWindow.baml
+e:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\FakultetiWindow.baml
+e:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\Gradovi.baml
+e:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\WMainWindow.baml
+e:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\DepartmanAddWindow.g.cs
+e:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\FakultetEditWindow.g.cs
+e:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\FakultetiWindow.g.cs
+e:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\Gradovi.g.cs
+e:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\WMainWindow.g.cs
+e:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\App.g.cs
+e:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\BindingCrud_MarkupCompile.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\BindingCrud.g.resources
+e:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\BindingCrud.Properties.Resources.resources
+e:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\BindingCrud.csproj.GenerateResource.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\BindingCrud.csproj.CoreCompileInputs.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\BindingCrud.exe
+e:\GoogleDrive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\BindingCrud.pdb
+g:\My Drive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\bin\Debug\BindingCrud.exe
+g:\My Drive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\bin\Debug\BindingCrud.pdb
+g:\My Drive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\BindingCrud.csprojAssemblyReference.cache
+g:\My Drive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\DepartmanAddWindow.baml
+g:\My Drive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\FakultetEditWindow.baml
+g:\My Drive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\FakultetiWindow.baml
+g:\My Drive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\Gradovi.baml
+g:\My Drive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\WMainWindow.baml
+g:\My Drive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\DepartmanAddWindow.g.cs
+g:\My Drive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\FakultetEditWindow.g.cs
+g:\My Drive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\FakultetiWindow.g.cs
+g:\My Drive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\Gradovi.g.cs
+g:\My Drive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\WMainWindow.g.cs
+g:\My Drive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\App.g.cs
+g:\My Drive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\BindingCrud_MarkupCompile.cache
+g:\My Drive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\BindingCrud.g.resources
+g:\My Drive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\BindingCrud.Properties.Resources.resources
+g:\My Drive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\BindingCrud.csproj.GenerateResource.cache
+g:\My Drive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\BindingCrud.csproj.CoreCompileInputs.cache
+g:\My Drive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\BindingCrud.exe
+g:\My Drive\Nastava\Platforme za OP\Source\BindingCrud\BindingCrud\obj\x86\Debug\BindingCrud.pdb

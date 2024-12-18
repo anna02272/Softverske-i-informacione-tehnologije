@@ -1,0 +1,52 @@
+D:\GoogleDrive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\bin\Debug\Dogadjaji.exe
+D:\GoogleDrive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\bin\Debug\Dogadjaji.pdb
+D:\GoogleDrive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\MainWindow.baml
+D:\GoogleDrive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\MainWindow.g.cs
+D:\GoogleDrive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\App.g.cs
+D:\GoogleDrive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji_MarkupCompile.cache
+D:\GoogleDrive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.g.resources
+D:\GoogleDrive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.Properties.Resources.resources
+D:\GoogleDrive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.csproj.GenerateResource.Cache
+D:\GoogleDrive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.exe
+D:\GoogleDrive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.pdb
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\bin\Debug\Dogadjaji.exe
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\bin\Debug\Dogadjaji.pdb
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.csprojAssemblyReference.cache
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\MainWindow.baml
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\MainWindow.g.cs
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\App.g.cs
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji_MarkupCompile.cache
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.g.resources
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.Properties.Resources.resources
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.csproj.GenerateResource.cache
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.csproj.CoreCompileInputs.cache
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.exe
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.pdb
+G:\My Drive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\bin\Debug\Dogadjaji.exe
+G:\My Drive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\bin\Debug\Dogadjaji.pdb
+G:\My Drive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.csprojAssemblyReference.cache
+G:\My Drive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\MainWindow.baml
+G:\My Drive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\MainWindow.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\App.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji_MarkupCompile.cache
+G:\My Drive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.g.resources
+G:\My Drive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.Properties.Resources.resources
+G:\My Drive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.csproj.GenerateResource.cache
+G:\My Drive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.csproj.CoreCompileInputs.cache
+G:\My Drive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.exe
+G:\My Drive\Nastava\Platforme za OP\Source\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.pdb
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\08\Dogadjaji\Dogadjaji\bin\Debug\Dogadjaji.exe.config
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\08\Dogadjaji\Dogadjaji\bin\Debug\Dogadjaji.exe
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\08\Dogadjaji\Dogadjaji\bin\Debug\Dogadjaji.pdb
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\08\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.csproj.AssemblyReference.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\08\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.csproj.SuggestedBindingRedirects.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\08\Dogadjaji\Dogadjaji\obj\x86\Debug\MainWindow.baml
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\08\Dogadjaji\Dogadjaji\obj\x86\Debug\MainWindow.g.cs
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\08\Dogadjaji\Dogadjaji\obj\x86\Debug\App.g.cs
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\08\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji_MarkupCompile.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\08\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.g.resources
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\08\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.Properties.Resources.resources
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\08\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.csproj.GenerateResource.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\08\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.csproj.CoreCompileInputs.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\08\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.exe
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\08\Dogadjaji\Dogadjaji\obj\x86\Debug\Dogadjaji.pdb

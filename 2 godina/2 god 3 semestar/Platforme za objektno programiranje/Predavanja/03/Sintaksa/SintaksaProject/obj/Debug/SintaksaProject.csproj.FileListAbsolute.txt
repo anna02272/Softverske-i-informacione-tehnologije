@@ -1,0 +1,7 @@
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Sintaksa\SintaksaProject\bin\Debug\SintaksaProject.exe.config
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Sintaksa\SintaksaProject\bin\Debug\SintaksaProject.exe
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Sintaksa\SintaksaProject\bin\Debug\SintaksaProject.pdb
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Sintaksa\SintaksaProject\obj\Debug\SintaksaProject.csprojAssemblyReference.cache
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Sintaksa\SintaksaProject\obj\Debug\SintaksaProject.csproj.CoreCompileInputs.cache
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Sintaksa\SintaksaProject\obj\Debug\SintaksaProject.exe
+E:\GoogleDrive\Nastava\Platforme za OP\Source\Sintaksa\SintaksaProject\obj\Debug\SintaksaProject.pdb

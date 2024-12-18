@@ -1,0 +1,10 @@
+D:\Fakultet\Nastava\Objektno-orijentisano programiranje u NET okruzenju\Source code\UpravljanjeGreskama\UpravljanjeGreskama\obj\Debug\ResolveAssemblyReference.cache
+D:\Fakultet\Nastava\Objektno-orijentisano programiranje u NET okruzenju\Source code\UpravljanjeGreskama\UpravljanjeGreskama\bin\Debug\UpravljanjeGreskama.exe
+D:\Fakultet\Nastava\Objektno-orijentisano programiranje u NET okruzenju\Source code\UpravljanjeGreskama\UpravljanjeGreskama\bin\Debug\UpravljanjeGreskama.pdb
+D:\Fakultet\Nastava\Objektno-orijentisano programiranje u NET okruzenju\Source code\UpravljanjeGreskama\UpravljanjeGreskama\obj\Debug\UpravljanjeGreskama.exe
+D:\Fakultet\Nastava\Objektno-orijentisano programiranje u NET okruzenju\Source code\UpravljanjeGreskama\UpravljanjeGreskama\obj\Debug\UpravljanjeGreskama.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\UpravljanjeGreskama\UpravljanjeGreskama\obj\Debug\UpravljanjeGreskama.exe
+d:\GoogleDrive\Nastava\Platforme za OP\Source\UpravljanjeGreskama\UpravljanjeGreskama\obj\Debug\UpravljanjeGreskama.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\UpravljanjeGreskama\UpravljanjeGreskama\bin\Debug\UpravljanjeGreskama.exe
+d:\GoogleDrive\Nastava\Platforme za OP\Source\UpravljanjeGreskama\UpravljanjeGreskama\bin\Debug\UpravljanjeGreskama.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\UpravljanjeGreskama\UpravljanjeGreskama\obj\Debug\UpravljanjeGreskama.csprojResolveAssemblyReference.cache

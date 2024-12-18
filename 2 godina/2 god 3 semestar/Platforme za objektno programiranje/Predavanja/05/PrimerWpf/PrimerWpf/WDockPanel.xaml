@@ -1,0 +1,11 @@
+﻿<Window x:Class="PrimerWpf.WDockPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WDockPanel" Height="300" Width="300">
+    <DockPanel LastChildFill="true">
+        <TextBox Height="23" Name="tbIme" Width="120" DockPanel.Dock="Top"/>
+        <TextBox Height="23" Name="tbDockPanel" Width="120" DockPanel.Dock="Bottom" />
+        <Image Name="imgParkSiti" Stretch="Fill" Source="Slike/ParkSiti.png"/>
+    </DockPanel>
+
+</Window>

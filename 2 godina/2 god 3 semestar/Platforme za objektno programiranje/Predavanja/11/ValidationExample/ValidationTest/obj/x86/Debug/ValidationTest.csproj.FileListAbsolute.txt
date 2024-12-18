@@ -1,0 +1,75 @@
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ValidationTest\bin\Debug\ValidationTest.exe
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ValidationTest\bin\Debug\ValidationTest.pdb
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ValidationTest\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ValidationTest\obj\x86\Debug\MainWindow.baml
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ValidationTest\obj\x86\Debug\MainWindow.g.cs
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ValidationTest\obj\x86\Debug\App.g.cs
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ValidationTest\obj\x86\Debug\ValidationTest_MarkupCompile.cache
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ValidationTest\obj\x86\Debug\ValidationTest.g.resources
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ValidationTest\obj\x86\Debug\ValidationTest.Properties.Resources.resources
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ValidationTest\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ValidationTest\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ValidationTest\obj\x86\Debug\ValidationTest.exe
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ValidationTest\obj\x86\Debug\ValidationTest.pdb
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ValidationTest\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\Goran\Local Settings\Application Data\Temporary Projects\ValidationTest\obj\x86\Debug\ValidationTest_MarkupCompile.lref
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ValidationTest\ValidationTest\obj\x86\Debug\ValidationTest.exe
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ValidationTest\ValidationTest\obj\x86\Debug\ValidationTest.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ValidationTest\ValidationTest\bin\Debug\ValidationTest.exe
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ValidationTest\ValidationTest\bin\Debug\ValidationTest.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ValidationTest\ValidationTest\obj\x86\Debug\MainWindow.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ValidationTest\ValidationTest\obj\x86\Debug\App.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ValidationTest\ValidationTest\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ValidationTest\ValidationTest\obj\x86\Debug\ValidationTest_MarkupCompile.cache
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ValidationTest\ValidationTest\obj\x86\Debug\ValidationTest_MarkupCompile.lref
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ValidationTest\ValidationTest\obj\x86\Debug\MainWindow.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ValidationTest\ValidationTest\obj\x86\Debug\ValidationTest.g.resources
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ValidationTest\ValidationTest\obj\x86\Debug\ValidationTest.Properties.Resources.resources
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ValidationTest\ValidationTest\obj\x86\Debug\ValidationTest.csproj.GenerateResource.Cache
+c:\Users\Korisnik\Downloads\Platforme za OP\ValidationTest\ValidationTest\bin\Debug\ValidationTest.exe
+c:\Users\Korisnik\Downloads\Platforme za OP\ValidationTest\ValidationTest\bin\Debug\ValidationTest.pdb
+c:\Users\Korisnik\Downloads\Platforme za OP\ValidationTest\ValidationTest\obj\x86\Debug\ValidationTest.csprojAssemblyReference.cache
+c:\Users\Korisnik\Downloads\Platforme za OP\ValidationTest\ValidationTest\obj\x86\Debug\MainWindow.g.cs
+c:\Users\Korisnik\Downloads\Platforme za OP\ValidationTest\ValidationTest\obj\x86\Debug\App.g.cs
+c:\Users\Korisnik\Downloads\Platforme za OP\ValidationTest\ValidationTest\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+c:\Users\Korisnik\Downloads\Platforme za OP\ValidationTest\ValidationTest\obj\x86\Debug\ValidationTest_MarkupCompile.cache
+c:\Users\Korisnik\Downloads\Platforme za OP\ValidationTest\ValidationTest\obj\x86\Debug\ValidationTest_MarkupCompile.lref
+c:\Users\Korisnik\Downloads\Platforme za OP\ValidationTest\ValidationTest\obj\x86\Debug\MainWindow.baml
+c:\Users\Korisnik\Downloads\Platforme za OP\ValidationTest\ValidationTest\obj\x86\Debug\ValidationTest.g.resources
+c:\Users\Korisnik\Downloads\Platforme za OP\ValidationTest\ValidationTest\obj\x86\Debug\ValidationTest.Properties.Resources.resources
+c:\Users\Korisnik\Downloads\Platforme za OP\ValidationTest\ValidationTest\obj\x86\Debug\ValidationTest.csproj.GenerateResource.cache
+c:\Users\Korisnik\Downloads\Platforme za OP\ValidationTest\ValidationTest\obj\x86\Debug\ValidationTest.csproj.CoreCompileInputs.cache
+c:\Users\Korisnik\Downloads\Platforme za OP\ValidationTest\ValidationTest\obj\x86\Debug\ValidationTest.exe
+c:\Users\Korisnik\Downloads\Platforme za OP\ValidationTest\ValidationTest\obj\x86\Debug\ValidationTest.pdb
+G:\My Drive\Nastava\Platforme za OP\Source\ValidationExample\ValidationTest\bin\Debug\ValidationTest.exe
+G:\My Drive\Nastava\Platforme za OP\Source\ValidationExample\ValidationTest\bin\Debug\ValidationTest.pdb
+G:\My Drive\Nastava\Platforme za OP\Source\ValidationExample\ValidationTest\obj\x86\Debug\ValidationTest.csprojAssemblyReference.cache
+G:\My Drive\Nastava\Platforme za OP\Source\ValidationExample\ValidationTest\obj\x86\Debug\MainWindow.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\ValidationExample\ValidationTest\obj\x86\Debug\App.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\ValidationExample\ValidationTest\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+G:\My Drive\Nastava\Platforme za OP\Source\ValidationExample\ValidationTest\obj\x86\Debug\ValidationTest_MarkupCompile.cache
+G:\My Drive\Nastava\Platforme za OP\Source\ValidationExample\ValidationTest\obj\x86\Debug\ValidationTest_MarkupCompile.lref
+G:\My Drive\Nastava\Platforme za OP\Source\ValidationExample\ValidationTest\obj\x86\Debug\MainWindow.baml
+G:\My Drive\Nastava\Platforme za OP\Source\ValidationExample\ValidationTest\obj\x86\Debug\ValidationTest.g.resources
+G:\My Drive\Nastava\Platforme za OP\Source\ValidationExample\ValidationTest\obj\x86\Debug\ValidationTest.Properties.Resources.resources
+G:\My Drive\Nastava\Platforme za OP\Source\ValidationExample\ValidationTest\obj\x86\Debug\ValidationTest.csproj.GenerateResource.cache
+G:\My Drive\Nastava\Platforme za OP\Source\ValidationExample\ValidationTest\obj\x86\Debug\ValidationTest.csproj.CoreCompileInputs.cache
+G:\My Drive\Nastava\Platforme za OP\Source\ValidationExample\ValidationTest\obj\x86\Debug\ValidationTest.exe
+G:\My Drive\Nastava\Platforme za OP\Source\ValidationExample\ValidationTest\obj\x86\Debug\ValidationTest.pdb
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\ValidationExample\ValidationTest\bin\Debug\ValidationTest.exe.config
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\ValidationExample\ValidationTest\bin\Debug\ValidationTest.exe
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\ValidationExample\ValidationTest\bin\Debug\ValidationTest.pdb
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\ValidationExample\ValidationTest\obj\x86\Debug\ValidationTest.csproj.AssemblyReference.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\ValidationExample\ValidationTest\obj\x86\Debug\ValidationTest.csproj.SuggestedBindingRedirects.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\ValidationExample\ValidationTest\obj\x86\Debug\MainWindow.g.cs
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\ValidationExample\ValidationTest\obj\x86\Debug\App.g.cs
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\ValidationExample\ValidationTest\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\ValidationExample\ValidationTest\obj\x86\Debug\ValidationTest_MarkupCompile.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\ValidationExample\ValidationTest\obj\x86\Debug\ValidationTest_MarkupCompile.lref
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\ValidationExample\ValidationTest\obj\x86\Debug\MainWindow.baml
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\ValidationExample\ValidationTest\obj\x86\Debug\ValidationTest.g.resources
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\ValidationExample\ValidationTest\obj\x86\Debug\ValidationTest.Properties.Resources.resources
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\ValidationExample\ValidationTest\obj\x86\Debug\ValidationTest.csproj.GenerateResource.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\ValidationExample\ValidationTest\obj\x86\Debug\ValidationTest.csproj.CoreCompileInputs.cache
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\ValidationExample\ValidationTest\obj\x86\Debug\ValidationTest.exe
+C:\Users\domon\Desktop\SR\Platforme za objektno programiranje\Predavanja\11\ValidationExample\ValidationTest\obj\x86\Debug\ValidationTest.pdb

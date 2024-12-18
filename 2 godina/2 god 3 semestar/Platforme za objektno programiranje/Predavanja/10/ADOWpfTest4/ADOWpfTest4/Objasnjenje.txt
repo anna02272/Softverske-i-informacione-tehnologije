@@ -1,0 +1,12 @@
+﻿Aplikacija predstavlja primer WPF aplikacije koja podatke perzistira u 
+relacionoj bazi podataka koriscenjem ADO .NET tehnologije.
+Kao memorijska reprezentacija podataka koriste se entiteti (klase) 
+kreirane u skladu sa tabelama u bazi podataka.
+Za prikaz i azuriranje podataka koristi se WPF DataGrid. 
+Podaci se unose i menjaju direktno u DataGrid komponenti. 
+Upis u bazu se vrši odmah nakon unosa podataka u DataGrid 
+(ili brisanja reda iz DataGrid-a).
+Implementacija je ispravna samo ako nijedno polje u bazi nije obavezno 
+(nije NOT NULL), jer se novi slog ubacuje u bazu najpre prazan, a 
+zatim se vrsi popunjavanje vrednosti sloga UPDATE izrazima.
+ 

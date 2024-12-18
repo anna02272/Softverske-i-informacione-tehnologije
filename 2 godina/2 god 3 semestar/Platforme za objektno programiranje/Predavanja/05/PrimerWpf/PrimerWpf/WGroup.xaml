@@ -1,0 +1,39 @@
+﻿<Window x:Class="PrimerWpf.WGroup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WGroup" Height="536" Width="504">
+    <Grid>
+        <GroupBox Header="Student" Height="100" HorizontalAlignment="Left" Margin="22,12,0,0" Name="gbStudent" VerticalAlignment="Top" Width="308">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="38*"/>
+                    <ColumnDefinition Width="257*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox Height="23" Name="tbIme" Width="209" Margin="35.5,6,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1" />
+                <Label Content="Ime" Height="28" HorizontalAlignment="Left" Margin="6,6,0,0" Name="lbIme" VerticalAlignment="Top" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="35.5,43,0,0" Name="tbPrezime" VerticalAlignment="Top" Width="209" Grid.Column="1" />
+                <Label Content="Prezime" Height="28" HorizontalAlignment="Left" Margin="6,43,0,0" Name="lbPrezime" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+            </Grid>
+        </GroupBox>
+        <Expander Header="Adresa" Height="100" HorizontalAlignment="Left" Margin="21,126,0,0" Name="expAdresa" VerticalAlignment="Top" Width="309" IsExpanded="True" ExpandDirection="Down">
+            <Grid>
+                <Label Content="Adresa" Height="28" HorizontalAlignment="Left" Margin="4,20,0,0" Name="lbAdresa" VerticalAlignment="Top" />
+                <TextBox Height="46" HorizontalAlignment="Left" Margin="60,23,0,0" Name="tbAdresa" VerticalAlignment="Top" Width="241" TextWrapping="Wrap" />
+            </Grid>
+        </Expander>
+        <TabControl Height="196" Name="tbEvidencija" Width="301" Margin="28,243,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" TabStripPlacement="Top">
+            <TabItem Header="Ispit" Name="tbIspiti">
+                <Grid>
+                    <Label Content="Ocena" Height="28" HorizontalAlignment="Left" Margin="15,24,0,0" Name="lbOcena" VerticalAlignment="Top" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="68,26,0,0" Name="tbOcena" VerticalAlignment="Top" Width="79" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Prisustvo" IsSelected="True">
+                <Grid>
+                    <Label Content="Broj dolazaka" Height="28" HorizontalAlignment="Left" Margin="15,25,0,0" Name="lbPrisustvo" VerticalAlignment="Top" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="102,25,0,0" Name="tbBrojDolazaka" VerticalAlignment="Top" Width="71" />
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

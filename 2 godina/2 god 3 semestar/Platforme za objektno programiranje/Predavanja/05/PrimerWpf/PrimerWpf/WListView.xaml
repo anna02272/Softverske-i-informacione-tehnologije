@@ -1,0 +1,13 @@
+﻿<Window x:Class="PrimerWpf.WListView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ListView" Height="300" Width="300">
+    <Grid>
+        <ListView Name="lvFajlovi" Margin="12,12,12,78">
+            <ListViewItem Content="primer.txt" />
+            <ListViewItem Content="odluka.docx" />
+            <ListViewItem Content="pregled.xlsx" />
+        </ListView>
+        <Button Content="Prikaži selektovani" Height="23" HorizontalAlignment="Right" Margin="0,0,12,38" Name="btnSelected" VerticalAlignment="Bottom" Width="121" Click="btnSelected_Click" />
+    </Grid>
+</Window>

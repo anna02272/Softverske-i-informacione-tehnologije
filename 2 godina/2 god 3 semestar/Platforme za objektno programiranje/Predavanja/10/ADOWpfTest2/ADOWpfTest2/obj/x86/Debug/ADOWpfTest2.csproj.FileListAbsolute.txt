@@ -1,0 +1,58 @@
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\bin\Debug\ADOWpfTest2.exe
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\bin\Debug\ADOWpfTest2.pdb
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\FakultetiWindow.baml
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\MainWindow.baml
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\FakultetiWindow.g.cs
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\MainWindow.g.cs
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\App.g.cs
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2_MarkupCompile.cache
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2.g.resources
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2.Properties.Resources.resources
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2.exe
+E:\Fakultet\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2.pdb
+D:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2.exe
+D:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\bin\Debug\ADOWpfTest2.exe
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\bin\Debug\ADOWpfTest2.pdb
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\FakultetiWindow.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\MainWindow.baml
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\FakultetiWindow.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\MainWindow.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\App.g.cs
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2_MarkupCompile.cache
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2.g.resources
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2.Properties.Resources.resources
+d:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2.csproj.GenerateResource.Cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\bin\Debug\ADOWpfTest2.exe
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\bin\Debug\ADOWpfTest2.pdb
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2.csprojAssemblyReference.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\FakultetiWindow.baml
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\MainWindow.baml
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\FakultetiWindow.g.cs
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\MainWindow.g.cs
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\App.g.cs
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2_MarkupCompile.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2.g.resources
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2.Properties.Resources.resources
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2.csproj.GenerateResource.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2.csproj.CoreCompileInputs.cache
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2.exe
+e:\GoogleDrive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2.pdb
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\bin\Debug\ADOWpfTest2.exe
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\bin\Debug\ADOWpfTest2.pdb
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2.csprojAssemblyReference.cache
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\FakultetiWindow.baml
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\MainWindow.baml
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\FakultetiWindow.g.cs
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\MainWindow.g.cs
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\App.g.cs
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2_MarkupCompile.cache
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2.g.resources
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2.Properties.Resources.resources
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2.csproj.GenerateResource.cache
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2.csproj.CoreCompileInputs.cache
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2.exe
+g:\My Drive\Nastava\Platforme za OP\Source\ADOWpfTest2\ADOWpfTest2\obj\x86\Debug\ADOWpfTest2.pdb

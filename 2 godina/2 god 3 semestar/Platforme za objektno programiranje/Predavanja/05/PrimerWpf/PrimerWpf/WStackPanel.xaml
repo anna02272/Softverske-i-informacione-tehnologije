@@ -1,0 +1,10 @@
+﻿<Window x:Class="PrimerWpf.WStackPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WStackPanel" Height="300" Width="300">
+    <StackPanel Orientation="Vertical">
+        <Label Content="Ime"/>
+        <TextBox Name="tbIme" Width="100" Height="26" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+    </StackPanel>
+
+</Window>

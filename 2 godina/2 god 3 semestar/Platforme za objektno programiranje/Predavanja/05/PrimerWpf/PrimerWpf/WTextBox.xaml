@@ -1,0 +1,14 @@
+﻿<Window x:Class="PrimerWpf.WTextBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WTextBox" Height="396" Width="442">
+    <Grid>
+        <TextBox Height="23" Margin="12,12,0,0" Name="tbIme" VerticalAlignment="Top" TextChanged="tbIme_TextChanged" HorizontalAlignment="Left" Width="120" />
+        <Label Content="Label" Height="28" HorizontalAlignment="Left" Margin="12,41,0,0" Name="lbIme" VerticalAlignment="Top" />
+        <PasswordBox Height="23" HorizontalAlignment="Left" Margin="12,105,0,0" Name="pwdSifra" VerticalAlignment="Top" Width="120" />
+        <Label Content="Unesite sifru" Height="28" HorizontalAlignment="Left" Margin="12,71,0,0" Name="lbSifra" VerticalAlignment="Top" />
+        <Button Content="Prikazi sifru" Height="23" HorizontalAlignment="Right" Margin="0,105,207.2,0" Name="btnPrikaziSifru" VerticalAlignment="Top" Width="75" Click="btnPrikaziSifru_Click" />
+        <Label Content="Unesite formatirani tekst" Height="28" HorizontalAlignment="Left" Margin="12,146,0,0" Name="lbRichText" VerticalAlignment="Top" />
+        <RichTextBox Height="163" HorizontalAlignment="Left" Margin="22,182,0,0" Name="rtbKomentar" VerticalAlignment="Top" Width="378" />
+    </Grid>
+</Window>
