@@ -1,0 +1,21 @@
+URL: https://jsonplaceholder.typicode.com/users
+-------------------------------------------------
+username: ppetrovic@webd.com
+password: petar123
+name: Petar Petrović
+
+username: jjovanovic@webd.com
+password: jovana123
+name: Jovana Jovanović
+
+username: mmarkovic@webd.com
+password: marko123
+name: Marko Marković
+
+username: ffilipovic@webd.com
+password: filip123
+name:  Filip Filipović
+
+username: ttijanic@webd.com
+password: tijana123
+name: Tijana Tijanić

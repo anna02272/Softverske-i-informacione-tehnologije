@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #3a4a58;
+  color: #4d4d4d;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.text-white { 
+  color: white; 
+}
+
+.header-section { 
+  text-align: center;
+}
+
+#coffee-icon {
+  vertical-align: text-bottom;
+  height: 50px;
+  margin-right: 15px;
+}
+
+#title-header {
+  display: inline-block;
+}
+
+.nav-bar {
+  background-color: #c4cdd6;
+  overflow: hidden;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  float: left;
+  color: #333333;
+  padding: 14px 18px;
+}
+
+.nav-bar a:hover {
+  background-color: #e5e8ed; 
+  color: black;
+}
+
+.main-content { 
+  background-color: #ffffff;
+  padding: 5px 30px 30px;
+}
+
+#top-img {
+  background-image: url(../images/chilling-caffe-01.jpg);
+  min-height: 350px;
+  background-position: center;
+  background-size: cover;
+}
+
+.section-header {
+  text-align: center;
+  color: #996633;
+  font-size: 180%;
+  margin-bottom: 0;
+}
+
+hr {
+  width: 60%;
+  border: 0.5px solid #C4CDD6;
+}
+
+p {
+  text-align: justify;
+}
+
+#caffe-image {
+  width: 310px;
+  float: left;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  margin-top: 20px;
+}
+
+td {
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.text-left { 
+  text-align: left; 
+}
+
+tr:nth-child(odd) { 
+  background-color: #e5e8ed; 
+}
+
+th {
+  background-color: #c4cdd6;
+  height: 50px;
+  color: #333333;
+  font-weight: normal;
+  font-size: 110%;
+  padding-left: 15px;
+  padding-right: 15px;
+}

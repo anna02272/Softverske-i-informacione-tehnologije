@@ -1,0 +1,96 @@
+    "users": {
+        "-MNQo55Aw0tLdwahMZMK": {
+            "korisnickoIme": "petar",
+            "ime": "Petar",
+            "prezime": "Petrović",
+            "datumRodjenja": "1994-10-22",
+            "adresa": "Gogoljeva 39, Novi Sad",
+            " ": "061456456",
+            "email": "ppetrovic@webd.com",
+            "lozinka": "petar123"
+        },
+        "-MNQoCqEXydVTdCNV47C": {
+            "adresa": "Jug Bogdana 14, Zrenjanin",
+            "datumRodjenja": "1982-05-05",
+            "email": "jjovanovic@webd.com",
+            "ime": "Jovana",
+            "lozinka": "jovana123",
+            "prezime": "Jovanović",
+            "telefon": "062321321",
+            "korisnickoIme": "jovana"
+        },
+        "-MNQoJw2p9rci4Rm_rYY": {
+            "adresa": "Cara Lazara 9a, Kragujevac",
+            "datumRodjenja": "1990-09-17",
+            "email": "mmarkovic@webd.com",
+            "ime": "Marko",
+            "lozinka": "marko123",
+            "prezime": "Marković",
+            "telefon": "063876876",
+            "korisnickoIme": "marko"
+        },
+        "-MNQoR-5erkWvcm8Hdnk": {
+            "adresa": "Solunska 5, Niš",
+            "datumRodjenja": "1973-03-10",
+            "email": "ffilipovic@webd.com",
+            "ime": "Filip",
+            "lozinka": "filip123",
+            "prezime": "Filipović",
+            "telefon": "064159159",
+            "korisnickoIme": "filip"
+        },
+        "-MNQoWt_gDudX5W8TLQj": {
+            "adresa": "Ružićeva 32, Beograd",
+            "datumRodjenja": "1998-06-29",
+            "email": "ttijanic@webd.com",
+            "ime": "Tijana",
+            "lozinka": "tijana123",
+            "prezime": "Tijanić",
+            "telefon": "065753753",
+            "korisnickoIme": "tijana"
+        }
+    }
+}
+
+
+URL: https://jsonplaceholder.typicode.com/users
+-------------------------------------------------
+username: Sincere@april.biz
+password: Bret
+name:     Leanne Graham
+
+username: Shanna@melissa.tv
+password: Antonette
+name:     Ervin Howell
+
+username: Nathan@yesenia.net
+password: Samantha
+name:     Clementine Bauch
+
+username: Julianne.OConner@kory.org
+password: Karianne
+name:     Patricia Lebsack
+
+username: Lucio_Hettinger@annie.ca
+password: Kamren
+name:     Chelsey Dietrich
+
+username: Karley_Dach@jasper.info
+password: Leopoldo_Corkery
+name:     Mrs. Dennis Schulist
+
+username: Telly.Hoeger@billy.biz
+password: Elwyn.Skiles
+name:     Kurtis Weissnat
+
+username: Sherwood@rosamond.me
+password: Maxime_Nienow
+name:     Nicholas Runolfsdottir V
+
+username: Chaim_McDermott@dana.io
+password: Delphine
+name:     Glenna Reichert
+
+username: Rey.Padberg@karina.biz
+password: Moriah.Stanton
+name:     Clementina DuBuque

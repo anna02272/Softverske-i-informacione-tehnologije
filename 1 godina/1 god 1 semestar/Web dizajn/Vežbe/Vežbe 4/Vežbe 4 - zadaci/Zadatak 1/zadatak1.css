@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("images/bg.jpg");
+    color: #000000
+    font-family: 'Lobster', "cursive";
+    font-size: 16px;
+  }
+
+  .container {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  .text-white { 
+    color: white; 
+  }
+  
+  
