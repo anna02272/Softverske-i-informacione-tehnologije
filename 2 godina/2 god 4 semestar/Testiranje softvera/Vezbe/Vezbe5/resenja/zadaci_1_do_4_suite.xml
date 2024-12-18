@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="ZadaciZaVezbu">
+
+	<test name="zadatak1">
+		<classes>
+			<class name="unittesting.calculator.CalculatorTestAddSub" />
+		</classes>
+	</test>
+	
+	<test name="zadatak2">
+		<classes>
+			<class name="unittesting.calculator.CalculatorTestMulDiv" />
+		</classes>
+	</test>
+	
+	<test name="zadatak3">
+		<classes>
+			<class name="unittesting.calculator.CalculatorTestSquare" />
+		</classes>
+	</test>
+	
+	<test name="zadatak4">
+		<parameter name="zaSabiranje" value="5" />
+		<parameter name="zaOduzimanje" value="9" />
+		<parameter name="zaMnozenje" value="2" />
+		<parameter name="zaDeljenje" value="2" />
+		<parameter name="zaKvadriranje" value="8" />
+		<classes>
+			<class name="unittesting.calculator.CalculatorTestParametrized" />
+		</classes>
+	</test>
+	
+
+</suite>

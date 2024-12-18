@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ssluzbaGroup]">
+  <test name="zadatak1">
+    <classes>
+      <class name="unittesting.ssluzba.TestGradeWithoutMock"/>
+      <class name="unittesting.ssluzba.TestGradeMock"/>
+    </classes>
+  </test> <!-- zadatak1 -->
+  <test name="zadatak2">
+    <classes>
+      <class name="unittesting.ssluzba.StudentDAOTest"/>
+    </classes>
+  </test> <!-- zadatak2 -->
+</suite> <!-- Failed suite [ssluzbaGroup] -->

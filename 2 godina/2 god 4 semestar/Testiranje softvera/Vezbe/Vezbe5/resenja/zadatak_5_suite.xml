@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!-- ovaj suit ce pokretati testove iz klasa CalculatorTestAddSub i CalculatorTestSquare
+	 ali samo one koji pripadaju grupi 'odabranaMetoda'
+-->
+<suite name="GrupisanjeSuit">
+	<test name="grupa_testcase">
+
+		<groups>
+			<run>
+				<include name="odabranaMetoda" />
+			</run>
+		</groups>
+		
+		<classes>
+      		<class name="unittesting.calculator.CalculatorTestAddSub" />
+      		<class name="unittesting.calculator.CalculatorTestSquare" />
+   		</classes>
+
+	</test>
+</suite>

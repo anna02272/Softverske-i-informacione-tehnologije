@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ZadaciZaVezbu]">
+  <parameter name="zaMnozenje" value="2"/>
+  <parameter name="zaSabiranje" value="5"/>
+  <parameter name="zaKvadriranje" value="8"/>
+  <parameter name="zaDeljenje" value="2"/>
+  <parameter name="zaOduzimanje" value="9"/>
+  <test name="zadatak1">
+    <classes>
+      <class name="unittesting.calculator.CalculatorTestAddSub"/>
+    </classes>
+  </test> <!-- zadatak1 -->
+  <test name="zadatak2">
+    <classes>
+      <class name="unittesting.calculator.CalculatorTestMulDiv"/>
+    </classes>
+  </test> <!-- zadatak2 -->
+  <test name="zadatak3">
+    <classes>
+      <class name="unittesting.calculator.CalculatorTestSquare"/>
+    </classes>
+  </test> <!-- zadatak3 -->
+  <test name="zadatak4">
+    <parameter name="zaMnozenje" value="2"/>
+    <parameter name="zaSabiranje" value="5"/>
+    <parameter name="zaKvadriranje" value="8"/>
+    <parameter name="zaDeljenje" value="2"/>
+    <parameter name="zaOduzimanje" value="9"/>
+    <classes>
+      <class name="unittesting.calculator.CalculatorTestParametrized"/>
+    </classes>
+  </test> <!-- zadatak4 -->
+  <test name="zadatak3(failed)">
+    <classes>
+      <class name="unittesting.calculator.CalculatorTestAddSub">
+        <methods>
+          <include name="methodThatRunsBeforeEveryOtherMethodInThisClass"/>
+          <include name="posleGrupeOdabranihMetoda"/>
+          <include name="preGrupeOdabranihMetoda"/>
+        </methods>
+      </class> <!-- unittesting.calculator.CalculatorTestAddSub -->
+      <class name="unittesting.calculator.CalculatorTestParametrized">
+        <methods>
+          <include name="metodPreTestMetoda"/>
+        </methods>
+      </class> <!-- unittesting.calculator.CalculatorTestParametrized -->
+      <class name="unittesting.calculator.CalculatorTestSquare">
+        <methods>
+          <include name="testSquareRoot"/>
+        </methods>
+      </class> <!-- unittesting.calculator.CalculatorTestSquare -->
+    </classes>
+  </test> <!-- zadatak3(failed) -->
+  <test name="zadatak4(failed)">
+    <parameter name="zaMnozenje" value="2"/>
+    <parameter name="zaSabiranje" value="5"/>
+    <parameter name="zaKvadriranje" value="8"/>
+    <parameter name="zaDeljenje" value="2"/>
+    <parameter name="zaOduzimanje" value="9"/>
+    <classes>
+      <class name="unittesting.calculator.CalculatorTestParametrized">
+        <methods>
+          <include name="testSub" invocation-numbers="0"/>
+          <include name="metodPreTestMetoda"/>
+        </methods>
+      </class> <!-- unittesting.calculator.CalculatorTestParametrized -->
+      <class name="unittesting.calculator.CalculatorTestAddSub">
+        <methods>
+          <include name="methodThatRunsBeforeEveryOtherMethodInThisClass"/>
+          <include name="posleGrupeOdabranihMetoda"/>
+          <include name="preGrupeOdabranihMetoda"/>
+        </methods>
+      </class> <!-- unittesting.calculator.CalculatorTestAddSub -->
+    </classes>
+  </test> <!-- zadatak4(failed) -->
+</suite> <!-- Failed suite [ZadaciZaVezbu] -->

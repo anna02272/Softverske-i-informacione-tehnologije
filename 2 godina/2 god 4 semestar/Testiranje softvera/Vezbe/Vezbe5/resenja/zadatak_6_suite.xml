@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Zadatak6Suite">
+	<test name="zadatak6_testcase">
+		
+		<classes>
+      		<class name="unittesting.calculator.Zadatak6Test" />
+   		</classes>
+
+	</test>
+</suite>

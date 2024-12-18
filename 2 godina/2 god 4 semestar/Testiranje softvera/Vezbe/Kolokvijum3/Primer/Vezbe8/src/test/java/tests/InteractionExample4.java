@@ -1,0 +1,76 @@
+package tests;
+
+
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
+
+public class InteractionExample4 {
+	WebDriver driver;
+
+	/**
+	 * This method will be executed before the test start.
+	 */
+	@BeforeSuite
+	public void initalize() {
+
+		// Create a Selenium WebDriver instance
+		System.setProperty("webdriver.chrome.driver", "chromedriver");
+		driver = new ChromeDriver();
+
+		// Configure browser if required
+		// Maximize browser window
+		driver.manage().window().maximize();
+
+		// Wait 5 seconds for loading the page before Exception
+		driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
+
+		// Wait 1 second before very action
+		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+
+		// Navigate to the required web page
+		driver.navigate().to("https://jqueryui.com/selectable/");
+
+	}
+
+	@Test
+	public void interaction() throws InterruptedException {
+		
+		driver.switchTo().frame(0);
+		Thread.sleep(4000);
+
+		// Perform Multiple Select
+		Actions builder = new Actions(driver);
+		WebElement select = driver.findElement(By.className("ui-selectable"));
+		List<WebElement> options = select.findElements(By.tagName("li"));
+		
+		Action multipleSelect = builder.keyDown(Keys.CONTROL).click(options.get(2)).click(options.get(4))
+				.click(options.get(6)).keyUp(Keys.CONTROL).build();
+		multipleSelect.perform();
+		
+		
+		Thread.sleep(5000);
+
+	}
+
+	/**
+	 * This method will be executed at the end of the test.
+	 */
+	@AfterSuite
+	public void quitDriver() {
+
+		// Close browser window
+		driver.quit();
+		driver = null;
+	}
+}

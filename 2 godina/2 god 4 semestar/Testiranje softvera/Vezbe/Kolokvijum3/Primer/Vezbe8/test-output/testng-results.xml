@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2921" started-at="2021-10-19T13:44:20Z" finished-at="2021-10-19T13:44:23Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2921" started-at="2021-10-19T13:44:20Z" finished-at="2021-10-19T13:44:23Z">
+      <class name="tests.InteractionExample7">
+        <test-method status="PASS" signature="initalize()[pri:0, instance:tests.InteractionExample7@174d20a]" name="initalize" is-config="true" duration-ms="4387" started-at="2021-10-19T13:44:15Z" finished-at="2021-10-19T13:44:20Z">
+        </test-method> <!-- initalize -->
+        <test-method status="PASS" signature="search()[pri:0, instance:tests.InteractionExample7@174d20a]" name="search" duration-ms="2908" started-at="2021-10-19T13:44:20Z" finished-at="2021-10-19T13:44:23Z">
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:tests.InteractionExample7@174d20a]" name="quitDriver" is-config="true" duration-ms="1" started-at="2021-10-19T13:44:23Z" finished-at="2021-10-19T13:44:23Z">
+        </test-method> <!-- quitDriver -->
+      </class> <!-- tests.InteractionExample7 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
