@@ -1,0 +1,27 @@
+FTN / Katedra za informatiku
+Osnove softverskih arhitektura / 2017.
+=================================
+
+1. Lokacija primera
+-------------------
+rs.ac.uns.ftn.informatika.osa.spring.pr26.frontend
+
+2. Opis primera
+---------------
+Primer front-end-a veb aplikacije napisanog pomocu JQuery i bootstrap biblioteka:
+- index.html osnovna stranica
+- css direktorijum sadrzi bootstrap css biblioteku
+- javascript direktorijum sadrzi bootstrap i jquery javascript biblioteku, kao i script.js koji je 
+konkretna implementacija CRUD operacija na front-end-u 
+
+3. Sadrzaj primera
+------------------
+*.html      			- html datoteke
+css.*  					- css datoteke
+javascript.*     		- javascript datoteke
+
+4. Pokretanje primera
+---------------------
+Otvoriti index.html u veb brauzeru
+(obratite paznju na sadrzaj fajla javascript/script.js, 
+treba podesiti putanju do end-point-a back-end aplikacije)

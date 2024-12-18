@@ -1,0 +1,172 @@
+<project name="Vezbe05" default="main" basedir=".">
+	<property file="build.properties" />
+
+	<property name="build" value="${basedir}/build" />
+	<property name="dist" value="${basedir}/dist" />
+	<property name="docs" value="${basedir}/docs" />
+	<property name="lib" value="${basedir}/lib" />
+	<property name="src" value="${basedir}/src" />
+	
+	<!-- Delete all built files -->
+	<target name="clean">
+		<delete dir="${build}" />
+		<delete dir="${dist}" />
+	</target>
+	
+	<target name="init" depends="clean">
+	    <mkdir dir="${build}"/>
+		<mkdir dir="${dist}"/>
+	</target>
+
+	<!-- Compile everything -->
+	<target name="compile" depends="init">
+	    <javac srcdir="${src}" destdir="${build}" debug="true" />
+	    <copy todir="${build}">
+			<fileset dir="${basedir}" includes="build.properties" />
+		</copy>
+	</target>
+	
+	<!-- Generate javadoc -->
+	<target name="javadoc" depends="compile">
+	    
+	</target>
+
+	<target name="main" depends="javadoc" />
+
+	<!-- Run Primer 01  -->
+	<target name="runPrimer01">
+		<java classname="rs.ac.uns.ftn.informatika.osa.vezbe05.primer01.TestStatement"  fork="true">
+			<classpath>
+				<pathelement path="${build}" />
+				<pathelement path="${lib}/mysql-connector-java-5.1.22-bin.jar" />
+			</classpath>
+		</java>
+	</target>
+	
+	<!-- Run Primer 02  -->
+	<target name="runPrimer02">
+		<java classname="rs.ac.uns.ftn.informatika.osa.vezbe05.primer02.TestPreparedStatement"  fork="true">
+			<classpath>
+				<pathelement path="${build}" />
+				<pathelement path="${lib}/mysql-connector-java-5.1.22-bin.jar" />
+			</classpath>
+		</java>
+	</target>
+	
+	<!-- Run Primer 03  -->
+	<target name="runPrimer03">
+		<java classname="rs.ac.uns.ftn.informatika.osa.vezbe05.primer03.TestCallableStatement"  fork="true">
+			<classpath>
+				<pathelement path="${build}" />
+				<pathelement path="${lib}/mysql-connector-java-5.1.22-bin.jar" />
+			</classpath>
+		</java>
+	</target>
+	
+	<!-- Run Primer 04  -->
+	<target name="runPrimer04">
+		<java classname="rs.ac.uns.ftn.informatika.osa.vezbe05.primer04.TestInsert"  fork="true">
+			<classpath>
+				<pathelement path="${build}" />
+				<pathelement path="${lib}/mysql-connector-java-5.1.22-bin.jar" />
+			</classpath>
+		</java>
+	</target>
+	
+	<target name="drop-tables" depends="init">
+		<sql classpath="${lib}/mysql-connector-java-5.1.22-bin.jar"
+			 driver="${db.driver}"
+		     url="jdbc:mysql://${db.hostname}:${db.port}/${db.name}"
+		     userid="${db.username}"
+		     password="${db.password}">
+			
+			 DROP FUNCTION IF EXISTS povezi;
+			 DROP TABLE IF EXISTS predaje; 
+			 DROP TABLE IF EXISTS nastavnici;
+			 DROP TABLE IF EXISTS predmeti;
+			
+		</sql>
+	</target>
+	
+	<target name="create-tables" depends="drop-tables">
+		<sql classpath="${lib}/mysql-connector-java-5.1.22-bin.jar"
+			 driver="${db.driver}"
+		     url="jdbc:mysql://${db.hostname}:${db.port}/${db.name}"
+		     userid="${db.username}"
+		     password="${db.password}">
+			
+			CREATE TABLE nastavnici
+			(
+			   nastavnikId	 INTEGER      NOT NULL,
+			   ime            VARCHAR(25)  NOT NULL,
+			   prezime        VARCHAR(35)  NOT NULL,
+			   zvanje         VARCHAR(15)  NOT NULL,
+			   PRIMARY KEY (nastavnikId)
+			);
+	
+			CREATE TABLE predmeti
+			(
+			   predmetId   INTEGER      NOT NULL,
+			   naziv       VARCHAR(150) NOT NULL,
+			   PRIMARY KEY (predmetId)
+			);
+	
+			CREATE TABLE predaje
+			(
+			   nastavnikId INTEGER NOT NULL,
+			   predmetId   INTEGER NOT NULL,
+			   PRIMARY KEY (nastavnikId, predmetId)
+			);
+	
+			ALTER TABLE predaje ADD CONSTRAINT fk_predaje_nastavnik FOREIGN KEY (nastavnikId)
+			      REFERENCES nastavnici (nastavnikId) ON DELETE CASCADE ON UPDATE CASCADE;
+	
+			ALTER TABLE predaje ADD CONSTRAINT fk_predaje_predmet FOREIGN KEY (predmetId)
+			      REFERENCES predmeti (predmetId) ON DELETE CASCADE ON UPDATE CASCADE;
+			
+		</sql>
+	</target>
+	
+	<target name="create-function" depends="create-tables">
+			<sql classpath="${lib}/mysql-connector-java-5.1.22-bin.jar"
+				 driver="${db.driver}"
+			     url="jdbc:mysql://${db.hostname}:${db.port}/${db.name}"
+			     userid="${db.username}"
+			     password="${db.password}" 
+				 delimiter="//">
+			
+					CREATE FUNCTION povezi(
+							ime_ VARCHAR(25),
+							prezime_ VARCHAR(35),
+							naziv_ VARCHAR(150))
+					RETURNS INTEGER
+					BEGIN
+							DECLARE nasID INTEGER;
+							DECLARE predID INTEGER;
+	
+							DECLARE EXIT HANDLER FOR NOT FOUND RETURN 0;
+							DECLARE EXIT HANDLER FOR SQLSTATE '23000' RETURN 0;
+	
+							SELECT nastavnikId INTO nasID FROM nastavnici WHERE ime = ime_ AND prezime = prezime_;
+							SELECT predmetId INTO predID FROM predmeti WHERE naziv = naziv_;
+							INSERT INTO predaje (nastavnikId, predmetId) VALUES (nasId, predID);
+	
+							RETURN 1;
+					END;
+			</sql>
+	</target>
+	
+	<target name="prepare-database" depends="create-function">
+			<sql classpath="${lib}/mysql-connector-java-5.1.22-bin.jar"
+				 driver="${db.driver}"
+			     url="jdbc:mysql://${db.hostname}:${db.port}/${db.name}"
+			     userid="${db.username}"
+			     password="${db.password}">
+				
+				INSERT INTO nastavnici VALUES(1,'Petar','Petrovic','docent');
+				INSERT INTO predmeti VALUES(1,'Matematika');
+					
+			</sql>
+	</target>
+	
+</project>

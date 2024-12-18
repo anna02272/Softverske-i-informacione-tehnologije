@@ -1,0 +1,93 @@
+Fakultet tehničkih nauka / Katedra za informatiku
+Osnove softverskih arhitektura / 2016.
+=================================
+----------------------------------------------------------------------------------
+Primer 1
+----------------------------------------------------------------------------------
+1. Lokacija primera
+-------------------
+rs.ac.uns.ftn.informatika.osa.vezbe05.primer01
+
+2. Opis primera
+---------------
+Primer upotrebe JDBC API-ja za pristup relacionim bazama podataka (u primeru
+se koristi MySQL). Slanje SELECT upita (Statement) i citanje rezultata (ResultSet).
+
+3. Sadrzaj primera
+------------------
+TestStatement.java - Slanje SELECT upita (Statement) i citanje rezultata (ResultSet)
+
+4. Pokretanje primera
+---------------------
+[]$ ant
+[]$ ant insert
+[]$ ant runPrimer01
+(Napomena: neophodno je izmeniti podatke u build.properites i pokrenuti MySQL server unutar koga je kreirana odgovarajuca baza podataka)
+
+----------------------------------------------------------------------------------
+Primer 2
+----------------------------------------------------------------------------------
+1. Lokacija primera
+-------------------
+rs.ac.uns.ftn.informatika.osa.vezbe05.primer02
+
+2. Opis primera
+---------------
+Primer upotrebe JDBC API-ja za pristup relacionim bazama podataka (u primeru
+se koristi MySQL). Azuriranje sadrzaja tabele pomocu PreparedStatement.
+
+3. Sadrzaj primera
+------------------
+TestPreparedStatement.java - Azuriranje sadrzaja tabele pomocu PreparedStatement
+
+4. Pokretanje primera
+---------------------
+[]$ ant
+[]$ ant runPrimer02
+(Napomena: neophodno je izmeniti podatke u build.properites i pokrenuti MySQL server unutar koga je kreirana odgovarajuca baza podataka)
+
+----------------------------------------------------------------------------------
+Primer 3
+----------------------------------------------------------------------------------
+1. Lokacija primera
+-------------------
+rs.ac.uns.ftn.informatika.osa.vezbe05.primer03
+
+2. Opis primera
+---------------
+Primer upotrebe JDBC API-ja za pristup relacionim bazama podataka (u primeru
+se koristi MySQL). Pozivanje uskladistene procedure/funkcije (CallableStatement).
+
+3. Sadrzaj primera
+------------------
+TestCallableStatement.java - Pozivanje uskladistene procedure/funkcije (CallableStatement)
+
+4. Pokretanje primera
+---------------------
+[]$ ant
+[]$ ant runPrimer03
+(Napomena: neophodno je izmeniti podatke u build.properites i pokrenuti MySQL server unutar koga je kreirana odgovarajuca baza podataka)
+
+----------------------------------------------------------------------------------
+Primer 4
+----------------------------------------------------------------------------------
+1. Lokacija primera
+-------------------
+rs.ac.uns.ftn.informatika.osa.vezbe05.primer04
+
+2. Opis primera
+---------------
+Primer upotrebe JDBC API-ja za pristup relacionim bazama podataka (u primeru
+se koristi MySQL). Programsko rukovanje transakcijama i nivoom izolacije transakcija.
+
+3. Sadrzaj primera
+------------------
+TestInsert.java - pokretanje niti Thread1 i Thread2
+Thread1.java - nit koja dodaje slog u tabelu
+Thread2.java - nit koja cita slogove tabele
+
+4. Pokretanje primera
+---------------------
+[]$ ant
+[]$ ant runPrimer04
+(Napomena: neophodno je izmeniti podatke u build.properites i pokrenuti MySQL server unutar koga je kreirana odgovarajuca baza podataka)

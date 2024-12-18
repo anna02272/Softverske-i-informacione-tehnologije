@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <display-name>servlet-session-entity</display-name>
+  <module>
+    <ejb>pr19-dao.jar</ejb>
+  </module>
+  <module>
+    <ejb>pr19-session.jar</ejb>
+  </module>
+  <module>
+    <web>
+      <web-uri>pr19.war</web-uri>
+      <context-root>pr19</context-root>
+    </web>
+  </module>
+</application>

@@ -1,0 +1,20 @@
+Fakultet tehničkih nauka / Katedra za informatiku
+Osnove softverskih arhitektura / 2016.
+=================================
+
+1. Lokacija primera
+-------------------
+rs.ac.uns.ftn.informatika.osa.vezbe01
+
+2. Opis primera
+---------------
+HelloWorld primer, upoznavanje studenata sa ant alatom za izgradnju aplikacije.
+
+3. Sadrzaj primera
+------------------
+TestClass.java    - klasa sa main metodom koja ispisuje HelloWorld!
+
+4. Pokretanje primera
+---------------------
+[]$ ant 
+[]$ ant run

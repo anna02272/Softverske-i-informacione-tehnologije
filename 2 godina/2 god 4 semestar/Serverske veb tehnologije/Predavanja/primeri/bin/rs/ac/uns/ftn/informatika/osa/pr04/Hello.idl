@@ -1,0 +1,20 @@
+module rs {
+module ac {
+module uns {
+module ftn {
+module informatika {
+module osa {
+module pr04 {
+
+  interface Hello {
+    string sayHello(in string name);
+    oneway void shutdown();
+  };
+
+};
+};
+};
+};
+};
+};
+};

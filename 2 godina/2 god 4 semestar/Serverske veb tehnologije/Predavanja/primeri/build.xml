@@ -1,0 +1,825 @@
+<project name="osa.predavanja" default="build.all"
+	xmlns:spring-boot="antlib:org.springframework.boot.ant">
+	<property file="build.properties" />
+	<property name="javac.debug" value="on" />
+	<property environment="env" />
+
+	<path id="runtime.classpath">
+		<fileset dir="runtime-libs" includes="*.jar" />
+	</path>
+	<path id="hibernate.classpath">
+		<fileset dir="client-libs/hibernate" includes="*.jar" />
+		<fileset dir="client-libs/mysql" includes="*.jar" />
+	</path>
+	<path id="compile.classpath">
+		<path refid="runtime.classpath" />
+		<fileset dir="compile-libs" includes="*.jar" />
+		<fileset dir="compile-libs/spring" includes="*.jar" />
+	</path>
+	
+
+	<target name="check.idlj">
+		<condition property="idlj.available">
+			<or>
+				<and>
+					<available file="${env.JAVA_HOME}/bin/idlj" />
+					<os family="unix" />
+				</and>
+				<and>
+					<available file="${env.JAVA_HOME}/bin/idlj.exe" />
+					<os family="windows" />
+				</and>
+			</or>
+		</condition>
+	</target>
+
+	<target name="idlj" depends="check.idlj" if="idlj.available">
+		<exec executable="${env.JAVA_HOME}/bin/idlj" dir="src"
+			failonerror="true">
+			<arg value="-keep" />
+			<arg value="-fall" />
+			<arg value="rs/ac/uns/ftn/informatika/osa/pr04/Hello.idl" />
+		</exec>
+	</target>
+
+	<target name="compile" depends="idlj">
+		<mkdir dir="bin" />
+		<mkdir dir="dist" />
+		<javac srcdir="src" destdir="bin" classpathref="compile.classpath" />
+	</target>
+
+	<target name="pr01" depends="compile">
+		<mkdir dir="dist/pr01" />
+		<jar destfile="dist/pr01/Server.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr01/ServerMain.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr01/Server.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr01/ServerI.class" />
+			</zipfileset>
+			<manifest>
+				<attribute name="Main-Class"
+					value="rs.ac.uns.ftn.informatika.osa.pr01.ServerMain" />
+			</manifest>
+		</jar>
+		<jar destfile="dist/pr01/Client.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr01/Client.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr01/ServerI.class" />
+			</zipfileset>
+			<manifest>
+				<attribute name="Main-Class"
+					value="rs.ac.uns.ftn.informatika.osa.pr01.Client" />
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="pr02" depends="compile">
+		<mkdir dir="dist/pr02" />
+		<jar destfile="dist/pr02/Server.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr02/Compute.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr02/ComputeEngine.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr02/Task.class" />
+			</zipfileset>
+			<manifest>
+				<attribute name="Main-Class"
+					value="rs.ac.uns.ftn.informatika.osa.pr02.ComputeEngine" />
+			</manifest>
+		</jar>
+		<jar destfile="dist/pr02/Client.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr02/Compute.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr02/Task.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr02/Pi.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr02/ComputePi.class" />
+			</zipfileset>
+			<manifest>
+				<attribute name="Main-Class"
+					value="rs.ac.uns.ftn.informatika.osa.pr02.ComputePi" />
+			</manifest>
+		</jar>
+		<copy file="src/rs/ac/uns/ftn/informatika/osa/pr02/server.policy"
+			todir="dist/pr02" />
+		<copy file="src/rs/ac/uns/ftn/informatika/osa/pr02/client.policy"
+			todir="dist/pr02" />
+	</target>
+
+	<target name="pr03" depends="compile">
+		<mkdir dir="dist/pr03" />
+	</target>
+
+	<target name="pr04" depends="compile">
+		<mkdir dir="dist/pr04" />
+		<jar destfile="dist/pr04/Server.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr04/_HelloStub.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr04/Hello.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr04/HelloImpl.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr04/HelloPOA.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr04/HelloHelper.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr04/HelloOperations.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr04/HelloServer.class" />
+			</zipfileset>
+			<manifest>
+				<attribute name="Main-Class"
+					value="rs.ac.uns.ftn.informatika.osa.pr04.HelloServer" />
+			</manifest>
+		</jar>
+		<jar destfile="dist/pr04/Client.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr04/_HelloStub.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr04/Hello.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr04/HelloOperations.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr04/HelloClient.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr04/HelloHelper.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr04/HelloHolder.class" />
+			</zipfileset>
+			<manifest>
+				<attribute name="Main-Class"
+					value="rs.ac.uns.ftn.informatika.osa.pr04.HelloClient" />
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="pr05" depends="compile">
+		<rmic classname="rs.ac.uns.ftn.informatika.osa.pr05.HelloImpl"
+			base="bin" iiop="true" />
+		<mkdir dir="dist/pr05" />
+		<jar destfile="dist/pr05/Server.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr05/HelloI.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr05/HelloImpl.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr05/HelloServer.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr05/_HelloImpl_Tie.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr05/_HelloI_Stub.class" />
+			</zipfileset>
+			<manifest>
+				<attribute name="Main-Class"
+					value="rs.ac.uns.ftn.informatika.osa.pr05.HelloServer" />
+			</manifest>
+		</jar>
+		<jar destfile="dist/pr05/Client.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr05/HelloI.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr05/_HelloI_Stub.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr05/HelloClient.class" />
+			</zipfileset>
+			<manifest>
+				<attribute name="Main-Class"
+					value="rs.ac.uns.ftn.informatika.osa.pr05.HelloClient" />
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="pr06" depends="compile">
+		<mkdir dir="dist/pr06" />
+		<jar destfile="dist/pr06/Server.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr06/Server.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr06/ServerI.class" />
+			</zipfileset>
+			<manifest>
+				<attribute name="Main-Class"
+					value="rs.ac.uns.ftn.informatika.osa.pr06.Server" />
+			</manifest>
+		</jar>
+		<jar destfile="dist/pr06/Client.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr06/ServerI.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr06/Client.class" />
+			</zipfileset>
+			<manifest>
+				<attribute name="Main-Class"
+					value="rs.ac.uns.ftn.informatika.osa.pr06.Client" />
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="pr07" depends="compile">
+		<mkdir dir="dist/pr07" />
+		<jar destfile="dist/pr07/pr07.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr07/Hello.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr07/HelloLocal.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr07/HelloBean.class" />
+			</zipfileset>
+			<metainf  dir="src"  includes="**/openejb-jar.xml" />
+		</jar>
+		<jar destfile="dist/pr07/Client.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr07/Hello.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr07/HelloClient.class" />
+			</zipfileset>
+			<manifest>
+				<attribute name="Main-Class"
+					value="rs.ac.uns.ftn.informatika.osa.pr07.HelloClient" />
+			</manifest>
+			<zipgroupfileset dir="client-libs/tomee" includes="*.jar" />
+		</jar>
+	</target>
+
+	<target name="pr08" depends="compile">
+		<mkdir dir="dist/pr08" />
+		<jar destfile="dist/pr08/pr08.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr08/Count.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr08/CountLocal.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr08/CountBean.class" />
+			</zipfileset>
+			<metainf  dir="src"  includes="**/openejb-jar.xml" />
+		</jar>
+		<jar destfile="dist/pr08/Client.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr08/Count.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr08/CountClient.class" />
+			</zipfileset>
+			<manifest>
+				<attribute name="Main-Class"
+					value="rs.ac.uns.ftn.informatika.osa.pr08.CountClient" />
+			</manifest>
+			<zipgroupfileset dir="client-libs/tomee" includes="*.jar" />
+		</jar>
+	</target>
+
+	<target name="pr09" depends="compile">
+		<mkdir dir="dist/pr09" />
+		<jar destfile="dist/pr09/pr09.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr09/Count.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr09/CountLocal.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr09/CountBean.class" />
+			</zipfileset>
+			<metainf  dir="src"  includes="**/openejb-jar.xml" />
+		</jar>
+		<jar destfile="dist/pr09/Client.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr09/Count.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr09/CountClient.class" />
+			</zipfileset>
+			<manifest>
+				<attribute name="Main-Class"
+					value="rs.ac.uns.ftn.informatika.osa.pr09.CountClient" />
+			</manifest>
+			<zipgroupfileset dir="client-libs/tomee" includes="*.jar" />
+		</jar>
+	</target>
+
+	<target name="pr10" depends="compile">
+		<mkdir dir="dist/pr10" />
+		<jar destfile="dist/pr10/pr10.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr10/CreditCard.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr10/Order.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr10/Payment.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr10/PaymentBean.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr10/PaymentLocal.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr10/Purchase.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr10/PurchaseBean.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr10/PurchaseLocal.class" />
+			</zipfileset>
+			<metainf  dir="src"  includes="**/openejb-jar.xml" />
+		</jar>
+		<jar destfile="dist/pr10/Client.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr10/Purchase.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr10/PurchaseClient.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr10/CreditCard.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr10/Order.class" />
+			</zipfileset>
+			<manifest>
+				<attribute name="Main-Class"
+					value="rs.ac.uns.ftn.informatika.osa.pr10.PurchaseClient" />
+			</manifest>
+			<zipgroupfileset dir="client-libs/tomee" includes="*.jar" />
+		</jar>
+	</target>
+
+	<target name="pr11" depends="compile">
+		<mkdir dir="dist/pr11" />
+		<jar destfile="dist/pr11/pr11.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr11/CreditCard.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr11/Order.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr11/Payment.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr11/PaymentBean.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr11/PaymentLocal.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr11/Purchase.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr11/PurchaseBean.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr11/PurchaseLocal.class" />
+			</zipfileset>
+			<metainf  dir="src"  includes="**/openejb-jar.xml" />
+		</jar>
+		<jar destfile="dist/pr11/Client.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr11/Purchase.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr11/PurchaseClient.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr11/CreditCard.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr11/Order.class" />
+			</zipfileset>
+			<manifest>
+				<attribute name="Main-Class"
+					value="rs.ac.uns.ftn.informatika.osa.pr11.PurchaseClient" />
+			</manifest>
+			<zipgroupfileset dir="client-libs/tomee" includes="*.jar" />
+		</jar>
+	</target>
+	
+	<target name="springpr11" depends="compile">
+			<mkdir dir="dist/spring/pr11" />
+			<mkdir dir="dist/spring/pr11/bin" />
+			<copy todir="dist/spring/pr11/bin">
+				<fileset dir="bin" includes="rs/ac/uns/ftn/informatika/osa/spring/pr11/**"></fileset>
+				<fileset dir="bin" includes="application.properties"></fileset>
+			</copy>
+			<spring-boot:exejar destfile="dist/spring/pr11/app.jar"  classes="dist/spring/pr11/bin" start-class="rs.ac.uns.ftn.informatika.osa.spring.pr11.PurchaseApplication">
+				            <spring-boot:lib>
+				                <fileset dir="runtime-libs/springCore" />
+				            </spring-boot:lib>
+			</spring-boot:exejar>	
+	</target>
+	
+	
+
+	<target name="pr12" depends="compile">
+		<mkdir dir="dist/pr12" />
+		<jar destfile="dist/pr12/pr12.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr12/CreditCard.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr12/Order.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr12/Payment.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr12/PaymentBean.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr12/PaymentLocal.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr12/Purchase.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr12/PurchaseBean.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr12/PurchaseLocal.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr12/Logger.class" />
+			</zipfileset>
+			<metainf  dir="src"  includes="**/openejb-jar.xml" />
+		</jar>
+		<jar destfile="dist/pr12/Client.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr12/Purchase.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr12/PurchaseClient.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr12/CreditCard.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr12/Order.class" />
+			</zipfileset>
+			<manifest>
+				<attribute name="Main-Class"
+					value="rs.ac.uns.ftn.informatika.osa.pr12.PurchaseClient" />
+			</manifest>
+			<zipgroupfileset dir="client-libs/tomee" includes="*.jar" />
+		</jar>
+	</target>
+	
+	<target name="springpr12" depends="compile">
+			<mkdir dir="dist/spring/pr12" />
+			<mkdir dir="dist/spring/pr12/bin" />
+			<copy todir="dist/spring/pr12/bin">
+				<fileset dir="bin" includes="rs/ac/uns/ftn/informatika/osa/spring/pr12/**"></fileset>
+				<fileset dir="bin" includes="application.properties"></fileset>
+			</copy>
+			<spring-boot:exejar destfile="dist/spring/pr12/app.jar"  classes="dist/spring/pr12/bin" start-class="rs.ac.uns.ftn.informatika.osa.spring.pr12.PurchaseApplication">
+				            <spring-boot:lib>
+				                <fileset dir="runtime-libs/springAop" />
+				            </spring-boot:lib>
+			</spring-boot:exejar>	
+	</target>
+
+	<target name="pr13" depends="compile">
+		<mkdir dir="dist/pr13" />
+		<jar destfile="dist/pr13/pr13.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr13/Count.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr13/CountLocal.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr13/CountBean.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr13/CountCallbacks.class" />
+			</zipfileset>
+			<metainf  dir="src"  includes="**/openejb-jar.xml" />
+		</jar>
+		<jar destfile="dist/pr13/Client.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr13/Count.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr13/CountClient.class" />
+			</zipfileset>
+			<manifest>
+				<attribute name="Main-Class"
+					value="rs.ac.uns.ftn.informatika.osa.pr13.CountClient" />
+			</manifest>
+			<zipgroupfileset dir="client-libs/tomee" includes="*.jar" />
+		</jar>
+	</target>
+	
+	<target name="springpr15" depends="compile">
+				<mkdir dir="dist/spring/pr15" />
+				<mkdir dir="dist/spring/pr15/bin" />
+				<copy todir="dist/spring/pr15/bin">
+					<fileset dir="bin" includes="rs/ac/uns/ftn/informatika/osa/spring/pr15/**.class"></fileset>
+					<fileset dir="bin" includes="rs/ac/uns/ftn/informatika/osa/spring/pr15/connection.properties"></fileset>
+					<fileset dir="bin" includes="application.properties"></fileset>
+				</copy>
+				<spring-boot:exejar destfile="dist/spring/pr15/app.jar"  classes="dist/spring/pr15/bin" start-class="rs.ac.uns.ftn.informatika.osa.spring.pr15.UserJDBCApplication">
+		            <spring-boot:lib>
+		                <fileset dir="runtime-libs/springJdbc" />
+		            </spring-boot:lib>
+				</spring-boot:exejar>	
+		</target>
+
+	<target name="pr16" depends="compile">
+		<mkdir dir="dist/pr16" />
+		<manifestclasspath property="hibernate.jars.pr16"
+			jarfile="dist/pr16/pr16.jar" maxParentLevels="3">
+			<classpath refid="hibernate.classpath" />
+		</manifestclasspath>
+		<jar destfile="dist/pr16/pr16.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr16/Admin.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr16/AdminTest.class" />
+			</zipfileset>
+			<metainf dir="src/rs/ac/uns/ftn/informatika/osa/pr16">
+				<include name="persistence.xml" />
+			</metainf>
+			<manifest>
+				<attribute name="Main-Class"
+					value="rs.ac.uns.ftn.informatika.osa.pr16.AdminTest" />
+				<attribute name="Class-Path" value="${hibernate.jars.pr16}" />
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="pr17" depends="compile">
+		<mkdir dir="dist/pr17" />
+		<manifestclasspath property="hibernate.jars.pr17"
+			jarfile="dist/pr17/pr17.jar" maxParentLevels="3">
+			<classpath refid="hibernate.classpath" />
+		</manifestclasspath>
+		<jar destfile="dist/pr17/pr17.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr17/Admin.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr17/Category.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr17/OrderItem.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr17/Product.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr17/ProductImage.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr17/PurchaseOrder.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr17/Supplier.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr17/Test.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr17/User.class" />
+			</zipfileset>
+			<metainf dir="src/rs/ac/uns/ftn/informatika/osa/pr17">
+				<include name="persistence.xml" />
+			</metainf>
+			<manifest>
+				<attribute name="Main-Class" value="rs.ac.uns.ftn.informatika.osa.pr17.Test" />
+				<attribute name="Class-Path" value="${hibernate.jars.pr17}" />
+			</manifest>
+		</jar>
+	</target>
+	
+	<target name="springpr17" depends="compile">
+			<mkdir dir="dist/spring/pr17" />
+			<mkdir dir="dist/spring/pr17/bin" />
+			<copy todir="dist/spring/pr17/bin">
+				<fileset dir="bin" includes="rs/ac/uns/ftn/informatika/osa/spring/pr17/**"></fileset>
+				<fileset dir="bin" includes="application.properties"></fileset>
+			</copy>
+			<spring-boot:exejar destfile="dist/spring/pr17/app.jar"  classes="dist/spring/pr17/bin" start-class="rs.ac.uns.ftn.informatika.osa.spring.pr17.TestApplication">
+	            <spring-boot:lib>
+	                <fileset dir="runtime-libs/springWebJar" />
+	            </spring-boot:lib>
+			</spring-boot:exejar>	
+	</target>
+	
+	<target name="runSpringpr17" >
+		<java jar="dist/spring/pr17/app.jar" fork="true" />
+	</target>
+
+	<target name="pr18" depends="compile">
+		<mkdir dir="dist/pr18" />
+		<jar destfile="dist/pr18/pr18.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr18/CreditCard.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr18/Order.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr18/Payment.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr18/PaymentBean.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr18/PaymentLocal.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr18/Purchase.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr18/PurchaseBean.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr18/PurchaseLocal.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr18/Logger.class" />
+			</zipfileset>
+			<metainf  dir="src"  includes="**/openejb-jar.xml" />
+		</jar>
+		<war destfile="dist/pr18/pr18.war" webxml="src/rs/ac/uns/ftn/informatika/osa/pr18/web.xml">
+			<zipfileset dir="src/rs/ac/uns/ftn/informatika/osa/pr18">
+				<include name="index.html" />
+			</zipfileset>
+			<classes dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr18/PurchaseServlet.class" />
+			</classes>
+		</war>
+		<ear destfile="dist/pr18/pr18.ear"
+			appxml="src/rs/ac/uns/ftn/informatika/osa/pr18/application.xml">
+			<zipfileset dir="dist/pr18">
+				<include name="pr18.jar" />
+				<include name="pr18.war" />
+			</zipfileset>
+		</ear>
+	</target>
+	
+	<target name="springpr18" depends="compile">
+			<mkdir dir="dist/spring/pr18" />
+			<mkdir dir="dist/spring/pr18/bin" />
+			<mkdir dir="dist/spring/pr18/bin/static" />
+			<copy todir="dist/spring/pr18/bin">
+				<fileset dir="bin" includes="rs/ac/uns/ftn/informatika/osa/spring/pr18/*.class"></fileset>
+				<fileset dir="src" includes="application.properties"></fileset>
+			</copy>
+			<copy tofile="dist/spring/pr18/bin/static/index.html" file="src/rs/ac/uns/ftn/informatika/osa/spring/pr18/index.html"/>
+			<war destfile="dist/spring/pr18/pr18.war" needxmlfile="false">
+				<zipfileset dir="dist/spring/pr18/bin/static" includes="index.html" prefix="WEB-INF/classes/static"/>
+				<classes dir="dist/spring/pr18/bin">
+					<include name="**" />
+				</classes>
+				<lib dir="runtime-libs/springWebWar" />
+			</war>	
+			<spring-boot:exejar destfile="dist/spring/pr18/app.jar"  classes="dist/spring/pr18/bin" start-class="rs.ac.uns.ftn.informatika.osa.spring.pr18.PurchaseApplication">
+	            <spring-boot:lib>
+	                <fileset dir="runtime-libs/springWebJar" />
+	            </spring-boot:lib>
+			</spring-boot:exejar>
+	</target>
+
+	<target name="pr19" depends="compile">
+		<mkdir dir="dist/pr19" />
+		<jar destfile="dist/pr19/pr19-entities.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr19/entity/*.class" />
+			</zipfileset>
+			<metainf dir="src/rs/ac/uns/ftn/informatika/osa/pr19/manifest">
+				<include name="persistence.xml" />
+			</metainf>
+		</jar>
+		<jar destfile="dist/pr19/pr19-dao.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr19/dao/*.class" />
+			</zipfileset>
+			<metainf  dir="src"  includes="**/openejb-jar.xml" />
+		</jar>
+		<jar destfile="dist/pr19/pr19-session.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr19/session/*.class" />
+			</zipfileset>
+			<metainf  dir="src"  includes="**/openejb-jar.xml" />
+		</jar>
+		<war destfile="dist/pr19/pr19.war"
+			webxml="src/rs/ac/uns/ftn/informatika/osa/pr19/manifest/web.xml">
+			<zipfileset dir="src/rs/ac/uns/ftn/informatika/osa/pr19/jsp">
+				<include name="*.jsp" />
+			</zipfileset>
+			<classes dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr19/servlet/*.class" />
+			</classes>
+			<lib dir="runtime-libs">
+				<include name="jstl-api.jar" />
+				<include name="jstl-refImpl.jar" />
+			</lib>
+		</war>
+		<ear destfile="dist/pr19/pr19.ear"
+			appxml="src/rs/ac/uns/ftn/informatika/osa/pr19/manifest/application.xml">
+			<zipfileset dir="dist/pr19">
+				<include name="pr19-dao.jar" />
+				<include name="pr19-session.jar" />
+				<include name="pr19.war" />
+			</zipfileset>
+			<zipfileset dir="dist/pr19" prefix="lib">
+				<include name="pr19-entities.jar" />
+			</zipfileset>
+		</ear>
+	</target>
+	
+	<target name="springpr19" depends="compile">
+		<mkdir dir="dist/spring/pr19" />
+		<mkdir dir="dist/spring/pr19/bin" />
+		<mkdir dir="dist/spring/pr19/bin/static" />
+		<mkdir dir="dist/spring/pr19/bin/jsp" />
+		<copy todir="dist/spring/pr19/bin">
+			<fileset dir="bin" includes="rs/ac/uns/ftn/informatika/osa/spring/pr19/**/*.class"></fileset>
+			<fileset dir="src" includes="application.properties"></fileset>
+		</copy>
+		<copy tofile="dist/spring/pr19/bin/import.sql" file="sql/webshopImport.sql"/>
+		<copy todir="dist/spring/pr19/jsp">
+			<fileset dir="src/rs/ac/uns/ftn/informatika/osa/spring/pr19/jsp" includes="**"></fileset>
+		</copy>
+		<war destfile="dist/spring/pr19/pr19.war" needxmlfile="false">
+			<zipfileset dir="dist/spring/pr19/jsp" includes="**" prefix="WEB-INF/jsp"/>
+			<classes dir="dist/spring/pr19/bin">
+				<include name="**/*" />
+			</classes>
+			<lib dir="runtime-libs/springWebWar" />
+		</war>	
+	</target>
+
+	<target name="pr21" depends="compile">
+		<mkdir dir="dist/pr21" />
+		<manifestclasspath property="hibernate.jars.pr21"
+			jarfile="dist/pr21/pr21.jar" maxParentLevels="3">
+			<classpath refid="hibernate.classpath" />
+		</manifestclasspath>
+		<jar destfile="dist/pr21/pr21-optimistic.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr21/optimistic/*.class" />
+			</zipfileset>
+			<metainf dir="src/rs/ac/uns/ftn/informatika/osa/pr21/optimistic">
+				<include name="persistence.xml" />
+			</metainf>
+			<manifest>
+				<attribute name="Main-Class"
+					value="rs.ac.uns.ftn.informatika.osa.pr21.optimistic.Test" />
+				<attribute name="Class-Path" value="${hibernate.jars.pr21}" />
+			</manifest>
+		</jar>
+		<jar destfile="dist/pr21/pr21-pessimistic.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr21/pessimistic/*.class" />
+			</zipfileset>
+			<metainf dir="src/rs/ac/uns/ftn/informatika/osa/pr21/pessimistic">
+				<include name="persistence.xml" />
+			</metainf>
+			<manifest>
+				<attribute name="Main-Class"
+					value="rs.ac.uns.ftn.informatika.osa.pr21.pessimistic.Test" />
+				<attribute name="Class-Path" value="${hibernate.jars.pr21}" />
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="pr23" depends="compile">
+		<mkdir dir="dist/pr23" />
+		<manifestclasspath property="hibernate.jars.pr23"
+			jarfile="dist/pr23/pr23.jar" maxParentLevels="3">
+			<classpath refid="hibernate.classpath" />
+		</manifestclasspath>
+		<jar destfile="dist/pr23/pr23-natural.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr23/natural/*.class" />
+			</zipfileset>
+			<metainf dir="src/rs/ac/uns/ftn/informatika/osa/pr23/natural">
+				<include name="persistence.xml" />
+			</metainf>
+			<manifest>
+				<attribute name="Main-Class"
+					value="rs.ac.uns.ftn.informatika.osa.pr23.natural.Proba" />
+				<attribute name="Class-Path" value="${hibernate.jars.pr23}" />
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="pr24" depends="compile">
+		<mkdir dir="dist/pr24" />
+		<jar destfile="dist/pr24/pr24.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr24/queue/CardType.class" />
+				<include
+					name="rs/ac/uns/ftn/informatika/osa/pr24/queue/PaymentInfo.class" />
+				<include
+					name="rs/ac/uns/ftn/informatika/osa/pr24/queue/PaymentBean.class" />
+				<include
+					name="rs/ac/uns/ftn/informatika/osa/pr24/topic/NewsMessage.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr24/topic/NewsReader.class" />
+			</zipfileset>
+			<metainf  dir="src"  includes="**/openejb-jar.xml" />
+		</jar>
+		<jar destfile="dist/pr24/queue-client.jar">
+			<zipfileset dir="bin">
+				<include name="rs/ac/uns/ftn/informatika/osa/pr24/queue/CardType.class" />
+				<include
+					name="rs/ac/uns/ftn/informatika/osa/pr24/queue/PaymentInfo.class" />
+				<include
+					name="rs/ac/uns/ftn/informatika/osa/pr24/queue/PaymentClient.class" />
+			</zipfileset>
+			<manifest>
+				<attribute name="Main-Class"
+					value="rs.ac.uns.ftn.informatika.osa.pr24.queue.PaymentClient" />
+			</manifest>
+			<zipgroupfileset dir="client-libs/easybeans"
+				includes="*.jar" />
+			<zipgroupfileset dir="client-libs/jms" includes="*.jar" />
+		</jar>
+		<jar destfile="dist/pr24/topic-client.jar">
+			<zipfileset dir="bin">
+				<include
+					name="rs/ac/uns/ftn/informatika/osa/pr24/topic/NewsMessage.class" />
+				<include name="rs/ac/uns/ftn/informatika/osa/pr24/topic/NewsClient.class" />
+			</zipfileset>
+			<manifest>
+				<attribute name="Main-Class"
+					value="rs.ac.uns.ftn.informatika.osa.pr24.topic.NewsClient" />
+			</manifest>
+			<zipgroupfileset dir="client-libs/easybeans"
+				includes="*.jar" />
+			<zipgroupfileset dir="client-libs/jms" includes="*.jar" />
+		</jar>
+	</target>
+	
+	<target name="pr25" depends="compile">
+			<mkdir dir="dist/pr25" />
+			<jar destfile="dist/pr25/pr25-entities.jar">
+				<zipfileset dir="bin">
+					<include name="rs/ac/uns/ftn/informatika/osa/pr25/entity/*.class" />
+				</zipfileset>
+				<metainf dir="src/rs/ac/uns/ftn/informatika/osa/pr25/manifest">
+					<include name="persistence.xml" />
+				</metainf>
+			</jar>
+			<jar destfile="dist/pr25/pr25-dao.jar">
+				<zipfileset dir="bin">
+					<include name="rs/ac/uns/ftn/informatika/osa/pr25/dao/*.class" />
+				</zipfileset>
+				<metainf  dir="src"  includes="**/openejb-jar.xml" />
+			</jar>
+			<jar destfile="dist/pr25/pr25-session.jar">
+				<zipfileset dir="bin">
+					<include name="rs/ac/uns/ftn/informatika/osa/pr25/session/*.class" />
+				</zipfileset>
+				<metainf  dir="src"  includes="**/openejb-jar.xml" />
+			</jar>
+			<war destfile="dist/pr25/pr25.war"
+					webxml="src/rs/ac/uns/ftn/informatika/osa/pr25/manifest/web.xml">
+				<zipfileset dir="src/rs/ac/uns/ftn/informatika/osa/pr25/web">
+					<include name="*.*" />
+				</zipfileset>
+				<classes dir="bin">
+					<include name="rs/ac/uns/ftn/informatika/osa/pr25/service/*.class" />
+				</classes>
+				<lib dir="runtime-libs">
+					<include name="jackson*.jar" />
+				</lib>
+			</war>
+			<ear destfile="dist/pr25/pr25.ear"
+				appxml="src/rs/ac/uns/ftn/informatika/osa/pr25/manifest/application.xml">
+				<zipfileset dir="dist/pr25">
+					<include name="pr25-dao.jar" />
+					<include name="pr25-session.jar" />
+					<include name="pr25.war" />
+				</zipfileset>
+				<zipfileset dir="dist/pr25" prefix="lib">
+					<include name="pr25-entities.jar" />
+				</zipfileset>
+			</ear>
+		</target>
+	
+	<target name="springpr25" depends="compile">
+		<mkdir dir="dist/spring/pr25" />
+		<mkdir dir="dist/spring/pr25/bin" />
+		<mkdir dir="dist/spring/pr25/bin/static" />
+		<copy todir="dist/spring/pr25/bin">
+			<fileset dir="bin" includes="rs/ac/uns/ftn/informatika/osa/spring/pr25/**/*.class"></fileset>
+			<fileset dir="src" includes="application.properties"></fileset>
+		</copy>
+		<copy tofile="dist/spring/pr25/bin/import.sql" file="sql/webshopImport.sql"/>
+		<copy todir="dist/spring/pr25/bin/static">
+			<fileset dir="src/rs/ac/uns/ftn/informatika/osa/spring/pr25/web" includes="**"></fileset>
+		</copy>
+		<war destfile="dist/spring/pr25/pr25.war" needxmlfile="false">
+			<zipfileset dir="dist/spring/pr25/bin/static" includes="**" prefix="WEB-INF/classes/static"/>
+			<classes dir="dist/spring/pr25/bin">
+				<include name="**" />
+			</classes>
+			<lib dir="runtime-libs/springWebWar" />
+		</war>	
+	</target>
+
+	<target name="build.all"
+		depends="pr01,pr02,pr03,pr04,pr05,pr06,pr07,pr08,pr09,pr10,pr11,springpr11, pr12, springpr12, pr13, springpr15, pr16,pr17, springpr17, pr18, springpr18, pr19, springpr19, pr21,pr23,pr24,pr25, springpr25" />
+
+	<target name="deploy" depends="build.all">
+		<copy todir="${tomee.dir}/webapps">
+		<fileset dir="dist/pr07" includes="pr07.jar" />
+			<!--	<fileset dir="dist/pr08" includes="pr08.jar" />
+			<fileset dir="dist/pr09" includes="pr09.jar" />
+			<fileset dir="dist/pr10" includes="pr10.jar" />
+			<fileset dir="dist/pr11" includes="pr11.jar" />
+			<fileset dir="dist/pr12" includes="pr12.jar" />
+			<fileset dir="dist/pr13" includes="pr13.jar" /> 
+			<fileset dir="dist/pr18" includes="pr18.ear" /> 
+			<fileset dir="dist/pr19" includes="pr19.ear" />
+			<fileset dir="dist/pr24" includes="pr24.jar" /> 
+			<fileset dir="dist/pr25" includes="pr25.ear" />  -->
+		</copy>
+		<copy todir="${tomee.dir}/lib">
+			<fileset dir="client-libs/mysql">
+				<include name="*.jar" />
+			</fileset>
+			<fileset dir="client-libs/jms">
+				<include name="*.jar" />
+			</fileset>
+			<fileset dir="runtime-libs">
+							<include name="*.jar" />
+						</fileset>
+		</copy>
+		<copy todir="${tomcat.dir}/webapps">
+			<fileset dir="dist/spring/pr18" includes="pr18.war" />
+			<fileset dir="dist/spring/pr19" includes="pr19.war" /> 
+			<fileset dir="dist/spring/pr25" includes="pr25.war" /> 
+		</copy>
+	</target>
+</project>

@@ -1,0 +1,7 @@
+<openejb-jar>
+  <properties>
+     openejb.deploymentId.format = {ejbClass}
+     openejb.jndiname.format = {deploymentId}{interfaceType.annotationName}
+     openejb.validation.output.level = VERBOSE
+  </properties>
+</openejb-jar>

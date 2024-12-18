@@ -1,0 +1,32 @@
+Fakultet tehničkih nauka / Katedra za informatiku
+Osnove softverskih arhitektura / 2016.
+=================================
+----------------------------------------------------------------------------------
+Primer 1
+----------------------------------------------------------------------------------
+1. Lokacija primera
+-------------------
+rs.ac.uns.ftn.informatika.osa.vezbe05.primer01.client
+rs.ac.uns.ftn.informatika.osa.vezbe05.primer01.server.beans
+rs.ac.uns.ftn.informatika.osa.vezbe05.primer01.server.dto
+rs.ac.uns.ftn.informatika.osa.vezbe05.primer01.server.util
+
+2. Opis primera
+---------------
+Referentni primer upotrebe stateful i stateless session beanova. U pitanju je aplikacija za kupovinu delova automobila.
+
+3. Sadrzaj primera
+------------------
+*.dto.*      - Data Transfer Object klase
+*.beans.*    - Stateful i Stateless session beanovi
+*.util.*     - Klase koje sluze kao servisi klasama iz drugih paketa (usluzne klase)
+*.client.*   - klijentske klase
+
+4. Pokretanje primera
+---------------------
+[]$ ant
+[]$ ant runInitItems  // popunjava lager prodavnice raspolozivim delovima koje ucitava iz datoteke
+[]$ ant runTestClient  // kreira nekoliko narudzbi
+[]$ ant runGetOrders  // ispisuje realizovane narudzbe
+
+(Napomena: neophodno je izmeniti podatke u build.properites i pokrenuti Tomee server)

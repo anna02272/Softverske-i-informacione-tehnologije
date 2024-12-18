@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="compile-libs/javaee-api-6.0-4-tomcat.jar"/>
+	<classpathentry kind="lib" path="runtime-libs/mysql-connector-java-5.1.22-bin.jar"/>
+	<classpathentry kind="lib" path="runtime-libs/openejb-client-4.5.0.jar"/>
+	<classpathentry kind="lib" path="runtime-libs/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="runtime-libs/serp-1.13.1.jar"/>
+	<classpathentry kind="lib" path="runtime-libs/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="runtime-libs/xbean-asm-shaded-3.11.jar"/>
+	<classpathentry kind="output" path="build"/>
+</classpath>

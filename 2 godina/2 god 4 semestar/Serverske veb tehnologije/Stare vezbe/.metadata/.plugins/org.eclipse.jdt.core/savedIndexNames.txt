@@ -1,0 +1,1 @@
+INDEX VERSION 1.131+C:\Users\domon\Desktop\SR\Serverske veb tehnologije\Stare vezbe\.metadata\.plugins\org.eclipse.jdt.core

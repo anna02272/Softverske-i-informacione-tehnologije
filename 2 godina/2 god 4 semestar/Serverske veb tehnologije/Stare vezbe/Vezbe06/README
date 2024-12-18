@@ -1,0 +1,61 @@
+Fakultet tehniÄ�kih nauka / Katedra za informatiku
+Osnove softverskih arhitektura / 2016.
+=================================
+----------------------------------------------------------------------------------
+Primer 1
+----------------------------------------------------------------------------------
+
+1. Lokacija primera
+-------------------
+rs.ac.uns.ftn.informatika.osa.vezbe06.primer01.client
+rs.ac.uns.ftn.informatika.osa.vezbe06.primer01.server.entity
+META-INF
+
+2. Opis primera
+---------------
+Mapiranje objektnog modela koji se sastoji iz vise povezanih klasa na relacionu 
+bazu. Za operacije nad podacima u bazi koristi se objektni model i entity manager. 
+Primer moze da radi van EJB container-a.
+
+3. Sadrzaj primera
+------------------
+*.entity.*      - anotirane perzistentne klase
+*.client.*		- testiranje entity klasa
+META-INF/persistence.xml - konfiguracija entity managera
+
+4. Pokretanje primera
+---------------------
+[] ant compile
+[] ant create-database
+[] ant runClient01
+(Napomena1: koristi jarove iz /runtime-libs direktorijuma)
+(Napomena2: neophodno je izmeniti build.properites i persistence.xml)
+
+----------------------------------------------------------------------------------
+Primer 2
+----------------------------------------------------------------------------------
+
+1. Lokacija primera
+-------------------
+rs.ac.uns.ftn.informatika.osa.vezbe06.primer02.client
+rs.ac.uns.ftn.informatika.osa.vezbe06.primer02.server.session
+rs.ac.uns.ftn.informatika.osa.vezbe06.primer01.server.entity
+META-INF
+
+2. Opis primera
+---------------
+Mapiranje objektnog modela koji se sastoji iz vise povezanih klasa na relacionu 
+bazu. Za operacije nad podacima u bazi koristi se objektni model i entity manager.
+
+3. Sadrzaj primera
+------------------
+*.entity.*      - anotirane perzistentne klase
+*.client.*		- pozivanje metode session bean-a
+*.session.*		- stateless session bean 
+META-INF/persistence.xml - konfiguracija entity managera
+
+4. Pokretanje primera
+---------------------
+[] ant deployPrimer02
+[] ant runClient02
+(Napomena: neophodno je izmeniti podatke u build.properites i persistence.xml, pokrenuti MySQL server unutar koga je kreirana odgovarajuca baza podataka, pokrenuti Tomee server)

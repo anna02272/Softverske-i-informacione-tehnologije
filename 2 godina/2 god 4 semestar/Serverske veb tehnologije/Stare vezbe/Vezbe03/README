@@ -1,0 +1,56 @@
+Fakultet tehničkih nauka / Katedra za informatiku
+Osnove softverskih arhitektura / 2016.
+=================================
+----------------------------------------------------------------------------------
+Primer 1
+----------------------------------------------------------------------------------
+1. Lokacija primera
+-------------------
+rs.ac.uns.ftn.informatika.osa.vezbe03.primer01.client
+rs.ac.uns.ftn.informatika.osa.vezbe03.primer01.server
+
+2. Opis primera
+---------------
+Primer elementarnog stateless session beana.
+
+3. Sadrzaj primera
+------------------
+Hello.java       - remote interfejs
+HelloLocal.java  - local interfejs
+HelloBean.java   - bean klasa
+HelloClient1.java - klijentski program
+HelloClient2.java - klijentski program
+
+4. Pokretanje primera
+---------------------
+[]$ ant
+[]$ ant runClient1
+[]$ ant runClient2
+
+(Napomena: neophodno je izmeniti podatke u build.properites i pokrenuti Tomee server)
+
+----------------------------------------------------------------------------------
+Primer 2
+----------------------------------------------------------------------------------
+1. Lokacija primera
+-------------------
+rs.ac.uns.ftn.informatika.osa.vezbe03.primer02.client
+rs.ac.uns.ftn.informatika.osa.vezbe03.primer02.server
+
+2. Opis primera
+---------------
+Primer elementarnog stateful session beana. 
+
+3. Sadrzaj primera
+------------------
+Counter.java       - remote interfejs
+CounterLocal.java  - local interfejs
+CounterBean.java   - bean klasa
+TestCounter.java   - klijentska klasa koja pokrece niti
+CounterThread.java - klijentska klasa koja komunicira sa stateful session bean-om 
+
+4. Pokretanje primera
+---------------------
+[]$ ant
+[]$ ant runClient3
+(Napomena: neophodno je izmeniti podatke u build.properites i pokrenuti Tomee server)

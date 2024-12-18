@@ -1,0 +1,97 @@
+Fakultet tehničkih nauka / Katedra za informatiku
+Osnove softverskih arhitektura / 2016.
+=================================
+
+----------------------------------------------------------------------------------
+Primer 1
+----------------------------------------------------------------------------------
+
+1. Lokacija primera
+-------------------
+rs.ac.uns.ftn.informatika.osa.vezbe02.primer01
+
+2. Opis primera
+---------------
+Primer elementarnog RMI klijenta i servera. Server klijentima nudi jednu
+metodu i broji ukupan broj poziva metode.
+
+3. Sadrzaj primera
+------------------
+ServerI.java    - definicija RMI interfejsa
+Server.java     - implementacija RMI interfejsa
+Client.java     - klijentski program
+
+4. Pokretanje primera
+---------------------
+[]$ ant runRMIRegistry
+[]$ ant runServer1
+[]$ ant runClient1
+	
+	(
+	1. Otvorite novu konzolu i pokrenete RMI Registry servis 
+	
+		title RMIRegistry
+		rmiregistry
+		
+	2. Otvorite novu konzolu i napravite Stub i Skeleton klase
+	
+		title RMIServer
+		cd /home/eXXXXX/workspace/Vezbe02/bin
+		rmic -vcompat -keep rs.ac.uns.ftn.informatika.osa.vezbe02.primer01.Server
+		
+	3. U istoj konzoli pokrenete server
+	
+		java -cp . -Djava.rmi.server.codebase=file:C:\Kzi\Ivanovic\OSA\eclipse\workspace\Vezbe02\bin
+		
+	4. Otvorite novu konzolu i pokrenete klijenta
+	
+		title RMIClient
+		cd /home/eXXXXX/workspace/Vezbe02/bin
+		java rs.ac.uns.ftn.informatika.osa.vezbe02.primer01.Client
+	)
+----------------------------------------------------------------------------------
+Primer 2
+----------------------------------------------------------------------------------
+1. Lokacija primera
+-------------------
+rs.ac.uns.ftn.informatika.osa.vezbe02.primer02
+
+2. Opis primera
+---------------
+Primer prenosenja programskog koda preko RMI. Serverska metoda kao parametar
+ima interfejs, a klijentski program prilikom poziva metode prosledjuje instancu
+podtipa (klase koja implementira interfejs, i koja nije poznata serveru).
+
+Za RMI dynamic code downloading potrebno je ukljuciti RMISecurityManager i na
+klijentu i na serveru. Ovaj security manager ne podrazumeva pravo aplikacije da
+uspostavlja konekcije i cita fajlove iz fajl-sistema pa se ta prava moraju
+eksplicitno dodeliti programima kroz "security policy" fajlove. Prilikom poziva
+servera i klijenta definise se i security policy fajl.
+
+3. Sadrzaj primera
+------------------
+Compute.java        - definicija RMI interfejsa
+ComputeEngine.java  - implementacija RMI interfejsa
+Task.java           - interfejs koji predstavlja parametar metode RMI interfejsa
+Pi.java             - implementacija Task interfejsa
+ComputePi.java      - klijentski program
+server.policy       - security policy fajl za serverski program
+client.policy       - security policy fajl za klijentski program
+
+4. Pokretanje primera
+---------------------
+[]$ ant runRmiRegistry
+[]$ ant runServer2
+[]$ ant runClient2
+	
+	(
+	1. U okviru RMIServer konzole zaustavite server iz Primera 1, generisati stub i skeleton klase i pokrenite server
+	   za Primer 2
+	   
+	   rmic -vcompat -keep rs.ac.uns.ftn.informatika.osa.vezbe02.primer02.ComputeEngine
+	   java -Djava.security.policy=rs/ac/uns/ftn/informatika/osa/vezbe02/primer02/server.policy -Djava.rmi.server.codebase=file:///C:/users/exxxx/<workspace>/Vezbe02/bin/ rs.ac.uns.ftn.informatika.osa.vezbe02.primer02.ComputeEngine
+	   
+	2. U okviru RMIClient konzole pokrenite klijentsku klasu
+		
+	   java -Djava.security.policy=rs/ac/uns/ftn/informatika/osa/vezbe02/primer02/client.policy rs.ac.uns.ftn.informatika.osa.vezbe02.primer02.ComputePi
+	)

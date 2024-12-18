@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <display-name>Pristup SLSB-u iz servleta</display-name>
+  <module>
+    <ejb>pr18.jar</ejb>
+  </module>
+  <module>
+    <web>
+      <web-uri>pr18.war</web-uri>
+      <context-root>pr18</context-root>
+    </web>
+  </module>
+</application>

@@ -1,0 +1,9 @@
+.categoryName {
+	font-size: 2em;
+}
+
+.orderNumber {
+	font-size: 2em;
+	color: grey;
+	margin-right: 15px;
+}
