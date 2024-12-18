@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "107732036668",
+    "project_id": "vezbe9-2-7244c",
+    "storage_bucket": "vezbe9-2-7244c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107732036668:android:4c4762aa29ca9d71b5e739",
+        "android_client_info": {
+          "package_name": "com.example.vezbe9_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107732036668-7bt97il4pc6gas2okh16shdlg99aqjau.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgbBNMIdgEY22FzFXi14P6S0ucNXNSpSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107732036668-7bt97il4pc6gas2okh16shdlg99aqjau.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

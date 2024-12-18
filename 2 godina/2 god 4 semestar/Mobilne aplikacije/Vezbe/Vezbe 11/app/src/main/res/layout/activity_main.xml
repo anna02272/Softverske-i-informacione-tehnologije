@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#CE93D8"
+        android:text="Sensors"
+        android:textAlignment="center"
+        android:textColor="#050505"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAccelerometar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginTop="30dp"
+        android:text="Accelerometer: "
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvLinearAccelerometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAccelerometar"
+        android:layout_marginTop="30dp"
+        android:text="Non-gravity accelerometer: "
+        android:textSize="24sp"/>
+    <TextView
+        android:id="@+id/tvMagneticField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLinearAccelerometer"
+        android:layout_marginTop="30dp"
+        android:text="Magnetic field: "
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/tvGyroscope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvAccelerometar"
+        android:layout_below="@+id/tvMagneticField"
+        android:layout_marginTop="30dp"
+        android:text="Gyroscope: "
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/tvProximitySensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvGyroscope"
+        android:layout_below="@+id/tvGyroscope"
+        android:layout_marginTop="30dp"
+        android:text="Proximity sensor: "
+        android:textSize="24sp"/>
+</RelativeLayout>

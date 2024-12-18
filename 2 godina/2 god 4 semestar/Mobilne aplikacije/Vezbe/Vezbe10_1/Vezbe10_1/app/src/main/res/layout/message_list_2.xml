@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/message_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:drawablePadding="-10px"
+        android:padding="5dp"
+        android:textAlignment="viewEnd"
+        android:textColor="#9567E8"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
