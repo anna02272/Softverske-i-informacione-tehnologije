@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Funkcija write</title>
+	<script type="text/javascript">
+		function ucitano() {
+			alert("onload")
+		}
+		function pritisakTastera() {
+			alert("onkeypress")
+		}
+		function prelazakMisem() {
+			alert("onmouseover")
+		}
+		function klikNaDugme() {
+			alert("onclick")
+		}
+		function submitForme() {
+			alert("onsubmit")
+		}
+		function ulazakUPolje() {
+			alert("onfocus")
+		}
+	</script>
+</head>
+<body onload="ucitano()" onkeypress="pritisakTastera()">
+	<p>pritisnite bilo koji taster</p>
+	<p style="background: gray; width: 25%" onmouseover="prelazakMisem()">pređite mišem preko ovog pasusa</p>
+	<p><button onclick="klikNaDugme()">kliknite na ovo dugme</button></p>
+	<form onsubmit="submitForme()">
+		<input type="text" onfocus="ulazakUPolje()" value="kliknite na ovo polje"/>
+		<input type="submit" value="kliknite na ovo dugme"/>
+	</form>
+</body>
+</html>

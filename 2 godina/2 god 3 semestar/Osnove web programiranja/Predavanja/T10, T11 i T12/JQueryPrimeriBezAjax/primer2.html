@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <script src="jquery-3.5.1.js" type="text/javascript"></script>
+  <script>
+    // pristupalo bi se elementima pre nego što su učitani
+    $(document).ready(function () {// sačekati da se stranica učita
+      $("h2").text("Selektori izmenjen tekst"); // pronalaženje, wrap-ovanje i izmena vrednosti
+      $("button#id_1").click(function () {
+        $("p#testId").hide(); // pronalaženje po id
+      });
+      $("button#id_2").click(function () {
+        $("p.testClass").hide(); // pronalaženje po nazivu klase
+      });
+      $("button#id_3").click(function () {
+        $("p").hide(); // pronalaženje po nazivu elementa
+      });
+      $("button#id_4").click(function () {
+        $("span p.testClass").hide(); // pronalaženje po nazivu elementa sa zajedničkim roditeljem
+      });
+      $("button#id_5").click(function () {
+        $("p:first").hide(); // pronalaženje po nazivu elementa i dodatnim uslovom
+      });
+      $("button#id_5_2").click(function () {
+        $("body p:nth-child(2)").hide(); // pronalaženje po nazivu elementa i dodatnim uslovom
+      });
+      $("button#id_6").click(function () {
+        $("p:not(#testId)").hide(); // pronalaženje po nazivu elementa i dodatnim uslovom
+      });
+      $("button#id_7").click(function () {
+        $("input[type=text]").hide(); // pronalaženje po nazivu elementa i dodatnim uslovom
+      });
+      $("button#id_8").click(function () {
+        $("p").show();
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+  <h2>Selektori</h2>
+  <p id="testId">Ovo je paragraf sa id="testId".</p>
+  <p class="testClass">Ovo je prvi paragraf sa class="testClass".</p>
+  <p class="testClass">Ovo je drugi paragraf sa class="testClass".</p>
+  <span>
+    <p class="testClass">Ovo je treci paragraf sa class="testClass" u span elementu.</p>
+  </span>
+  <p>Ovo je paragraf bez postavljene klase i bez id.</p><br />
+  <form>
+    <table>
+      <tr>
+        <td><input type="text" /></td>
+      <tr>
+      <tr>
+        <td><input type="password" /></td>
+      <tr>
+      <tr>
+        <td><input type="submit" value="Pošalji" /></td>
+      <tr>
+    </table>
+  </form>
+  <hr />
+  <button id="id_1">Sakrij paragraf sa id &quot;testId&quot;</button><br />
+  <button id="id_2">Sakrij paragrafe sa kalsom &quot;testClass&quot;</button><br />
+  <button id="id_3">Sakrij paragraf sve paragrafe</button><br />
+  <button id="id_4">Sakrij paragraf sve paragrafe kalse &quot;testClass&quot; u span elementu</button><br />
+  <button id="id_5">Sakrij prvi paragraf</button><br />
+  <button id="id_5_2">Sakrij prvi paragraf ver 2</button><br />
+  <button id="id_6">Sakrij se paragrafe osim onog koji ima id=&quot;testId&quot;</button><br />
+  <button id="id_7">Sakrij se ulazna polja tipa tekst</button><br /><br />
+  <button id="id_8">Reset all</button><br /><br />
+</body>
+
+</html>

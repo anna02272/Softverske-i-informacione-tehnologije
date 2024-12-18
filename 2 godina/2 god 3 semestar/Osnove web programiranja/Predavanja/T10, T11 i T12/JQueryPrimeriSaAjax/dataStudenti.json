@@ -1,0 +1,22 @@
+{
+    "studenti": [
+        { 
+            "id": 1,
+            "ime": "Pera",
+            "prezime": "Perić",    
+            "email":"pera@gmail.com"
+        },
+        { 
+            "id": 2,
+            "ime": "Steva",
+            "prezime": "Stević", 
+            "email": null
+        },
+        { 
+            "id": 3,
+            "ime": "Jova",
+            "prezima": "Jović",
+            "email":"jova@gmail.com"
+        }
+    ]
+}

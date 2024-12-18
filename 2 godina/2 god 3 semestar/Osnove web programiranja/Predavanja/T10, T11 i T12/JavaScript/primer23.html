@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Funkcija write</title>
+	<script type="text/javascript">
+		function generisiPasus(tekst) {
+			document.write("<p>" + tekst + "</p>")
+		}
+		function klikNaDugme() {
+			document.write(
+					'<!DOCTYPE html>' + 
+					'<html>' + 
+					'<head>' + 
+						'<meta charset="UTF-8">' + 
+						'<title>Poruke</title>' + 
+					'</head>' + 
+					'<body>' + 
+						'<h2>Potpuno nova stranica koju je generisala funkcija.</h2>' + 
+					'</body>' + 
+					'</html>'
+					)
+		}
+	</script>
+</head>
+<body>
+	<p>običan pasus</p>
+	<script type="text/javascript">
+		generisiPasus("pasus generisan za vreme učitavanja")
+	</script>
+	<button onclick="klikNaDugme()">kliknite na ovo dugme</button>
+</body>
+</html>

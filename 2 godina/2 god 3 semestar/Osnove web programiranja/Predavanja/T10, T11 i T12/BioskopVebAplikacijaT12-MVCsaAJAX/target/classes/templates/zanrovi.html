@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html th:replace="~{fragments/base.html :: layout(~{::title},~{::link},~{},~{::centralniDiv})}" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/StiloviTabela.css"/>
+	<title>Žanrovi</title>
+</head>
+<body>
+	<div th:fragment="centralniDiv">
+		<form method="get">
+			<table class="tabela">
+				<caption>Žanrovi</caption>
+				<tr>
+					<th>r. br.</th>
+					<th>naziv</th>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<th><input type="search" name="naziv" th:value="${param.naziv?: null}"/></th>
+					<th><input type="submit" value="Pretraži"/></th>
+				</tr>
+				<tr th:each="itZanr, status: ${zanrovi}">
+					<td th:text="${status.index + 1}">1</td>
+					<td><a th:href="|Zanrovi/Details?id=${itZanr.id}|" th:text="${itZanr.naziv}">fantazija</a></td>
+					<td><a th:href="|Filmovi?zanrId=${itZanr.id}|">filmovi</a></td>
+				</tr>
+			</table>
+		</form>
+		<ul>
+			<li th:if="${session.prijavljeniKorisnik != null and session.prijavljeniKorisnik.administrator}"><a href="Zanrovi/Create">dodavanje žanra</a></li>
+		</ul>
+	</div>
+</body>
+</html>

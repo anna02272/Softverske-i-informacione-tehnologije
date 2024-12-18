@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Poruke</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// prikazuje pitanje i vraća korisnikov odgovor u vidu boolean rezultata
+		var nastavak = confirm("Da li želite da nastavite?") 
+		console.log(nastavak)
+		if (nastavak) {
+			// traži unos od korisnika i vraća unesenu vrednost
+			var vrednost = prompt("Unesite vrednost:")
+			// prikazuje poruku
+			alert("Uneli ste: " + vrednost)
+		}
+	</script>
+</body>
+</html>

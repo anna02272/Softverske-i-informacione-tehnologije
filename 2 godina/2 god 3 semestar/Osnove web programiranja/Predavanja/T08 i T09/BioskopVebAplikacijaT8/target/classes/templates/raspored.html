@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html th:replace="~{fragments/layout.html :: zajednickiStranica(~{::title},~{::centralniDiv})}" xmlns:th="http://www.thymeleaf.org">
+
+	<title th:text="'Fleksibilni layout'"></title>
+
+
+	<div th:fragment="centralniDiv">
+		<h2>Naslov fleksibilnog layouta</h2>
+		<ul>
+			<li><a href="" th:text="#{index.index}"></a></li>
+		</ul>
+		<p>Tekst fleksibilnog layouta</p>
+	</div>
+
+</html>

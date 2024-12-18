@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html th:replace="~{fragments/base.html :: layout(~{::title},~{::link},~{::centralniDiv})}" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/StiloviForma.css"/>
+	<title>Projekcija</title>
+</head>
+<body>
+	<div th:fragment="centralniDiv">
+		<form method="post" action="Projekcije/Create">
+			<input type="hidden" name="id" value="1">
+			<table class="forma">
+				<caption>Projekcija</caption>
+				<tr>
+					<th>datum i vreme:</th>
+					<td>
+						<input type="date" th:value="2020-04-01" name="datum"/>&nbsp;
+						<input type="time" value="18:00" name="vreme"/>
+					</td>
+				<tr>
+					<th>film:</th>
+					<td>
+						<select name="filmId">
+							<option th:each="itFilm: ${filmovi}" th:value="${itFilm.id}" th:text="${itFilm.naziv}"></option>
+						</select>	
+					</td>
+				</tr>
+				<tr>
+					<th>tip:</th>
+					<td>
+						<select name="tip">
+							<option value="2D">2D</option>
+							<option value="3D">3D</option>
+							<option value="4D">4D</option>
+						</select>
+					</td>
+				</tr>
+				<tr><th>sala:</th><td><input type="number" value="1" min="1" name="sala"/></td></tr>
+				<tr><th>cena karte:</th><td><input type="number" value="400.0" min="0" step="0.1" name="cenaKarte"/></td></tr>
+				<tr><th></th><td><input type="submit" value="Dodaj"/></td></tr>
+			</table>
+		</form>
+		<ul>
+			<li><a href="Projekcije">povratak</a></li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<base th:href="@{/}"><!-- popuni href atribut vrednosšću context path-a -->
+	<link rel="stylesheet" type="text/css" href="css/StiloviTabela.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviKorisnik.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviHorizontalniMeni.css"/>
+	<title>Filmovi</title>
+</head>
+<body>
+	<h2>Bioskop</h2>
+	<ul>
+		<li><a href="">početna</a></li>
+	</ul>
+	<table class="korisnik" th:unless="${session.prijavljeniKorisnik == null}"><!-- prikaži HTML element ako uslov nije zadovoljen -->
+		<tr><th>Prijavljeni ste kao</th><td><a th:href="|Korisnici/Details?korisnickoIme=${session.prijavljeniKorisnik.korisnickoIme}|" th:text="${session.prijavljeniKorisnik.korisnickoIme}"></a>.</td></tr><!-- popuni href atribut i sadžaj elementa vrednostima -->
+		<tr>
+			<td colspan="2">
+				<ul>
+					<li><a href="Korisnici/Logout">odjava</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<table class="korisnik" th:if="${session.prijavljeniKorisnik == null}"><!-- prikaži HTML element ako je uslov zadovoljen -->
+		<tr><th>Niste prijavljeni</th></tr>
+		<tr>
+			<td>
+				<ul>
+					<li><a href="registracija.html">registracija</a></li>
+					<li><a href="prijava.html">prijava</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<ul>
+		<li><a href="Zanrovi">žanrovi</a></li>
+		<li><a href="Filmovi">filmovi</a></li>
+		<li><a href="Projekcije">projekcije</a></li>
+		<li th:if="${session.prijavljeniKorisnik != null and session.prijavljeniKorisnik.administrator}"><a href="Korisnici">korisnici</a></li>
+	</ul>
+	<table class="tabela">
+		<caption>Filmovi</caption>
+		<tr>
+			<th>r. br.</th>
+			<th>naziv</th>
+			<th>žanr</th>
+			<th>trajanje</th>
+			<th></th>
+		</tr>
+		<tr th:each="itFilm, status: ${filmovi}"><!-- ponovi HTML element za svaki element kolekcije -->
+			<td class="broj" th:text="${(status.index + 1)+'.'}"></td>
+			<td><a th:href="|Filmovi/Details?id=${itFilm.id}|" th:text="${itFilm.naziv}"></a></td>
+			<td>
+				<ul>
+					<li th:each="itZanr: ${itFilm.zanrovi}"><a th:href="|Zanrovi/Details?id=${itZanr.id}|" th:text="${itZanr.naziv}"></a></li>
+				</ul>
+			</td>
+			<td class="broj" th:text="${itFilm.trajanje}"></td>
+			<td>
+				<a th:href="|Projekcije?filmId=${itFilm.id}|">projekcije</a>
+			</td>
+		</tr>
+	</table>
+	<ul>
+		<li th:if="${session.prijavljeniKorisnik != null and session.prijavljeniKorisnik.administrator}"><a href="Filmovi/Create">dodavanje filma</a></li>
+	</ul>
+	<table class="horizontalni-meni" th:unless="${#servletContext.getAttribute('statistikaFilmova').empty}">
+		<caption>Popularni filmovi</caption>
+		<tr>
+			<td>
+				<ul>
+					<li th:each="itBrojac: ${#servletContext.getAttribute('statistikaFilmova').filmovi}">
+						<a th:href="|Filmovi/Details?id=${itBrojac.film.id}|" th:text="${itBrojac.film.naziv}"></a>
+						<progress th:value="${itBrojac.brojac}" th:max="${#servletContext.getAttribute('statistikaFilmova').max}"></progress><!-- popuni value i max atribute vrednostima i HTML element tekstom -->
+						<span th:text="${itBrojac.brojac}"></span>
+					</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<table class="horizontalni-meni" th:unless="${session.poseceniFilmoviZaKorisnika.empty}">
+		<caption>Posećeni filmovi</caption>
+		<tr>
+			<td>
+				<ul>
+					<li th:each="itFilm: ${session.poseceniFilmoviZaKorisnika}"><a th:href="|Filmovi/Details?id=${itFilm.id}|" th:text="${itFilm.naziv}"></a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

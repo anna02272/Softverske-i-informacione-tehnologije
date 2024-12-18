@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<base th:href="@{/}"><!-- popuni href atribut vrednošću context path-a -->
+	<link rel="stylesheet" type="text/css" href="css/StiloviTabela.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviKorisnik.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviHorizontalniMeni.css"/>
+	<title>Literali</title>
+</head>
+<body>
+	<h2>Korišćenje litarala</h2>
+	<ul>
+		<li><a href="">početna</a></li>
+	</ul>
+	<h3>Text Literals</h3>
+	<p>
+		Pera je <span th:text="'rekao \'važi\' kako da ne'"> Jovane</span>.
+	</p>
+	<hr/>
+	
+	<h3>Number Literals</h3>
+	<p>Trenutna godina je <span th:text="2020">neki tekst</span>.</p>
+	<p>Naredna godina je <span th:text="2020 + 1">neki tekst</span>.</p>
+	<hr/>
+	
+	
+	<h3>Boolean Literals</h3>
+	<p th:if="5>3 == true">Tekst se ispisuje ako je izraz "5&gt;3 == true" tačan</span>.</p>
+	<p th:if="5<3 == false">Tekst se ispisuje ako je izraz "5&lt;3 == false" tačan</span>.</p>
+	<hr/>
+	
+	<h3>null Literal</h3>
+	<p th:if="${session.prijavljeniKorisnik} == null">Nije prijavljen korisnik 1</span>.</p>
+	<p th:if="${session.prijavljeniKorisnik == null}">Nije prijavljen korisnik 2</span>.</p>
+	<hr/>
+	
+	<h3>Literal tokens</h3>
+	<p th:text="jedan">neki tekst</p>
+	<p th:text="'dva'">neki tekst</p>
+	<p th:text="moj.Tekst">neki tekst</p>
+	<p th:text="moj.Tekst2">neki tekst</p>
+	<hr/>
+</body>
+</html>

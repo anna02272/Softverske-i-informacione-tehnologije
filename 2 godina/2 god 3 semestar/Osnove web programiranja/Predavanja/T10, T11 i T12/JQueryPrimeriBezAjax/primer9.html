@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.5.1.js" type="text/javascript"></script>
+    </script>
+    <script>
+        // pristupalo bi se elementima pre nego što su učitani
+        $(document).ready(function () {// sačekati da se stranica učita
+            $("button#b_1").click(function () {
+                //$("p").hide();
+                 $("p").hide(5000);    
+            });
+            $("button#b_2").click(function () {
+                $("p").show('slow');
+            });
+            $("button#b_3").click(function () {
+                $("p").toggle('fast');
+            });
+            $("#id_4").click(function () {
+                $("p").show();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Hide i show</h1>
+    <p>Prvi paragraf.</p>
+    <p>Drugi paragraf.</p>
+    <p>Treći paragraf.</p>
+    <p>Četvrti paragraf.</p><br />
+    <button id="b_1">sakrij</button>
+    <button id="b_2">prikaži</button>
+    <button id="b_3">sakrij/prikaži</button><br /><br />
+    <button id="id_4">Reset all</button><br /><br />
+</body>
+
+</html>

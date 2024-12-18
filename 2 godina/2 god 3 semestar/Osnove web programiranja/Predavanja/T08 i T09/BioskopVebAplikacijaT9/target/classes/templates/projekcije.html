@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html th:replace="~{fragments/base.html :: layout(~{::title},~{::link},~{::centralniDiv})}" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/StiloviTabela.css"/>
+	<title>Projekcije</title>
+</head>
+<body>
+	<div th:fragment="centralniDiv">
+		<form method="get">
+			<table class="tabela">
+				<caption>Projekcije</caption>
+				<tr>
+					<th>r. br.</th>
+					<th>datum i vreme</th>
+					<th>film</th>
+					<th>tip</th>
+					<th>sala</th>
+					<th>cena karte</th>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<th>
+						od:<input type="date" th:value="${param.datumOd?: '2020-01-01'}" name="datumOd"/><input type="time" th:value="${param.vremeOd?: '08:00'}" name="vremeOd"/><br/>
+						do:<input type="date" th:value="${param.datumDo?: '3000-01-01'}" name="datumDo"/><input type="time" th:value="${param.vremeDo?: '23:00'}"  name="vremeDo"/>
+					</th>
+					<th>
+						<select name="filmId">
+							<option value="">odaberi</option>
+							<option th:each="itFilm: ${filmovi}" th:value="${itFilm.id}" th:text="${itFilm.naziv}" th:selected="${#strings.equals(itFilm.id, param.filmId)}"></option>
+						</select>
+					</th>
+					<th>
+						<select name="tip">
+							<option value="">odaberi</option>
+							<option value="2D" th:selected="${#strings.equals(param.tip, '2D')}">2D</option>
+							<option value="3D" th:selected="${#strings.equals(param.tip, '3D')}">3D</option>
+							<option value="4D" th:selected="${#strings.equals(param.tip, '4D')}">4D</option>
+						</select>
+					</th>
+					<th><input type="number" th:value="${param.sala?: ''}" min="1" name="sala"/></th>
+					<th>
+						od:<input type="number" th:value="${param.cenaKarteOd?: '0.0'}" min="0" step="0.1" name="cenaKarteOd"/><br/>
+						do:<input type="number" th:value="${param.cenaKarteDo?: '1000.0'}" min="0" step="0.1" name="cenaKarteDo"/>
+					</th>
+					<th><input type="submit" value="Pretraži"/></th>
+				</tr>
+				<tr th:each="itProjekcija, status: ${projekcije}">
+					<td class="broj" th:value="${status.index}"></td>
+					<td><a th:href="|Projekcije/Details?id=${itProjekcija.id}|" th:text="${#temporals.format(itProjekcija.datumIVreme, 'dd.MM.yyy . HH:mm')}"></a></td>
+					<td><a th:href="|Filmovi/Details?id=${itProjekcija.film.id}|" th:text="${itProjekcija.film.naziv}"></a></td>
+					<td th:text="${itProjekcija.tip}"></td>
+					<td class="broj" th:text="${itProjekcija.sala}"></td>
+					<td class="broj" th:text="|${itProjekcija.cenaKarte} rsd|"></td>
+					<td></td>
+				</tr>
+			</table>
+		</form>
+		<ul>
+			<li th:if="${session.prijavljeniKorisnik != null and session.prijavljeniKorisnik.administrator}"><a href="Projekcije/Create">dodavanje projekcije</a></li>
+		</ul>
+	</div>
+</body>
+</html>

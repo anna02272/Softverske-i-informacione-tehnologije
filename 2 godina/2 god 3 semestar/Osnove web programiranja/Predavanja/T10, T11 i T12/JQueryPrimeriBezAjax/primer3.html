@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.5.1.js" type="text/javascript"></script>
+    </script>
+    <script>
+        // pristupalo bi se elementima pre nego što su učitani
+        $(document).ready(function () {// sačekati da se stranica učita
+            alert("onload");
+            $("p").click(function () {
+                alert("kliknuto je na paragraf");
+            });
+            $("button").click(function () {
+                alert("kliknuto je na dugme");
+            });
+            $("p#p_1").hover(
+                function () {
+                    alert("prelazi se preko paragrafa p_1");
+                },
+                function () {
+                    alert("napušta se paragraf p_1");
+                });
+            $("p#p_2").mouseover(function () {
+                    alert("prelazi se preko paragrafa p_2");
+            });
+            $(":text#t_1").focus(function () {
+                alert("polje 1 je dobilo fokus");
+                //otkomentarisi da bi radilo kako treba
+                $(":text#t_1").blur();
+            });
+            $(":text#t_2").blur(function () {
+                alert("polje 2 je izgubilo fokus");
+            });
+            $("form").submit(function() {
+				alert("onsubmit")
+			})
+        });
+    </script>
+</head>
+
+<body>
+    <h2>Događaji</h2>
+    <p id="p_1">Prvi paragraf. Događaj hower</p>
+    <p id="p_2">Drugi paragraf. Događaj mouseover</p>
+    <p>Treći paragraf.</p>
+    <p>Četvrti paragraf.</p>
+    <p><button>kliknite na ovo dugme</button></p>
+    <form>
+        <input type="text" id="t_1" /> Događaj fokus <br />
+        <input type="text" id="t_2" /> Događaj blur <br />
+        <input type="submit" value="kliknite na ovo dugme"/>
+    </form>
+</body>
+
+</html>

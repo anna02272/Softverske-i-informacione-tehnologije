@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ugrađene funkcije</title>
+</head>
+<body>
+	<script type="text/javascript">
+		console.log(isNaN("nije broj") + ", " + isNaN("1.5")) // provera da li se string ne može parsirati u broj
+		eval("for (var it = 0; it < 3; it++) {console.log(it)}") // izvršava string kao JavaScript kod
+		console.log(parseInt("1")) // parsira string u ceo broj
+		console.log(parseFloat("1.5")) // parsira string u realan broj
+		var kodiraniURL = escape("localhost:8080/URL sa razmakom") // kodira url
+		console.log(kodiraniURL)
+		var dekodiraniURL = unescape(kodiraniURL) // dekodira url
+		console.log(dekodiraniURL)
+	</script>
+</body>
+</html>

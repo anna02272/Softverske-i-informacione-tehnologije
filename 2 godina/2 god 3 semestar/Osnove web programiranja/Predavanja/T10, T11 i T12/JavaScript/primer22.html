@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Pronalaženje elemenata</title>
+	<script type="text/javascript">
+		function submitForme() {
+			var forma = document.forms[0] // 1. način
+			var forma = document.forms["unosFilma"] // 2. način
+			var forma = document.getElementsByName("unosFilma")[0] // 3. način
+			var forma = document.getElementsByTagName("form")[0] // 4. način
+
+			var inputNaziv = forma.naziv // 1. način
+			var inputNaziv = forma.elements[0] // 2. način
+			var inputNaziv = forma.elements["naziv"] // 3. način
+			var inputNaziv = document.getElementsByName("naziv")[0] // 4. način
+			var inputNaziv = document.getElementsByTagName("input")[0] // 5. način
+
+			var inputTrajanje = forma.trajanje
+			
+			var naziv = inputNaziv.value
+			var trajanje = inputTrajanje.value
+			console.log("naziv: " + naziv)
+			console.log("trajanje: " + trajanje)
+
+			var pasusPoruka = document.getElementById("poruka") // 1. način
+			var pasusPoruka = document.getElementsByTagName("p")[0] // 2. način
+			pasusPoruka.innerHTML = "naziv: " + naziv + ", trajanje: " + trajanje // popunjavanje sadržaja elementa
+			
+			return false // poništavanje podrazumevanog ponašanja forme (slanje zahteva)
+		}
+	</script>
+</head>
+<body>
+	<form name="unosFilma" onsubmit="return submitForme()">
+		<table>
+			<tr><td>naziv:</td><td><input type="text" name="naziv"/></td></tr>
+			<tr><td>trajanje:</td><td><input type="text" name="trajanje"/></td></tr>
+			<tr><td></td><td><input type="submit" value="Dodaj"/></td></tr>
+		</table>
+	</form>
+	<p id="poruka"></p>
+</body>
+</html>

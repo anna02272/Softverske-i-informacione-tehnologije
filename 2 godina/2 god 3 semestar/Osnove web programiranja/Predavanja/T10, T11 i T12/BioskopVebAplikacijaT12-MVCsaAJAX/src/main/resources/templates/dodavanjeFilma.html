@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html th:replace="~{fragments/base.html :: layout(~{::title},~{::link},~{},~{::centralniDiv})}" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/StiloviForma.css"/>
+	<title>Dodavanje filma</title>
+</head>
+<body>
+	<div th:fragment="centralniDiv">
+		<form method="post" action="Filmovi/Create">
+			<table class="forma">
+				<caption>Dodavanje filma</caption>
+				<tr><th>naziv:</th><td><input type="text" name="naziv"/></td></tr>
+				<tr>
+					<th>žanr:</th>
+					<td>
+						<th:block th:each="itZanr: ${zanrovi}">
+							<input type="checkbox" name="zanrId" th:value="${itZanr.id}"/><span th:text="${itZanr.naziv}"></span><br>
+						</th:block>
+					</td>
+				</tr>
+				<tr><th>trajanje:</th><td><input type="number"  min="5" value="120" name="trajanje"/></td></tr>
+				<tr><th></th><td><input type="submit" value="Dodaj"/></td></tr>
+			</table>
+		</form>
+		<ul>
+			<li><a href="Filmovi">povratak</a></li>
+		</ul>
+	</div>
+</body>
+</html>

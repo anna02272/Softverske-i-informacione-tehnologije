@@ -1,0 +1,1 @@
+redis-server.exe --maxheap 1024M

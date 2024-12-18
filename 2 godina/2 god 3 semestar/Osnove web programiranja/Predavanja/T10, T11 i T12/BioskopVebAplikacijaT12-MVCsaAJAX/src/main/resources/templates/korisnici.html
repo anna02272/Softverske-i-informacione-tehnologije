@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html th:replace="~{fragments/base.html :: layout(~{::title},~{::link},~{},~{::centralniDiv})}" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/StiloviTabela.css"/>
+	<title>Korisnici</title>
+</head>
+<body>
+	<div th:fragment="centralniDiv">
+		<form method="get">
+			<table class="tabela">
+				<caption>Korisnici</caption>
+				<tr>
+					<th>r. br.</th>
+					<th>korisničko ime</th>
+					<th>e-mail</th>
+					<th>pol</th>
+					<th>administrator</th>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<th><input type="search" name="korisnickoIme" th:value="${param.korisnickoIme}?: null"/></th>
+					<th><input type="search" name="eMail" th:value="${param.eMail}?: null"/></th>
+					<th>
+						<select name="pol">
+							<option value="">odaberi</option>
+							<option value="muški" th:selected="${#strings.equals(param.pol, 'muški')}">muški</option>
+							<option value="ženski" th:selected="${#strings.equals(param.pol, 'ženski')}">ženski</option>
+						</select>
+					</th>
+					<th><input type="checkbox" name="administrator" th:checked="${param.administrator != null}"/></th>
+					<th><input type="submit" value="Pretraži"/></th>
+				</tr>
+				<tr th:each="itKorisnik, status: ${korisnici}">
+					<td th:value="${status.index + 1}"></td>
+					<td><a th:href="|Korisnici/Details?korisnickoIme=${itKorisnik.korisnickoIme}|" th:text="${itKorisnik.korisnickoIme}"></a></td>
+					<td th:text="${itKorisnik.eMail}"></td>
+					<td th:text="${itKorisnik.pol}"></td>
+					<td th:text="${itKorisnik.administrator}? 'da': 'ne'"></td>
+					<td></td>
+				</tr>
+			</table>
+		</form>
+		<ul>
+			<li><a href="Korisnici/Create">dodavanje korisnika</a></li>
+		</ul>
+	</div>
+</body>
+</html>

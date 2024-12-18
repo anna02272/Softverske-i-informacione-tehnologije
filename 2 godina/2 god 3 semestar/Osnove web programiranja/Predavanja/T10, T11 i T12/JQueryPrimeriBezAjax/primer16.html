@@ -1,0 +1,141 @@
+﻿<html>
+<head>
+	<title>Parking</title>
+	<meta charset="UTF-8"/>
+	<script src="jquery-3.5.1.js" type="text/javascript"></script>
+	<script type="text/javascript" src="primer16jQuery.js"></script>
+	<style>
+		
+		table[id='prva'], table[id='prva'] th, table[id='prva'] td {
+			border: 1px dashed red;
+			border-collapse: collapse;
+		}
+
+		label {
+			padding-left: 5px;
+		}
+		
+		th.prelama {
+			width:80px; 
+			word-wrap: break-word;
+		}
+
+		th.udesno {
+			width:50px; 
+			word-wrap: break-word;
+			text-align: right;
+		}
+		
+		.sirina30 {
+			width: 30%
+		}
+		.centrirano {
+			text-align: center;
+		}
+		.udesno {
+			text-align: right;
+		}
+		.yellow {background-color:yellow;}
+
+	</style>
+</head>
+<body>
+	<h1><pre>Ukoliko se odabere zona crvena proširi formu sa novim redom tako da 
+		se pre dugmeta Dodaj pojavi unos broja telefona</pre></h1>
+	<h1><pre>Ukoliko se odabere zona plava proširi formu sa novim redom tako da 
+		se pre dugmeta Dodaj pojavi unos broja emaila</pre></h1>
+	<form>
+	<table id="prva">	
+		<tr>
+			<td> <label for="registracija">Registarska oznaka vozila</label></td>
+			<td> <input type="text" id="registracija" name="registracija"/></td>
+		</tr>
+		<tr>
+			<td> <label for="pocetakParkinga">Početak parkinga</label></td>
+			<td> <input type="text" id="pocetakParkinga" name="pocetakParkinga"/></td>
+		</tr>
+		<tr>
+			<td> <label for="trajanjeUMinutima">Trajanje u minutima</label></td>
+			<td> <input type="text" id="trajanjeUMinutima" name="trajanjeUMinutima" class="sirina30"/></td>
+		</tr>
+		<tr>
+			<td rowspan="2"> <label for="osobaSaInvaliditetom">Osoba sa invaliditetom</label></td>
+			<td> 
+				<input type="radio" name="osobaSaInvaliditetom" value="DA" /> DA <BR/>
+			</td>
+		</tr>
+		<tr>
+			<td> 
+				<input type="radio" name="osobaSaInvaliditetom" value="NE" checked /> NE
+			</td>
+		</tr>
+		<tr>
+			<td> <label for="zona">Zona</label></td>
+			<td class="centrirano"> 
+				<select name="zona" id="zona"> 
+					<option value="1">bela</option>
+					<option value="2">plava</option>
+					<option value="3">crvena</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="centrirano"><input type="submit" value="Dodaj"/> </td>
+		</tr>
+	</table>
+	</form>
+	<hr/>
+	<h1>Pregled parking karti</h1>
+	<table>
+		<tr>
+			<th class="prelama">Registarska oznaka vozila</th>
+			<th>Početak parkinga</th>
+			<th class="prelama">Trajanje u minutima</th>
+			<th class="prelama">Osoba sa invaliditetom</th>
+			<th class="prelama">Zona</th>
+		</tr>
+		<tr>
+			<td>SO 123 456</td>
+			<td>2019-12-18 11:30:00</td>
+			<td class="udesno">130</td>
+			<td>DA</td>
+			<td>crvena</td>
+		</tr>
+		<tr>
+			<td>NS 222 333</td>
+			<td>2019-12-17 15:00:00</td>
+			<td class="udesno">45</td>
+			<td>NE</td>
+			<td>bela</td>
+		</tr>
+		<tr>
+			<td>BG 444 555</td>
+			<td>2019-12-16 19:00:00</td>
+			<td class="udesno">90</td>
+			<td>NE</td>
+			<td>plava</td>
+		</tr>
+		<tr>
+			<td>NS 666 777</td>
+			<td>2019-12-16 07:45:00</td>
+			<td class="udesno">20</td>
+			<td>NE</td>
+			<td>crvena</td>
+		</tr>
+		<tr>
+			<td>SU 888 999</td>
+			<td>2019-12-17 10:20:00</td>
+			<td class="udesno">150</td>
+			<td>NE</td>
+			<td>crvena</td>
+		</tr>	
+		<tr>
+			<td>BG 111 222</td>
+			<td>2019-12-18 11:00:00</td>
+			<td class="udesno">150</td>
+			<td>DA</td>
+			<td>plava</td>
+		</tr>		
+	</table>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html th:replace="~{fragments/base.html :: layout(~{::title},~{::link},~{::centralniDiv})}" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/StiloviForma.css"/>
+	<title>Žanr</title>
+</head>
+<body>
+	<div th:fragment="centralniDiv">
+		<form method="post" action="Zanrovi/Edit" th:if="${session.prijavljeniKorisnik != null and session.prijavljeniKorisnik.administrator}">
+			<input type="hidden" name="id" th:value="${zanr.id}">
+			<table class="forma">
+				<caption>Žanr</caption>
+				<tr><th>naziv:</th><td><input type="text" th:value="${zanr.naziv}" name="naziv"/></td></tr>
+				<tr><th></th><td><a th:href="|Filmovi?zanrId=${zanr.id}|">filmovi</a></td></tr>
+				<tr><th></th><td><input type="submit" value="Izmeni"/></td></tr>
+			</table>
+		</form>
+		<form method="post" action="Zanrovi/Delete" th:if="${session.prijavljeniKorisnik != null and session.prijavljeniKorisnik.administrator}">
+			<input type="hidden" name="id" th:value="${zanr.id}">
+			<table class="forma">
+				<tr><th></th><td><input type="submit" value="Obriši"/></td></tr>
+			</table>
+		</form>
+		<table class="forma" th:if="${session.prijavljeniKorisnik == null or not session.prijavljeniKorisnik.administrator}">
+			<caption>Žanr</caption>
+			<tr><th>naziv:</th><td th:text=${zanr.naziv}>fantazija</td>
+			<tr><th></th><td><a th:href="|Filmovi?zanrId=${zanr.id}|">filmovi</a></td></tr>
+		</table>
+	</div>
+</body>
+</html>

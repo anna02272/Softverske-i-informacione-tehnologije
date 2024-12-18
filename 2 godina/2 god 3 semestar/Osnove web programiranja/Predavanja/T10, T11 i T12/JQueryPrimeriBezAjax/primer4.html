@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.5.1.js" type="text/javascript"></script>
+    </script>
+    <script>
+        // pristupalo bi se elementima pre nego što su učitani
+        $(document).ready(function () {// sačekati da se stranica učita
+            $("button#b_1").click(function () {
+                alert($("p#p_1").text());
+            });
+            $("button#b_2").click(function () {
+                alert($("body").html());
+            });
+            $("button#b_3").click(function () {
+                alert($("input#t_1").val());
+            });
+            $("button#b_4").click(function () {
+                alert($("input#t_1").attr("type"));
+            });
+            $("button#b_5").click(function () {
+                $("p#p_1").text("novi tekst");
+            });
+            $("button#b_6").click(function () {
+                $("h1#h1_1").html($("h1#h1_1").text() + " <u> dodato</u>");
+            });
+            $("button#b_7").click(function () {
+                $("input#t_1").val("nova vrednost");
+            });
+            $("button#b_8").click(function () {
+                $("input#t_1").attr("type", "password");
+            });
+            $("button#b_9").click(function () {
+                alert($("input#c_1").attr("checked"));
+                alert($("input#c_1").prop("checked"));
+                alert($("input#c_1").checked);
+            });
+            $("button#b_10").click(function () {
+                $("p#p_1").text(function () {
+                    return $("p#p_1").text() + " " + $("input#t_1").val();
+                });
+            });
+            $("#id_11").click(function () {
+                $("p").show().addClass("normalnaSlova");
+                $("p#p_1").text("Prvi paragraf.");
+                $("h1#h1_1").html("Manipulacija DOM stablom");
+                $("input#t_1").val("ime i prezime");
+                $("input#t_1").attr("type", "text");
+                $("input#c_1").prop("checked", false);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1 id="h1_1">Manipulacija DOM stablom</h1>
+    <p id="p_1">Prvi paragraf.</p>
+    <form>
+        <input id="t_1" type="text" value="ime i prezime" /><br />
+        <input id="c_1" type="checkbox"/>Odaberi me<br />
+    </form>
+    <button id="b_1">prikaži tekst prvog paragrafa</button>
+    <button id="b_2">prikaži html body taga</button>
+    <button id="b_3">prikaži vrednost input polja</button>
+    <button id="b_4">prikaži atribut type input polje</button><br />
+    <button id="b_5">izmeni tekst u prvom paragrafu</button>
+    <button id="b_6">izmeni html naslova</button>
+    <button id="b_7">izmeni vrednost za input polje</button>
+    <button id="b_8">izmeni atribut type za input polje</button><br />
+    <button id="b_9">prikazi vrednost atributa checked za checkbox</button><br />
+    <button id="b_10">izmeni sa callback</button><br /><br />
+    <button id="id_11">Reset all</button><br /><br />
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<base th:href="@{/}"><!-- popuni href atribut vrednošću context path-a -->
+	<link rel="stylesheet" type="text/css" href="css/StiloviKorisnik.css"/>
+	<script src="webjars/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/lokacijaJS.js"></script>
+	<title th:text="#{internacionalizacija.pageTitle}"></title>
+</head>
+<body>
+	<div style="float:right">
+		<span th:text="${#locale}"></span>
+		<span th:text="#{lang.change}"></span>:
+		<select id="locales" name="locales">
+		    <option value=""></option>
+		    <option value="en" th:text="#{lang.eng}" th:selected="${#strings.equals(#locale.language,'en')}"></option>
+		    <option value="sr" th:text="#{lang.sr}" th:selected="${#strings.equals(#locale.language,'sr')}"></option>
+		</select>
+	</div>
+	<h2 th:text="#{internacionalizacija.heading}"></h2>
+	<ul>
+		<li><a href="" th:text="#{index.index}"></a></li>
+		<li><a href="Internacionalizacija" th:text="#{internacionalizacija.index}"></a></li>
+		<li><a href="Internacionalizacija/menjajLokalizacijuNaSrpski" th:text="#{internacionalizacija.menjajLokalizacijuNaSrpski}"></a></li>
+	</ul>
+	<span th:text="#{internacionalizacija.someText}"></span>
+</body>
+</html>

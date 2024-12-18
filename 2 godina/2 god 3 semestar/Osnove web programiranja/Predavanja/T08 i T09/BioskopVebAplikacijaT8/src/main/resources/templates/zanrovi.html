@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<base th:href="@{/}">
+	<link rel="stylesheet" type="text/css" href="css/StiloviTabela.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviKorisnik.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviHorizontalniMeni.css"/>
+	<title>Žanrovi</title>
+</head>
+<body>
+	<h2>Bioskop</h2>
+	<ul>
+		<li><a href="">početna</a></li>
+	</ul>
+	<table class="korisnik" th:if="${session.prijavljeniKorisnik != null}">
+		<tr><th>Prijavljeni ste kao</th><td><a th:href="|Korisnici/Details?korisnickoIme=${session.prijavljeniKorisnik.korisnickoIme}|" th:text=${session.prijavljeniKorisnik.korisnickoIme}>a</a>.</td></tr>
+		<tr>
+			<td colspan="2">
+				<ul>
+					<li><a href="Korisnici/Logout">odjava</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<table class="korisnik" th:unless="${session.prijavljeniKorisnik != null}">
+		<tr><th>Niste prijavljeni</th></tr>
+		<tr>
+			<td>
+				<ul>
+					<li><a href="registracija.html">registracija</a></li>
+					<li><a href="prijava.html">prijava</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<ul>
+		<li><a href="Zanrovi">žanrovi</a></li>
+		<li><a href="Filmovi">filmovi</a></li>
+		<li><a href="Projekcije">projekcije</a></li>
+		<li th:if="${session.prijavljeniKorisnik != null and session.prijavljeniKorisnik.administrator}"><a href="Korisnici">korisnici</a></li>
+	</ul>
+	<table class="tabela">
+		<caption>Žanrovi</caption>
+		<tr>
+			<th>r. br.</th>
+			<th>naziv</th>
+			<th></th>
+		</tr>
+		<tr th:each="itZanr, status: ${zanrovi}">
+			<td class="broj" th:text="${status.index + 1}">1</td>
+			<td><a th:href="|Zanrovi/Details?id=${itZanr.id}|" th:text="${itZanr.naziv}">fantazija</a></td>
+			<td><a th:href="|Filmovi?zanrId=${itZanr.id}|">filmovi</a></td>
+		</tr>
+	</table>
+	<ul th:if="${session.prijavljeniKorisnik != null and session.prijavljeniKorisnik.administrator}">
+		<li><a href="Zanrovi/Create">dodavanje žanra</a></li>
+	</ul>
+</body>
+</html>

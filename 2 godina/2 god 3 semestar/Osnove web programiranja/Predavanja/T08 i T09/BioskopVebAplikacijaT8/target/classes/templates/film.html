@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<base th:href="@{/}"><!-- popuni href atribut vrednosšću context path-a -->
+	<link rel="stylesheet" type="text/css" href="css/StiloviForma.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviKorisnik.css"/>
+	<title>Film</title>
+</head>
+<body>
+	<h2>Bioskop</h2>
+	<ul>
+		<li><a href="">početna</a></li>
+	</ul>
+	<table class="korisnik" th:unless="${session.prijavljeniKorisnik == null}"><!-- prikaži HTML element ako uslov nije zadovoljen -->
+		<tr><th>Prijavljeni ste kao</th><td><a th:href="|Korisnici/Details?korisnickoIme=${session.prijavljeniKorisnik.korisnickoIme}|" th:text="${session.prijavljeniKorisnik.korisnickoIme}"></a>.</td></tr><!-- popuni href atribut i sadžaj elementa vrednostima -->
+		<tr>
+			<td colspan="2">
+				<ul>
+					<li><a href="Korisnici/Logout">odjava</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<table class="korisnik" th:if="${session.prijavljeniKorisnik == null}"><!-- prikaži HTML element ako je uslov zadovoljen -->
+		<tr><th>Niste prijavljeni</th></tr>
+		<tr>
+			<td>
+				<ul>
+					<li><a href="registracija.html">registracija</a></li>
+					<li><a href="prijava.html">prijava</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<ul>
+		<li><a href="Zanrovi">žanrovi</a></li>
+		<li><a href="Filmovi">filmovi</a></li>
+		<li><a href="Projekcije">projekcije</a></li>
+		<li th:if="${session.prijavljeniKorisnik != null and session.prijavljeniKorisnik.administrator}"><a href="Korisnici">korisnici</a></li>
+	</ul>
+	<form method="post" action="Filmovi/Edit" th:if="${session.prijavljeniKorisnik != null and session.prijavljeniKorisnik.administrator}">
+		<input type="hidden" name="id" th:value="${film.id}"/><!-- popuni value atribut vrednošću -->
+		<table class="forma">
+			<caption>Film</caption>
+			<tr><th>naziv:</th><td><input type="text" th:value="${film.naziv}" name="naziv"/></td></tr>
+			<tr>
+				<th>žanr:</th>
+				<td>
+					<th:block th:each="itZanr: ${zanrovi}"><!-- ponovi grupu HTML elemenata za svaki element kolekcije -->
+						<input type="checkbox" name="zanrId" th:value="${itZanr.id}" th:checked="${#lists.contains(film.zanrovi, itZanr)}"/><span th:text="${itZanr.naziv}"></span><br><!-- prikaži checked atribut u zavisnosti od uslova -->
+					</th:block>
+				</td>
+			</tr>
+			<tr><th>trajanje:</th><td><input type="number" min="5" th:value="${film.trajanje}" name="trajanje"/></td></tr>
+			<tr><th></th><td><a th:href="|Projekcije?filmId=${film.id}|">projekcije</a></td></tr>
+			<tr><th></th><td><input type="submit" value="Izmeni"/></td></tr>
+		</table>
+	</form>
+	<form method="post" action="Filmovi/Delete" th:if="${session.prijavljeniKorisnik != null and session.prijavljeniKorisnik.administrator}">
+		<input type="hidden" name="id" th:value="${film.id}"/>
+		<table class="forma">
+			<tr><th></th><td><input type="submit" value="Obriši"/></td></tr>
+		</table>
+	</form>
+	<table class="forma" th:if="${session.prijavljeniKorisnik == null or not session.prijavljeniKorisnik.administrator}">
+		<caption>Film</caption>
+		<tr><th>naziv:</th><td th:text="${film.naziv}"></td>
+		<tr>
+			<th>žanr:</th>
+			<td>
+				<ul>
+					<li th:each="itZanr: ${film.zanrovi}"><a th:href="|Zanrovi/Details?id=${itZanr.id}|" th:text="${itZanr.naziv}"></a></li><!-- ponovi HTML elemenat za svaki element kolekcije -->
+				</ul>
+			</td>
+		</tr>
+		<tr><th>trajanje:</th><td th:text="${film.trajanje}"></td>
+		<tr><th></th><td><a th:href="|Projekcije?filmId=${film.id}|">projekcije</a></td></tr>
+	</table>
+</body>
+</html>

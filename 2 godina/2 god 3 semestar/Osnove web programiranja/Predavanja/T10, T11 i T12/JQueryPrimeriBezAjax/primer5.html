@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.5.1.js" type="text/javascript"></script>
+    </script>
+    <script>
+        // pristupalo bi se elementima pre nego što su učitani
+        $(document).ready(function () {// sačekati da se stranica učita
+            $("button#b_1").click(function () {
+                // Create element with HTML code
+                var stavka1 = "<li class=\"dodataStavka\">dodata stavka na početak podnivoa za listu</li>";
+                $("ol#ol_1").prepend(stavka1);
+            });
+            $("button#b_2").click(function () {
+                // Create with jQuery
+                var stavka2 = $("<li class=\"dodataStavka\"></li>").text("dodata stavka na kraj podnivoa za listu");
+                $("ol#ol_1").append(stavka2);
+            });
+            $("button#b_3").click(function () {
+                // Create with DOM
+                var stavka3 = document.createElement("<li class=\"dodataStavka\"></li>");  
+                stavka3.innerHTML = "dodata stavka pre stavke označene kao druga stavka";
+                $("ol#ol_1 li.drugaStavka").before(stavka3);
+            });
+            $("button#b_4").click(function () {
+                $("ol#ol_1 li.drugaStavka").after("<li class=\"dodataStavka\">dodata stavka posle stavke označene kao druga stavka</li>");
+            });
+            $("button#b_5").click(function () {
+                $("ol#ol_1 li.dodataStavka").remove();
+            });
+            $("button#b_6").click(function () {
+                $("ol#ol_1 li").remove(".dodataStavka");
+            });
+            $("#id_7").click(function () {
+                $("ol#ol_1").empty();
+                $("ol#ol_1").append("<li>prva stavka</li>");
+                $("ol#ol_1").append("<li class=\"drugaStavka\">druga stavka</li>");
+                $("ol#ol_1").append("<li>treća stavka</li>");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Manipulacija DOM stablom</h1>
+    <ol id="ol_1">
+        <li>prva stavka</li>
+        <li class="drugaStavka">druga stavka</li>
+        <li>treća stavka</li>
+    </ol>
+    <button id="b_1">ubaci sadržaj na pocetak liste</button>
+    <button id="b_2">ubaci sadržaj na kraj liste</button><br />
+    <button id="b_3">ubaci sadržaj pre druge stavke</button>
+    <button id="b_4">ubaci sadržaj posle druge stavke</button><br />
+    <button id="b_5">ukloni sadržaj ver 1</button>
+    <button id="b_6">ukloni sadržaj ver 2</button><br /><br />
+    <button id="id_7">Reset all</button><br /><br />
+</body>
+
+</html>

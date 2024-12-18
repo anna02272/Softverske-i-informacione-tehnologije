@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<base th:href="@{/}"><!-- popuni href atribut vrednosšću context path-a -->
+	<link rel="stylesheet" type="text/css" href="css/StiloviForma.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviKorisnik.css"/>
+	<title>Dodavanje filma</title>
+</head>
+<body>
+	<h2>Bioskop</h2>
+	<ul>
+		<li><a href="">početna</a></li>
+	</ul>
+	<table class="korisnik">
+		<tr><th>Prijavljeni ste kao</th><td><a th:href="|Korisnici/Details?korisnickoIme=${session.prijavljeniKorisnik.korisnickoIme}|" th:text="${session.prijavljeniKorisnik.korisnickoIme}"></a>.</td></tr><!-- popuni href atribut i sadžaj elementa vrednostima -->
+		<tr>
+			<td colspan="2">
+				<ul>
+					<li><a href="Korisnici/Logout">odjava</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<ul>
+		<li><a href="Zanrovi">žanrovi</a></li>
+		<li><a href="Filmovi">filmovi</a></li>
+		<li><a href="Projekcije">projekcije</a></li>
+		<li><a href="Korisnici">korisnici</a></li>
+	</ul>
+	<form method="post" action="Filmovi/Create">
+		<table class="forma">
+			<caption>Dodavanje filma</caption>
+			<tr><th>naziv:</th><td><input type="text" name="naziv"/></td></tr>
+			<tr>
+				<th>žanr:</th>
+				<td>
+					<th:block th:each="itZanr: ${zanrovi}"><!-- ponovi grupu HTML elemenata za svaki element kolekcije -->
+						<input type="checkbox" name="zanrId" th:value="${itZanr.id}"/><span th:text="${itZanr.naziv}"></span><br><!-- popuni value atribut vrednošću  -->
+					</th:block>
+				</td>
+			</tr>
+			<tr><th>trajanje:</th><td><input type="number"  min="5" value="120" name="trajanje"/></td></tr>
+			<tr><th></th><td><input type="submit" value="Dodaj"/></td></tr>
+		</table>
+	</form>
+	<ul>
+		<li><a href="Filmovi">povratak</a></li>
+	</ul>
+</body>
+</html>

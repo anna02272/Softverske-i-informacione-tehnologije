@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html th:replace="~{fragments/base.html :: layout(~{::title},~{::link},~{},~{::centralniDiv})}" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/StiloviForma.css"/>
+	<title>Projekcija</title>
+</head>
+<body>
+	<div th:fragment="centralniDiv">
+		<form method="post" action="Projekcije/Edit" th:if="${session.prijavljeniKorisnik != null and session.prijavljeniKorisnik.administrator}">
+			<input type="hidden" name="id" th:value="${projekcija.id}">
+			<table class="forma">
+				<caption>Projekcija</caption>
+				<tr>
+					<th>datum i vreme:</th>
+					<td>
+						<input type="date" th:value="${#temporals.format(projekcija.datumIVreme, 'yyyy-MM-dd')}" name="datum"/>&nbsp;
+						<input type="time" th:value="${#temporals.format(projekcija.datumIVreme, 'HH:mm')}" name="vreme"/>
+					</td>
+				<tr>
+					<th>film:</th>
+					<td>
+						<select name="filmId">
+							<option th:each="itFilm: ${filmovi}" th:value="${itFilm.id}" th:text="${itFilm.naziv}" th:selected="${itFilm == projekcija.film}"></option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th>tip:</th>
+					<td>
+						<select name="tip">
+							<option value="2D" th:selected="${#strings.equals(projekcija.tip, '2D')}">2D</option>
+							<option value="3D" th:selected="${#strings.equals(projekcija.tip, '3D')}">3D</option>
+							<option value="4D" th:selected="${#strings.equals(projekcija.tip, '4D')}">4D</option>
+						</select>
+					</td>
+				</tr>
+				<tr><th>sala:</th><td><input type="number" th:value="${projekcija.sala}" min="1" name="sala"/></td></tr>
+				<tr><th>cena karte:</th><td><input type="number" th:value="${projekcija.cenaKarte}" min="0" step="0.1" name="cenaKarte"/></td></tr>
+				<tr><th></th><td><input type="submit" value="Izmeni"/></td></tr>
+			</table>
+		</form>
+		<form method="post" action="Projekcije/Delete" th:if="${session.prijavljeniKorisnik != null and session.prijavljeniKorisnik.administrator}">
+			<input type="hidden" name="id" th:value="${projekcija.id}">
+			<table class="forma">
+				<tr><th></th><td><input type="submit" value="Obriši"/></td></tr>
+			</table>
+		</form>
+		<table class="forma" th:if="${session.prijavljeniKorisnik == null or not session.prijavljeniKorisnik.administrator}">
+			<caption>Projekcija</caption>
+			<tr><th>datum i vreme:</th><td th:text="${#temporals.format(projekcija.datumIVreme, 'dd.MM.yyy . HH:mm')}"></td></tr>
+			<tr>
+				<th>film:</th><td><a th:href="|Filmovi/Details?id=${projekcija.film.id}|" th:text="${projekcija.film.naziv}"></a></td>
+			</tr>
+			<tr><th>tip:</th><td th:text="${projekcija.tip}"></td></tr>
+			<tr><th>sala:</th><td th:text="${projekcija.sala}"></td></tr>
+			<tr><th>cena karte:</th><td th:text="${projekcija.cenaKarte}"></td></tr>
+		</table>
+	</div>	
+</body>
+</html>

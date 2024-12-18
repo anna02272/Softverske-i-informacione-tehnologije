@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>String metode</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var poruka = "Hello World!"
+		console.log(poruka.length)
+		console.log(poruka.substring(1, 10))
+		console.log(poruka.split(" "))
+		console.log(poruka.indexOf("ll"))
+		console.log(poruka.lastIndexOf("l"))
+		console.log(poruka.charAt(6))
+
+		var poruka = "$%^ ^&*()"
+		console.log(poruka.match("^[a-zA-Z0-9]+$") != null)
+		var poruka = "1a"
+		console.log(poruka.match("^[a-zA-Z0-9]+$") != null)
+	</script>
+</body>
+</html>

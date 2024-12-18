@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Navigacija kroz stablo</title>
+	<script type="text/javascript">
+		function klikNaDugme(dugme) { // referenca na čvor koji je proizveo događaj (mora se proslediti)
+			var celija = dugme.parentNode.previousSibling // dugme -> ćelija koja sadrži dugme -> prethodna ćelija
+			
+			// create a new anchor element
+			let newAnchor = document.createElement("a");
+			newAnchor.innerText = "Inicijalni sadržaj linka "
+
+			// and give it some content
+			const newContent = document.createTextNode("->Dodati tekst! ");
+			newAnchor.appendChild(newContent)
+
+			// and give it some atribute
+			newAnchor.setAttribute("href", "https://www.google.com/")
+
+			celija.appendChild(newAnchor)
+		}
+	</script>
+</head>
+<body>
+	<table>
+		<tr><td>prvi red </td><td><button onclick="klikNaDugme(this)">Dodaj element</button></td><tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<base href="">
+	<title>AJAX</title>
+
+	<script src="webjars/jquery/3.5.1/jquery.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		function clickMeLoad() {
+			$("div#myDiv").load('TestAjaxHTML #mojDiv', {"tekst": "Juhu"}, function (responseTxt, statusTxt, xhr) {
+                alert(responseTxt);
+                if (statusTxt == "success")
+                    alert("External content loaded successfully!");
+                if (statusTxt == "error")
+                    alert("Error: " + xhr.status + ": " + xhr.responseTxt);
+            });
+		}
+		function clickMeGet() {
+			//var par = arguments[0];
+			//var par2 = arguments[1];
+			$.get('TestAjaxHTML', arguments[0],
+				function (data) {
+					var odgovor = '' + data;
+					var mojDivHTML = odgovor.substring(odgovor.indexOf("<div id='mojDiv'>")+17, odgovor.indexOf("</div>"));
+					alert(odgovor);
+					$("div#myDiv").html(mojDivHTML);
+				});
+		}
+
+		function clickMePost() {
+			//var par = arguments[0];
+			//var par2 = arguments[1];
+			$.post('TestAjaxHTML', arguments[0],
+				function (data) {
+					var odgovor = '' + data;
+					var mojDivHTML = odgovor.substring(odgovor.indexOf("<div id='mojDiv'>")+17, odgovor.indexOf("</div>"));
+					alert(odgovor);
+					$("div#myDiv").html(mojDivHTML);
+				});
+		}
+
+		function loadXMLDoc() {
+			var xmlhttp;
+
+			if (window.XMLHttpRequest) {
+				// code for IE7+, Firefox, Chrome, Opera, Safari
+				xmlhttp = new XMLHttpRequest();
+			} else {
+				// code for IE6, IE5
+				xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.onload = function() {
+				if (xmlhttp.status == 200) {
+						var odgovor = xmlhttp.responseText;
+						var mojDivHTML = odgovor.substring(odgovor.indexOf("<div id='mojDiv'>")+17, odgovor.indexOf("</div>"));
+						document.getElementById("myDiv").innerHTML = mojDivHTML;
+						//$("div#myDiv").html(mojDivHTML);
+						alert(xmlhttp.responseText);
+						alert(xmlhttp.response);
+					} else if (xmlhttp.status == 400) {
+						alert('There was an error 400')
+					} else {
+						alert('something else other than 200 was returned')
+					}
+			}
+
+			var params = "tekst=tekst koji se šalje 1";
+			//var params = "tekst="+$("input[name='tekst']").val();
+			
+			//1 način
+			xmlhttp.open("GET", "TestAjaxHTML?"+params, true);
+			xmlhttp.send();
+			
+			//2 način
+			xmlhttp.open("POST", "TestAjaxHTML", true);
+			xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+			xmlhttp.send(params);
+			
+		}
+
+		function loadXMLDoc2() {
+			var xmlhttp;
+
+			if (window.XMLHttpRequest) {
+				// code for IE7+, Firefox, Chrome, Opera, Safari
+				xmlhttp = new XMLHttpRequest();
+			} else {
+				// code for IE6, IE5
+				xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+
+			xmlhttp.onreadystatechange = function () {
+				if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+					if (xmlhttp.status == 200) {
+						var odgovor = xmlhttp.responseText;
+						var mojDivHTML = odgovor.substring(odgovor.indexOf("<div id='mojDiv'>")+17, odgovor.indexOf("</div>"));
+						document.getElementById("myDiv").innerHTML = mojDivHTML;
+						//$("div#myDiv").html(mojDivHTML);
+						alert(xmlhttp.responseText);
+					} else if (xmlhttp.status == 400) {
+						alert('There was an error 400')
+					} else {
+						alert('something else other than 200 was returned')
+					}
+				}
+			}
+			var params = arguments[0];
+
+			//1 način
+			//xmlhttp.open("GET", "TestAjaxHTML?tekst=tekst koji se šalje 2", true);
+			//xmlhttp.send();
+			
+			//2 način
+			xmlhttp.open("POST", "TestAjaxHTML", true);
+			xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+			xmlhttp.send(params);
+			
+		}
+	</script>
+
+</head>
+
+<body>
+
+	<h3>TestAjaxHTML koji demonstrira preuzimanje delova drugih HTML stanica</h3>
+	<form action="TestAjaxHTML" accept-charset="UTF-8" method="post">
+		<input type="text" name="tekst" /> 
+		<input type="submit" value="Posalji" /> 
+		<!--XMLHttpRequest-->
+		<input type="button" id="testPost" value="TestPostAjax inside form" onclick="loadXMLDoc()" /> 
+		<!--jquery-->
+		<input type="button" id="testPost2" value="TestLoadAjaxJQuery inside form" onclick="clickMeLoad()" />
+	</form>
+	<hr />
+	<!--XMLHttpRequest-->
+	<button onclick="loadXMLDoc2('tekst=tekst koji se šalje 2')">TestPostAjax outside form</button>
+	<!--jquery-->
+	<button onclick="clickMeGet({'tekst': 'Juhu2'})">TestGetAjaxJQuery outside form</button>
+	<button onclick="clickMePost({'tekst': 'Juhu3'})">TestPostAjaxJQuery outside form</button>
+	<hr />
+	<div id="myDiv"></div>
+	<hr />
+
+</body>
+
+</html>

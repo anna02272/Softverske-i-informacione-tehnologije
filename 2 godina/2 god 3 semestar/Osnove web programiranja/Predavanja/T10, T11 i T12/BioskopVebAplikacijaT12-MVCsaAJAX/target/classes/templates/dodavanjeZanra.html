@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html th:replace="~{fragments/base.html :: layout(~{::title},~{::link},~{},~{::centralniDiv})}" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/StiloviForma.css"/>
+	<title>Dodavanje žanra</title>
+</head>
+<body>
+	<div th:fragment="centralniDiv">
+		<form method="post" action="Zanrovi/Create">
+			<table class="forma">
+				<caption>Dodavanje žanra</caption>
+				<tr><th>naziv:</th><td><input type="text" name="naziv"/></td></tr>
+				<tr><th></th><td><input type="submit" value="Dodaj"/></td></tr>
+			</table>
+		</form>
+		<ul>
+			<li><a href="Zanrovi">povratak</a></li>
+		</ul>
+	</div>
+</body>
+</html>

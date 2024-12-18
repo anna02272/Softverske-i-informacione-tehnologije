@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<base th:href="@{/}"><!-- popuni href atribut vrednošću context path-a -->
+	<link rel="stylesheet" type="text/css" href="css/StiloviKorisnik.css"/>
+	<script src="webjars/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/lokacijaJS.js"></script>
+	<title th:text="#{fragments.pageTitle}"></title>
+</head>
+<body>
+	<header th:insert="~{fragments/general.html :: header}"> </header>
+	<h2 th:text="#{fragments.heading}"></h2>
+	<ul>
+		<li><a href="" th:text="#{index.index}"></a></li>
+	</ul>
+	<span th:text="#{fragments.someText}"></span>
+	<div th:replace="~{fragments/general.html :: footer}"> </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\domon\Desktop\SR\Osnove web programiranja\Projekat\sr46-2021-owp2022-projekat"/>
+			<item value="C:\Users\domon\Desktop\SR\Osnove web programiranja\Vezbe\Vezbe 11\Biblioteka"/>
+			<item value="C:\Users\domon\Downloads\SpringBootThymeleafFormValidation"/>
+			<item value="C:\Users\domon\Desktop\SR\Osnove web programiranja\Vezbe\Vezbe 9\Biblioteka"/>
+			<item value="C:\Users\domon\Desktop\SR\Osnove web programiranja\Vezbe\Vezbe 10\Biblioteka"/>
+			<item value="C:\Users\domon\Desktop\SR\Osnove web programiranja\Predavanja\T10, T11 i T12\BioskopVebAplikacijaT12-MVCsaAJAX"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

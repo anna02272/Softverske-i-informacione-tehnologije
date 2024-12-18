@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.5.1.js"></script>
+    <script>
+        // pristupalo bi se elementima pre nego što su učitani
+        $(document).ready(function () {// sačekati da se stranica učita
+            $("button#b_1").click(function () {
+                // sekvencijalno - oboji crveno i sakri, pa zatim pokazi
+                $("p").css("color", "red").hide(1000).show(1000);
+            });
+            $("button#b_2").click(function () {
+                // paralelno - oboji zeleno i sakri
+                $("p").css("color", "blue").hide(1000).css("color", "green");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Ulančavanje</h1>
+    <p>Prvi paragraf.</p>
+    <button id="b_1">oboji crvno i sakri, pa zatim pokazi</button>
+    <button id="b_2">oboji plavo, sakri, pa zatim oboj zeleno,wtf??? </button>
+</body>
+
+</html>

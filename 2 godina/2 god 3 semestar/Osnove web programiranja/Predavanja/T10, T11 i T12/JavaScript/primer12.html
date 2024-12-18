@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Nizovi</title>
+</head>
+<body>
+	<script type="text/javascript">
+	    // Kreiranje niza Array objektom
+		var niz1 = new Array()
+		niz1[0] = 5
+		// određivanje duzine niza
+		console.log(niz1.length)
+
+		var niz2 = new Array(1, 2, 3, 4)
+		console.log(niz2.length) 
+
+		var index = 1
+		// izdvajanje elemenata u indeksa + broj elemenata; 
+		//modifikuje postojeci niz
+		console.log(niz2.splice(index, 2))
+
+		// Kreiranje niza "JSON" sintaksom
+		var brojevi = ["one", "dva", "tri"]
+		console.log(brojevi)
+
+		var brojevi = [] // prazan niz
+		brojevi[0] = "one"
+		brojevi[1] = "dva"
+		brojevi[2] = "tri"
+		console.log(brojevi)
+
+		console.log(brojevi.includes("jedan") + ", " + brojevi.includes("one")) // da li sadrži element?
+		
+		brojevi[0] = "jedan" // zamena
+		brojevi.push("četiri") // dodavanje na kraj
+		console.log(brojevi)
+		brojevi.pop() // uklanjanje sa kraja
+		console.log(brojevi)
+		// izdvajanje elemenata u opsegu; 
+		//vraća modifikovani niz, ne dira originalni niz
+		brojevi = brojevi.slice(1, 3) 
+		console.log(brojevi) 
+	</script>
+</body>
+</html>

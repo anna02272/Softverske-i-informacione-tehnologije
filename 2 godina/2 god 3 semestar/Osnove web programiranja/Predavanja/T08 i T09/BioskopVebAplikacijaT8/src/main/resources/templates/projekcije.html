@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<base href="">
+	<link rel="stylesheet" type="text/css" href="css/StiloviTabela.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviKorisnik.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviHorizontalniMeni.css"/>
+	<title>Projekcije</title>
+</head>
+<body>
+	<h2>Bioskop</h2>
+	<ul>
+		<li><a href="">početna</a></li>
+	</ul>
+	<table class="korisnik">
+		<tr><th>Prijavljeni ste kao</th><td><a href="Korisnici/Details?korisnickoIme=a">a</a>.</td></tr>
+		<tr>
+			<td colspan="2">
+				<ul>
+					<li><a href="Korisnici/Logout">odjava</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<table class="korisnik">
+		<tr><th>Niste prijavljeni</th></tr>
+		<tr>
+			<td>
+				<ul>
+					<li><a href="registracija.html">registracija</a></li>
+					<li><a href="prijava.html">prijava</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<ul>
+		<li><a href="Zanrovi">žanrovi</a></li>
+		<li><a href="Filmovi">filmovi</a></li>
+		<li><a href="Projekcije">projekcije</a></li>
+		<li><a href="Korisnici">korisnici</a></li>
+	</ul>
+	<table class="tabela">
+		<caption>Projekcije</caption>
+		<tr>
+			<th>r. br.</th>
+			<th>datum i vreme</th>
+			<th>film</th>
+			<th>tip</th>
+			<th>sala</th>
+			<th>cena karte</th>
+		</tr>
+		<tr>
+			<td class="broj">1</td>
+			<td><a href="Projekcije/Details?id=1">01.04.2020. 18:00</a></td>
+			<td><a href="Filmovi/Details?id=1">film 1</a></td>
+			<td>2D</td>
+			<td class="broj">1</td>
+			<td class="broj">380.00 rsd</td>
+		</tr>
+	</table>
+	<ul>
+		<li><a href="Projekcije/Create">dodavanje projekcije</a></li>
+	</ul>
+</body>
+</html>

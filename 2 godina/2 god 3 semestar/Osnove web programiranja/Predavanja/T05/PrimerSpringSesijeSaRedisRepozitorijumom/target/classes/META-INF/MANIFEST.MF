@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: Simona Nikolic
+Build-Jdk: 10
+Implementation-Title: Spring-Boot-Session-Example
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.ftn
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/Spring-Boot-Session-Example
+Created-By: Maven Integration for Eclipse
+

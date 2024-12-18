@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.5.1.js" type="text/javascript"></script>
+    <script>
+        // pristupalo bi se elementima pre nego što su učitani
+        $(document).ready(function () {// sačekati da se stranica učita
+            $("button#b_1").click(function () {
+                var jsonObj = {
+                    "custname": "pera",
+                    "custtel": "0601234567",
+                    "custemail": "abc@def",
+                    "size": "small",
+                    "topping": ["bacon", "cheese"],
+                    "delivery": "11:30",
+                    "comments": "abc"
+                };
+
+                $.post('https://httpbin.org/post', JSON.stringify(jsonObj), function (result, status) {
+                    if (status != "success")
+                        alert("Result: " + result + "\nStatus: " + status);
+                    if (status == "success")
+                        $("#div1").text(JSON.stringify(result));
+                        // var firstKey = Object.keys(result.form)[0];
+                        // var narudbina = JSON.parse(firstKey);
+
+                        // var tekst = '<table border="1">';
+                        // tekst += '<tr>';
+                        // tekst += '<td>custname: ' + narudbina.custname + '</td>';
+                        // tekst += '<td>custtel: ' + narudbina.custtel + '</td>';
+                        // tekst += '<td>custemail: ' + narudbina.custemail + '</td>';
+                        // tekst += '<td>delivery: ' + narudbina.delivery + '</td>';
+                        // tekst += '</tr>';
+                        // tekst += '</table>'
+                        // ;
+                        // $("#div2").html(tekst);
+                });
+            });
+            $("button#b_2").click(function () {
+                $("#div1").html("");
+                $.get('https://jsonplaceholder.typicode.com/posts' , function (result, status) {
+                    if (status != "success")
+                        alert("Result: " + result + "\nStatus: " + status);
+                    if (status == "success") {
+                        var tekst = '<table border="1">';
+                        for (i = 0; i < result.length; i++) {
+                            tekst += '<tr>';
+                            tekst += '<td>userId: ' + result[i].userId + '</td>';
+                            tekst += '<td>id: ' + result[i].id + '</td>';
+                            tekst += '<td>title: ' + result[i].title + '</td>';
+                            tekst += '<td>body: ' + result[i].body + '</td>';
+                            tekst += '</tr>';
+                        }
+                        tekst += '</table>';
+                        $("#div2").html(tekst);
+                    }
+                });
+            });
+            $("button#b_3").click(function () {
+                $("#div1").html("");
+                var jsonObj = {
+                    "id": $("input#vrednostAtID").val()
+                };
+                $.get('https://jsonplaceholder.typicode.com/posts', jsonObj, function (result, status) {
+                    if (status != "success")
+                        alert("Result: " + result + "\nStatus: " + status);
+                    if (status == "success") {
+                        var tekst = '<table border="1">';
+                        for (i = 0; i < result.length; i++) {
+                            tekst += '<tr>';
+                            tekst += '<td>userId: ' + result[i].userId + '</td>';
+                            tekst += '<td>id: ' + result[i].id + '</td>';
+                            tekst += '<td>title: ' + result[i].title + '</td>';
+                            tekst += '<td>body: ' + result[i].body + '</td>';
+                            tekst += '</tr>';
+                        }
+                        tekst += '</table>';
+                        $("#div2").html(tekst);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div><h2>Slanje podataka koriscenjem jQuery i AJAX-a</h2></div>
+    <button id="b_1">Salji sadrzaj perina narudžbina</button>
+    <button id="b_2">Salji i preuzmi sadrzaj</button><br /><br />
+    Vrednost atributa id:<input type="text" name="vrednostAt" id="vrednostAtID" /> <br />
+    <button id="b_3">Salji i preuzmi sadrzaj u odnosu na</button><br /><br />
+    <div id="div1">Ovaj sadržaj će se promeniti 1</div>
+    <div id="div2">Ovaj sadržaj će se promeniti 2</div>
+</body>
+</html>

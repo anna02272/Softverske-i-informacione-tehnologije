@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Petlje</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var granica = 3
+		
+		var it = 1;
+		while (it <= granica) {
+			console.log("while: " + it)
+			it++
+		}
+
+		var it = 1;
+		do {
+			console.log("do-while: " + it)
+			it++
+		} while (it <= granica)
+
+		for (var it = 1; it <= granica; it++) {
+			console.log("for A: " + it)
+		}
+		
+		var granica = 5
+		var preskoci = 2
+		var prekini = 4
+		for (var it = 1; it <= granica; it++) {
+			if (it == preskoci) {
+				continue
+			}
+			if (it == prekini) {
+				break
+			}
+			console.log("for B: " + it)
+		}
+	</script>
+</body>
+</html>

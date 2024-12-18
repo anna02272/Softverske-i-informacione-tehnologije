@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.5.1.js" type="text/javascript"></script>
+    <script>
+        // pristupalo bi se elementima pre nego što su učitani
+        $(document).ready(function () {// sačekati da se stranica učita
+            $("h2").text("jQuery sintaksa izmenjen tekst"); // pronalaženje, wrap-ovanje i izmena vrednosti
+
+            $("button#1").click(function () {
+                var pasus = document.getElementById("testId"); //JavaScript pronalaženje
+                var jQueryPasus = $(pasus); // wrap-ovanje DOM objekta (ako je DOM objekat već postojao)
+                jQueryPasus.text("Hello World!"); //izmena vrednosti
+            });
+            $("button#2").click(function () {
+                $("#testId").hide(); // pronalaženje, wrap-ovanje i pozivanje animacije 
+                //$("p").hide();
+                //$(this).hide();
+                //$(".testClass").hide();
+                //$("p").hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h2>jQuery sintaksa</h2>
+    <p id="testId">Ovo je paragraf sa id="testId".</p>
+    <p class="testClass">Ovo je prvi paragraf sa class="testClass".</p>
+    <p class="testClass">Ovo je drugi paragraf sa class="testClass".</p>
+    <p>Ovo je paragraf bez postavljene klase i bez id.</p>
+    <button id="1">Izmeni sadržaj 1 paragrafa</button>
+    <button id="2">Sakrij nesto</button>
+</body>
+
+</html>

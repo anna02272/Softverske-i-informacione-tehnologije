@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.5.1.js"></script>
+    <script>
+        // pristupalo bi se elementima pre nego što su učitani
+        $(document).ready(function () {// sačekati da se stranica učita
+            $("button#b_1").click(function () {
+                $("li").each(function () {
+                    $(this).toggleClass("red");
+                    alert($(this).text());
+                });
+            });
+        });
+    </script>
+    <style>
+        .red {
+            color: red !important;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Each prolazak kroz listu elemenata</h1>
+    <ul>
+        <li>prva stavka</li>
+        <li>druga stavka</li>
+        <li class="yellow">treća stavka</li>
+        <li>četvrta stavka</li>
+        <li class="yellow">peta stavka</li>
+        <li>šesta stavka</li>
+    </ul>
+    <button id="b_1">svi</button>
+</body>
+
+</html>

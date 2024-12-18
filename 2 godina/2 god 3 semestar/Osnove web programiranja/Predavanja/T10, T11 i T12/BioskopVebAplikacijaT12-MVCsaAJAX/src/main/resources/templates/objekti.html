@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<base th:href="@{/}"><!-- popuni href atribut vrednošću context path-a -->
+	<link rel="stylesheet" type="text/css" href="css/StiloviTabela.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviKorisnik.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviHorizontalniMeni.css"/>
+	<title>Literali</title>
+</head>
+<body>
+	<h2>Korišćenje objekata</h2>
+	<ul>
+		<li><a href="">početna</a></li>
+	</ul>
+	<h3>Bazici objekti</h3>
+	Lokalizacija jezik:<span th:text="${#locale.language}"></span><br/>
+	Parametar zahteva parametar1:<span th:text="${#request.getParameter('parametar1')}"></span><br/>
+	Atribut zahteva tekst1: <span th:text="${#request.getAttribute('tekst1')}"></span><br/>
+	Atribut zahteva korisnik1 (deo korisnickoIme): <span th:text="${#request.getAttribute('korisnik1').korisnickoIme}"></span><br/>
+	Atribut zahteva korisnik2 (deo korisnickoIme): <span th:text="${#request.getAttribute('korisnik2').korisnickoIme}"></span><br/>
+	Atribut zaglavlja zahteva User-Agent: <span th:text="${#request.getHeader('User-Agent')}"></span><br/>
+	Atribut zaglavlja odgovora zaglavlje1: <span th:text="${#response.getHeader('zaglavlje1')}"></span><br/>
+	Parametar zahteva parametar1: <span th:if="${param.parametar1 != null}" th:text="${param.parametar1[0]}"></span><br/>
+	Atribut sesije prijavljeniKorisnik(deo korisnickoIme): <span th:if="${session.prijavljeniKorisnik} != null" th:text="${session.prijavljeniKorisnik.korisnickoIme}"></span><br/>
+	<hr/>
+	
+	<h3>Pomoćni objekti</h3>
+	Poruke #messages za test1: <span th:text="${#messages.msg('test1')}"></span><br/>
+	Poruke #messages za test2 i parametre A, B, C: <span th:text="${#messages.msg('test2','A','B','C')}"></span><br/><br/>
+	
+	Dan od trenutnog Date: <span th:text="${#dates.day(standardDate)}"></span><br/>
+	Formatiranje trenutnog Date: <span th:text="${#dates.format(standardDate, 'dd-MM-yyyy HH:mm')}"></span><br/>
+	Formatiranje trenutnog LocalDate: <span th:text="${#temporals.format(localDate, 'dd-MM-yyyy')}"></span><br/>
+	Formatiranje trenutnog LocalDateTime: <span th:text="${#temporals.format(localDateTime, 'dd-MM-yyyy HH:mm')}"></span><br/>
+	Kreirnje datuma 2020-12-03: <span th:text="${#dates.create(2020,12,03)}"></span><br/>
+	Formatiranje prizvoljnog Date 2020-12-03: <span th:text="${#dates.format(#dates.create(2020,12,03), 'dd-MM-yyyy HH:mm')}"></span><br/><br/>
+	
+	Formatiranje broja 123.123456 na 2 decimale: <span th:text="${#numbers.formatDecimal(123.123456,5,2)}"></span><br/>
+	Formatiranje broja 123.123456 na 2 decimale sa .: <span th:text="${#numbers.formatDecimal(123.123456,0,2,'POINT')}"></span><br/>
+	Formatiranje broja 123.123456 na 2 decimale sa ,: <span th:text="${#numbers.formatDecimal(123.123456,0,2,'COMMA')}"></span><br/><br/>
+	
+	Provera praznog teksta: <span th:text="${#strings.isEmpty('abc')}"></span><br/>
+	Provera praznog teksta parametar1: <span th:text="${#strings.isEmpty(#request.getParameter('parametar1'))}"></span><br/>
+	Provera sadržanja reči 'dva' u tekstu 'jedan dva tri': <span th:text="${#strings.contains('jedan dva tri','dva')}"></span><br/>
+	Zamena sadržanja reči 'dva' sa 'pet' u tekstu 'jedan dva tri': <span th:text="${#strings.replace('jedan dva tri','dva','pet')}"></span><br/>
+	<hr/>
+	
+</body>
+</html>

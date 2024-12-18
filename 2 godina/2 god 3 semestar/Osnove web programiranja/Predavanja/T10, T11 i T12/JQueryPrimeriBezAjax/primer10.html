@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Stilizovanje</title>
+	<style type="text/css">
+		input.greska {
+			outline-style: solid;
+			outline-color: LightCoral;
+			outline-width: 2px
+		}
+	</style>
+	<script src="jquery-3.5.1.js" type="text/javascript"></script>
+	<script>
+		// pristupalo bi se elementima pre nego što su učitani
+		$(document).ready(function () {// sačekati da se stranica učita
+			var div = $("div")
+			div.hide()
+
+			$("button:first").click(function () {
+				div.toggle(1000)
+			})
+			$("button:last").click(function () {
+				div.slideToggle(1000)
+			})
+
+			//sakrij lozinku tj promeni tip input polja
+			$("input[type=checkbox]").click(function () {
+				if (this.checked) { // da li je checkbox čekiran?
+					$(this).parent().prev().find("input").attr("type", "password") // promena vrednosti type atributa
+				} else {
+					$(this).parent().prev().find("input").attr("type", "text") // promena vrednosti type atributa
+				}
+			})
+
+			$("form").submit(function () {
+				var forma = $(this)
+
+				var korisnickoImeInput = forma.find("input[name=korisnickoIme]")
+				var lozinkaInput = forma.find("input[name=lozinka]")
+
+				korisnickoImeInput.removeClass("greska");
+				lozinkaInput.removeClass("greska");
+
+				var korisnickoIme = korisnickoImeInput.val()
+				var lozinka = lozinkaInput.val()
+
+				if (korisnickoIme == "") {
+					korisnickoImeInput.addClass("greska") // ofarbaj polje zamenom css klase
+				}
+				if (lozinka == "") {
+					lozinkaInput.addClass("greska") // ofarbaj polje zamenom css klase
+				}
+				if (korisnickoIme == "" || lozinka == "") {
+					return false // spreči slanje
+				}
+
+				return true // dozvoli slanje
+			})
+		})
+	</script>
+</head>
+
+<body>
+	<button>Prijava show hide toggle</button><br />
+	<button>Prijava slideUp slideDown slideToggle</button>
+	<div>
+		<form name="prijava">
+			<table>
+				<tr>
+					<td>korisničko ime:</td>
+					<td><input type="text" name="korisnickoIme" /></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>lozinka:</td>
+					<td><input type="password" name="lozinka" /></td>
+					<td><input type="checkbox" checked />sakrij lozinku</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Prijavi se" /></td>
+					<td></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+
+</html>

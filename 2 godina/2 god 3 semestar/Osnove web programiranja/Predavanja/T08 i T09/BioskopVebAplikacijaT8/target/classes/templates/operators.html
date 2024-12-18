@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<base th:href="@{/}"><!-- popuni href atribut vrednošću context path-a -->
+	<link rel="stylesheet" type="text/css" href="css/StiloviTabela.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviKorisnik.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviHorizontalniMeni.css"/>
+	<title>Literali</title>
+</head>
+<body>
+	<h2>Korišćenje operatora</h2>
+	<ul>
+		<li><a href="">početna</a></li>
+	</ul>
+	<h3>Aritmetički operatori</h3>
+	<p>
+		Sabiranje 2 + 1 je: <span th:text="2+1"> neki tekst</span><br/>
+		Oduzimanje 5 - 1 - 1 je: <span th:text="${5 - 1} - 1"> neki tekst</span><br/>
+		Množenje 10*2 je: <span th:text="10 * 2"> neki tekst</span><br/>
+		Deljenje 10/2 je: <span th:text="10 / 2"> neki tekst</span><br/>
+		Ostatak pri deljenju 5%2 je: <span th:text="5 % 2"> neki tekst</span><br/>
+	</p>
+	<hr/>
+	
+	<h3>Konkatenacija teksta</h3>
+	<p th:text="'ovo je' + ' neki '+ 'tekst'">neki tekst</p>
+	<p th:text="'Rezultat zbira 2 i 3 je:' + (2+3)">neki tekst</p>
+	<p th:text="'Rezultat zbira 2 i 3 je:' + 2 + 3">neki tekst</p>
+	<hr/>
+	
+	<h3>Relacioni operatori</h3>
+	<p>
+		Rezultat 5 > 3 == true je: <span th:text="5>3 == true"></span><br/>
+		Rezultat 5 lt 3 == true je: <span th:text="5 lt 3 == true"></span><br/>
+		Rezultat 5 > 3 == true je:<span th:text="${5>3} == true"></span><br/>
+		Rezultat 5 lt 3 == true je:<span th:text="${5 lt 3} == true"></span><br/>
+	</p>
+	<hr/>
+	
+	<h3>Logički operatori</h3>
+	<p>
+		Rezultat 5%2==1 &and; 5&gt;3 je: <span th:text="5%2==1 and 5>3"></span><br/>
+		Rezultat 5%2==1 &and; 5&lt;3 je: <span th:text="5%2==1 and 5<3"></span><br/>
+		Rezultat 5%2==1 &or; 5&lt;3 je: <span th:text="5%2==1 or 5<3"></span><br/>
+		Rezultat &not;(5>3)  je:<span th:text="not(5>3)"></span><br/>
+		Rezultat &not;(5>3)  je:<span th:text="!(5>3)"></span><br/>
+	</p>
+	<hr/>
+</body>
+</html>

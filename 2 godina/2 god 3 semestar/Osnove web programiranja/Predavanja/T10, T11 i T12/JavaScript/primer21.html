@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Navigacija kroz stablo</title>
+	<script type="text/javascript">
+		function klikNaDugme(dugme) { // referenca na čvor koji je proizveo događaj (mora se proslediti)
+			var celija = dugme.parentNode.previousSibling // dugme -> ćelija koja sadrži dugme -> prethodna ćelija
+			celija.innerHTML = "" // popunjavanje sadržaja elementa
+		}
+	</script>
+</head>
+<body>
+	<table>
+		<tr><td>prvi red</td><td><button onclick="klikNaDugme(this)">Obriši</button></td><tr>
+		<tr><td>drugi red</td> <td><button onclick="klikNaDugme(this)">Obriši ne radi zašto?</button></td><tr>
+	</table>
+</body>
+</html>

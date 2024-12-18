@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.5.1.js" type="text/javascript"></script>
+    <script>
+        // pristupalo bi se elementima pre nego što su učitani
+        $(document).ready(function () {// sačekati da se stranica učita
+            $("button#b_1").click(function () {
+                $("div#div2").load('https://httpbin.org/html');
+            });
+        });
+        $(document).ready(function () { // sačekati da se stranica učita
+            $("button#b_2").click(function () {
+                $("#div1").load('https://httpbin.org/html h1', function (responseTxt, statusTxt, xhr) {
+                    alert(responseTxt);
+                    alert(xhr.responseText);
+                    if (statusTxt == "success")
+                        alert("External content loaded successfully!");
+                    if (statusTxt == "error")
+                        alert("Error: " + xhr.status + ": " + xhr.statusText);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="div1"><h2>Promena teksta koriscenjem jQuery i AJAX-a</h2></div>
+    <button id="b_1">Preuzmi ceo sadrzaj stranice</button> 
+    <button id="b_2">Preuzmi određeni deo sadrzaja</button><br/><br />
+    <div id="div2">Ovaj sadržaj će se promeniti</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.5.1.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function loadXMLDoc() {
+            var xmlhttp;
+
+            if (window.XMLHttpRequest) {
+                // code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            } else {
+                // code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+                    if (xmlhttp.status == 200) {
+                        document.getElementById("div2").innerHTML = xmlhttp.responseText;
+                        // $("div#div2").html(xmlhttp.responseText);
+                        alert(xmlhttp.responseText);
+                    }
+                    else if (xmlhttp.status == 400) {
+                        alert('There was an error 400')
+                    }
+                    else {
+                        alert('something else other than 200 was returned')
+                    }
+                }
+            }
+
+            xmlhttp.open("GET", "https://httpbin.org/html", true);
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlhttp.send();
+        }
+
+        function loadXMLDoc2() {
+            var xmlhttp;
+
+            if (window.XMLHttpRequest) {
+                // code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            } else {
+                // code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onload = function() {
+                if (xmlhttp.status == 200) {
+                        var odgovor = xmlhttp.responseText;
+                        naslov = odgovor.substring(odgovor.indexOf("<h1>"), odgovor.indexOf("</h1>")+5);
+                        document.getElementById("div1").innerHTML = naslov;
+                        // $("div#div1 h2").html(naslov);
+
+                        alert(xmlhttp.responseText);
+                    }
+                    else if (xmlhttp.status == 400) {
+                        alert('There was an error 400')
+                    }
+                    else {
+                        alert('something else other than 200 was returned')
+                    }
+            }
+
+            // xmlhttp.onreadystatechange = function () {
+            //     if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+            //         if (xmlhttp.status == 200) {
+            //             var odgovor = xmlhttp.responseText;
+            //             naslov = odgovor.substring(odgovor.indexOf("<h1>"), odgovor.indexOf("</h1>")+5);
+            //             document.getElementById("div1").innerHTML = naslov;
+            //             // $("div#div1 h2").html(naslov);
+
+            //             alert(xmlhttp.responseText);
+            //         }
+            //         else if (xmlhttp.status == 400) {
+            //             alert('There was an error 400')
+            //         }
+            //         else {
+            //             alert('something else other than 200 was returned')
+            //         }
+            //     }
+            // }
+
+            xmlhttp.open("GET", "https://httpbin.org/html", true);
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlhttp.send();
+        }
+    </script>
+</head>
+
+<body>
+    <div id="div1">
+        <h2>Promena teksta koriscenjem jQuery i AJAX-a</h2>
+    </div>
+    <button id="b_1" onclick="loadXMLDoc()">Preuzmi ceo sadrzaj stranice</button>
+    <button id="b_2" onclick="loadXMLDoc2()">Preuzmi određeni deo sadrzaja</button><br /><br />
+    <div id="div2">Ovaj sadržaj će se promeniti</div>
+</body>
+
+</html>

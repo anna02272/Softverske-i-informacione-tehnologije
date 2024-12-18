@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<base th:href="@{/}"><!-- popuni href atribut vrednošću context path-a -->
+	<link rel="stylesheet" type="text/css" href="css/StiloviTabela.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviKorisnik.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviHorizontalniMeni.css"/>
+	<title>Literali</title>
+</head>
+<body>
+	<h2>Izvori podataka</h2>
+	<ul>
+		<li><a href="">početna</a></li>
+	</ul>
+	
+	<h3>Spring bean</h3>
+	<p>Pristupa se beanu preko @nazivSpringBean objekata</p>
+	<p th:text="'Film id ' + ${@memorijaAplikacije.get('film1').id} +' i nazivom '+ ${@memorijaAplikacije.get('film1').naziv}"></p>
+	<hr/>
+	 
+	<h3>Servlet context</h3>
+	<p>Pristupa se objektu u context preko #servletContext.getAttribute('nazivObjekta')</p>
+	<p th:text="'Film id ' + ${#servletContext.getAttribute('film2').id} + ' i nazivom '+ ${#servletContext.getAttribute('film2').naziv}"></p>
+	<hr/>
+	
+	<h3>HTTP Session</h3>
+	<p>Pristupa se objektu u sesiji preko session.nazivObjekta</p>
+	<p th:text="'Film id ' + ${session.film3.id} +' i nazivom '+ ${session.film3.naziv}"></p>
+	<hr/>
+	
+	<h3>Model</h3>
+	<p>Pristupa se objektu u modelu preko nazivObjekta</p>
+	<p th:text="'Film id ' + ${film4.id} +' i nazivom '+ ${film4.naziv}"></p>
+	<p th:text="'Film id ' + ${film5.id} +' i nazivom '+ ${film5.naziv}"></p>
+	<hr/>
+	<hr/>
+</body>
+</html>

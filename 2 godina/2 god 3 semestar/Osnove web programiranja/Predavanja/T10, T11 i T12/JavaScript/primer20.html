@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Link-ovi</title>
+	<script type="text/javascript">
+		function klikNaLink1() {
+			alert("neki tekst")
+		}
+		function klikNaLink2() {
+			return '<!DOCTYPE html>' + 
+					'<html>' + 
+					'<head>' + 
+						'<meta charset="UTF-8">' + 
+						'<title>Poruke</title>' + 
+					'</head>' + 
+					'<body>' + 
+						'<h2>Potpuno nova stranica koju je generisala funkcija.</h2>' + 
+					'</body>' + 
+					'</html>'
+		}
+	</script>
+</head>
+<body>
+	<a href="javascript:klikNaLink1()">kliknite na ovaj link</a><br/>
+	<a href="javascript:klikNaLink2()">kliknite na ovaj link</a>
+</body>
+</html>

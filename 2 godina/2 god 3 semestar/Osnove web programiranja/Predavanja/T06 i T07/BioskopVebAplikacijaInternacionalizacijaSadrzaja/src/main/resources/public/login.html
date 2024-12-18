@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<base href="/BioskopVebAplikacija/">	
+	<title>Prijava korisnika</title>
+	<link rel="stylesheet" type="text/css" href="css/StiloviForma.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviHorizontalniMeni.css"/>
+</head>
+<body>
+	<ul>
+		<li><a href="registracija.html">Registruj se</a></li>
+	</ul>
+	<form method="post" action="PrijavaOdjavaController/LogIn">
+		<table>
+			<caption>Prijava korisnika</caption>
+			<tr><th>korisničko ime:</th><td><input type="text" value="" name="korisnickoIme" required/></td></tr>
+			<tr><th>korisnicka šifra:</th><td><input type="password" value="" name="korisnickaSifra" required/></td></tr>
+			<tr><th></th><td><input type="submit" value="Prijavi se" /></td>
+		</table>
+	</form>
+	<br/>
+</body>
+</html>

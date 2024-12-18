@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<base href="">
+	<link rel="stylesheet" type="text/css" href="css/StiloviForma.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviKorisnik.css"/>
+	<title>Projekcija</title>
+</head>
+<body>
+	<h2>Bioskop</h2>
+	<ul>
+		<li><a href="">početna</a></li>
+	</ul>
+	<table class="korisnik">
+		<tr><th>Prijavljeni ste kao</th><td><a href="Korisnici/Details?korisnickoIme=a">a</a>.</td></tr>
+		<tr>
+			<td colspan="2">
+				<ul>
+					<li><a href="Korisnici/Logout">odjava</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<table class="korisnik">
+		<tr><th>Niste prijavljeni</th></tr>
+		<tr>
+			<td>
+				<ul>
+					<li><a href="registracija.html">registracija</a></li>
+					<li><a href="prijava.html">prijava</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<ul>
+		<li><a href="Zanrovi">žanrovi</a></li>
+		<li><a href="Filmovi">filmovi</a></li>
+		<li><a href="Projekcije">projekcije</a></li>
+		<li><a href="Korisnici">korisnici</a></li>
+	</ul>
+	<form method="post" action="Projekcije/Edit">
+		<input type="hidden" name="id" value="1">
+		<table class="forma">
+			<caption>Projekcija</caption>
+			<tr>
+				<th>datum i vreme:</th>
+				<td>
+					<input type="date" value="2020-04-01" name="datum"/>&nbsp;
+					<input type="time" value="18:00" name="vreme"/>
+				</td>
+			<tr>
+				<th>film:</th>
+				<td>
+					<select name="filmId">
+						<option value="1" selected>film 1</option>
+					</select>	
+				</td>
+			</tr>
+			<tr>
+				<th>tip:</th>
+				<td>
+					<select name="tip">
+						<option value="2D">2D</option>
+						<option value="3D" selected>3D</option>
+						<option value="4D">4D</option>
+					</select>
+				</td>
+			</tr>
+			<tr><th>sala:</th><td><input type="number" value="1" min="1" name="sala"/></td></tr>
+			<tr><th>cena karte:</th><td><input type="number" value="420.00" min="0" step="0.1" name="cenaKarte"/></td></tr>
+			<tr><th></th><td><input type="submit" value="Izmeni"/></td></tr>
+		</table>
+	</form>
+	<form method="post" action="Projekcije/Delete">
+		<input type="hidden" name="id" value="1">
+		<table class="forma">
+			<tr><th></th><td><input type="submit" value="Obriši"/></td></tr>
+		</table>
+	</form>
+	<table class="forma">
+		<caption>Projekcija</caption>
+		<tr><th>datum i vreme:</th><td>01.04.2020. 18:00</td></tr>
+		<tr>
+			<th>film:</th><td><a href="Filmovi/Details?id=1">film 1</a></td>
+		</tr>
+		<tr><th>tip:</th><td>3D</td></tr>
+		<tr><th>sala:</th><td>1</td></tr>
+		<tr><th>cena karte:</th><td>420.0</td></tr>
+	</table>
+</body>
+</html>

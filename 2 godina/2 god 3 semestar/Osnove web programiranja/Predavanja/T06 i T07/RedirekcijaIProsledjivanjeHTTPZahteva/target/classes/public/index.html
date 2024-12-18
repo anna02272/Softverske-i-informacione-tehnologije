@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<base href="/RedirekcijaIProsledjivanje/">
+	<title>Osnovna stranica projekta</title>
+</head>
+<body>
+	<h1>Osnovna stranica projekta</h1>
+	<dl style="list-style-type: none;">
+		<dt>Rad sa Handler Method metodama</dt>
+		<dd>
+			<dl>
+				<dt>Provratan tip je String i metoda je anotirana sa
+					@ResponseBody</dt>
+				<dd>
+					<a href="ZdravoSvete">URL /ZdravoSvete</a>
+				</dd>
+ 
+				<dt>Provratan tip je void i metoda koristi tipove argumenata
+					HttpServletRequest i HttpServletResponse</dt>
+				<dd>
+					<a href="ZdravoSvete/Zdravo2">URL /ZdravoSvete/Zdravo2</a>
+				</dd>
+
+				<dt>Provratan tip je void i metoda koristi tipove argumenata
+					Reader i Writer</dt>
+				<dd>
+					<a href="ZdravoSvete/Zdravo3">URL /ZdravoSvete/Zdravo3</a>
+				</dd>
+
+				<dt>Provratan tip je void i metoda koristi redirekciju na statički resurs oslanjajući se na sendRedirect od HttpServletResponse</dt>
+				<dd>
+					<a href="ZdravoSvete/Zdravo4">URL /ZdravoSvete/Zdravo4</a>
+				</dd>
+
+				<dt>Provratan tip je String i vraća naziv statičkog resurs "/zdravo5.html", da bi ovobilo dozvoljeno View Engine mora biti isključen</dt>
+				<dd>
+					<a href="ZdravoSvete/Zdravo5">URL /ZdravoSvete/Zdravo5</a>
+				</dd>
+			</dl>
+		</dd> 
+		
+		<dt>Prihatanje parametar forme</dt>
+		<dd><a href="forma.html">URL /forma.html</a></dd>
+
+	</dl>
+
+	<a href="Redirekcija">Prikaz rada redirekcije</a>
+	<br />
+	<a href="Prosledjivanje">Prikaz rada prosleđivanja</a>
+	<br />
+</body>
+</html>

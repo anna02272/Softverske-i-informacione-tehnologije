@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://localhost:8080/PrviMavenVebProjekat/Filmovi -->
+<html class="wf-roboto-n3-active wf-roboto-n5-active wf-roboto-n4-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<!--<base href="/PrviMavenVebProjekat/">--><base href=".">	<title>Filmovi</title>
+	<link rel="stylesheet" type="text/css" href="./statistika_files/StiloviTabela.css">
+	<link rel="stylesheet" type="text/css" href="./statistika_files/StiloviHorizontalniMeni.css">
+<link rel="stylesheet" href="./statistika_files/css" media="all"><link rel="stylesheet" href="./statistika_files/css" media="all"><style data-styled="" data-styled-version="4.4.1"></style></head>
+<body> 	<ul>
+		<li><a href="http://localhost:8080/PrviMavenVebProjekat/Filmovi">filmovi</a></li>
+		<li><a href="http://localhost:8080/PrviMavenVebProjekat/Projekcije">projekcije</a></li>
+	</ul>
+		<table>
+			<caption>Filmovi</caption>
+			<tbody><tr>
+				<th>r. br.</th>
+				<th>naziv</th>
+				<th>trajanje</th>
+				<th>projekcije</th>
+			</tr>
+			<tr>
+				<td class="broj">1</td>
+				<td><a href="http://localhost:8080/PrviMavenVebProjekat/Filmovi/Details?id=1">The Shining</a></td>
+				<td class="broj">146</td>
+				<td>
+					<a href="http://localhost:8080/PrviMavenVebProjekat/Projekcije?filmID=1">projekcije</a>
+					<form action="http://localhost:8080/PrviMavenVebProjekat/Projekcije" method="get">
+						<input type="hidden" name="filmID" value="1">
+						<input type="submit" value="Projekcije">
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td class="broj">2</td>
+				<td><a href="http://localhost:8080/PrviMavenVebProjekat/Filmovi/Details?id=2">One Flew Over the Cuckoo's Nest</a></td>
+				<td class="broj">133</td>
+				<td>
+					<a href="http://localhost:8080/PrviMavenVebProjekat/Projekcije?filmID=2">projekcije</a>
+					<form action="http://localhost:8080/PrviMavenVebProjekat/Projekcije" method="get">
+						<input type="hidden" name="filmID" value="2">
+						<input type="submit" value="Projekcije">
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td class="broj">3</td>
+				<td><a href="http://localhost:8080/PrviMavenVebProjekat/Filmovi/Details?id=3">The Little Shop of Horrors</a></td>
+				<td class="broj">72</td>
+				<td>
+					<a href="http://localhost:8080/PrviMavenVebProjekat/Projekcije?filmID=3">projekcije</a>
+					<form action="http://localhost:8080/PrviMavenVebProjekat/Projekcije" method="get">
+						<input type="hidden" name="filmID" value="3">
+						<input type="submit" value="Projekcije">
+					</form>
+				</td>
+			</tr>
+		</tbody></table>
+	<ul>
+		<li><a href="http://localhost:8080/PrviMavenVebProjekat/Filmovi/Create">dodavanje filma</a></li>
+	</ul>
+	<table class="horizontalni-meni">
+		<caption>Popularni filmovi</caption>
+		<tbody><tr>
+			<td>
+				<ul>
+					<li>
+
+						<a href="http://localhost:8080/Filmovi/Details?id=2">One Flew Over the Cuckoo's Nest</a><br>
+						<progress value="3" max="3"></progress>3
+					</li>
+					<li>
+
+						<a href="http://localhost:8080/Filmovi/Details?id=1">The Shining</a><br>
+						<progress value="2" max="3"></progress>2
+					</li>
+					<li>
+
+						<a href="http://localhost:8080/Filmovi/Details?id=3">The Little Shop of Horrors</a><br>
+						<progress value="1" max="3"></progress>1
+					</li>
+				</ul>
+			</td>
+		</tr>
+	</tbody></table>
+
+
+</body><div class="notranslate" style="position: absolute; top: 0; right:0;" id="vd-root-d19608294"></div></html>

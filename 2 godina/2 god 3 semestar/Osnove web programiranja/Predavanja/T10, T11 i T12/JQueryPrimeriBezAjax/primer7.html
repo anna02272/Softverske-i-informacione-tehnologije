@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.5.1.js" type="text/javascript"></script>
+    </script>
+    <script>
+        // pristupalo bi se elementima pre nego što su učitani
+        $(document).ready(function () {// sačekati da se stranica učita
+            $("button#b_1").click(function () {
+                $("li#li_1").siblings().attr("style", "color:red");
+            });
+            $("button#b_2").click(function () {
+                $("li#li_1").next().attr("style", "color:red");
+            });
+            $("button#b_3").click(function () {
+                $("li#li_1").nextAll().attr("style", "color:red");
+            });
+            $("button#b_4").click(function () {
+                $("li#li_1").nextUntil("li#li_2").attr("style", "color:red");
+            });
+            $("button#b_5").click(function () {
+                $("li#li_1").prev().attr("style", "color:red");
+            });
+            $("button#b_6").click(function () {
+                $("li#li_1").prevUntil("li#li_0").attr("style", "color:red");
+            });
+        });
+    </script>
+    <style>
+        .red {
+            color: red !important;
+        }
+
+        li#li_1 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Horizontalni prolazak kroz stablo</h1>
+    <ul>
+        <li id="li_0">prva stavka #li_0</li>
+        <li>druga stavka</li>
+        <li id="li_1">treća stavka #li_1</li>
+        <li>četvrta stavka</li>
+        <li>peta stavka</li>
+        <li>šesta stavka</li>
+        <li id="li_2">sedma stavka #li_2</li>
+    </ul>
+    <button id="b_1">siblings</button>
+    <button id="b_2">next</button>
+    <button id="b_3">nextAll</button>
+    <button id="b_4">nextUntil</button>
+    <button id="b_5">prev</button>
+    <button id="b_6">prevUntil</button>
+</body>
+
+</html>

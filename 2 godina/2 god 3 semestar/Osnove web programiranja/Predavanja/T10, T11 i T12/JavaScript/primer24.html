@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Stilizovanje</title>
+	<style type="text/css">
+		input.greska {
+			outline-style: solid;
+			outline-color: LightCoral;
+			outline-width: 2px
+		}
+		input.ok {
+			outline-style: none;
+			outline-color: black;
+			outline-width: 0px
+		}
+	</style>
+	<script type="text/javascript">
+		function klikNaDugme() {
+			var divPrijava = document.getElementsByTagName("div")[0]
+			divPrijava.style.display = "initial"
+		}
+		function klikNaCheckbox(checkbox) { // referenca na čvor koji je proizveo događaj (mora se proslediti)
+			if (checkbox.checked) { // da li je checkbox čekiran?
+				document.forms["prijava"].lozinka.type = "password" // promena vrednosti type atributa
+			} else {
+				document.forms["prijava"].lozinka.type = "text"
+			}
+		}
+		function submitForme() {
+			var forma = document.forms["prijava"]
+			
+			var korisnickoImeInput = forma.korisnickoIme
+			var lozinkaInput = forma.lozinka
+
+			if (korisnickoImeInput.value == "") {
+				korisnickoImeInput.className = "greska" // ofarbaj polje zamenom css klase
+			}
+			else
+				korisnickoImeInput.className = "ok"
+
+			if (lozinkaInput.value == "") {
+				lozinkaInput.className = "greska" // ofarbaj polje zamenom css klase
+			}
+			if (korisnickoImeInput.value == "" || lozinkaInput.value == "") {
+				return false // spreči slanje
+			}
+
+			return true // dozvoli slanje
+		}
+	</script>
+</head>
+<body>
+	<button onclick="klikNaDugme()">Prijava</button>
+	<div hidden>
+		<form name="prijava" onsubmit="return submitForme()">
+			<table>
+				<tr><td>korisničko ime:</td><td><input type="text" name="korisnickoIme"/></td><td></td></tr>
+				<tr><td>lozinka:</td><td><input type="password" name="lozinka"/></td><td><input type="checkbox" onclick="return klikNaCheckbox(this)" checked/>sakrij lozinku</td></tr>
+				<tr><td></td><td><input type="submit" value="Prijavi se"/></td><td></td></tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

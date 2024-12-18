@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<base th:href="@{/}">
+	<link rel="stylesheet" type="text/css" href="css/StiloviForma.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviKorisnik.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviHorizontalniMeni.css"/>
+	<title>Žanr</title>
+</head>
+<body>
+	<h2>Bioskop</h2>
+	<ul>
+		<li><a href="">početna</a></li>
+	</ul>
+	<table class="korisnik" th:if="${session.prijavljeniKorisnik != null}">
+		<tr><th>Prijavljeni ste kao</th><td><a th:href="|Korisnici/Details?korisnickoIme=${session.prijavljeniKorisnik.korisnickoIme}|" th:text=${session.prijavljeniKorisnik.korisnickoIme}>a</a>.</td></tr>
+		<tr>
+			<td colspan="2">
+				<ul>
+					<li><a href="Korisnici/Logout">odjava</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<table class="korisnik" th:unless="${session.prijavljeniKorisnik != null}">
+		<tr><th>Niste prijavljeni</th></tr>
+		<tr>
+			<td>
+				<ul>
+					<li><a href="registracija.html">registracija</a></li>
+					<li><a href="prijava.html">prijava</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<ul>
+		<li><a href="Zanrovi">žanrovi</a></li>
+		<li><a href="Filmovi">filmovi</a></li>
+		<li><a href="Projekcije">projekcije</a></li>
+		<li th:if="${session.prijavljeniKorisnik != null and session.prijavljeniKorisnik.administrator}"><a href="Korisnici">korisnici</a></li>
+	</ul>
+	<form method="post" action="Zanrovi/Edit" th:if="${session.prijavljeniKorisnik != null and session.prijavljeniKorisnik.administrator}">
+		<input type="hidden" name="id" th:value="${zanr.id}">
+		<table class="forma">
+			<caption>Žanr</caption>
+			<tr><th>naziv:</th><td><input type="text" th:value="${zanr.naziv}" name="naziv"/></td></tr>
+			<tr><th></th><td><a th:href="|Filmovi?zanrId=${zanr.id}|">filmovi</a></td></tr>
+			<tr><th></th><td><input type="submit" value="Izmeni"/></td></tr>
+		</table>
+	</form>
+	<form method="post" action="Zanrovi/Delete" th:if="${session.prijavljeniKorisnik != null and session.prijavljeniKorisnik.administrator}">
+		<input type="hidden" name="id" th:value="${zanr.id}">
+		<table class="forma">
+			<tr><th></th><td><input type="submit" value="Obriši"/></td></tr>
+		</table>
+	</form>
+	<table class="forma" th:unless="${session.prijavljeniKorisnik != null and session.prijavljeniKorisnik.administrator}">
+		<caption>Žanr</caption>
+		<tr><th>naziv:</th><td th:text=${zanr.naziv}>fantazija</td>
+		<tr><th></th><td><a th:href="|Filmovi?zanrId=${zanr.id}|">filmovi</a></td></tr>
+	</table>
+</body>
+</html>

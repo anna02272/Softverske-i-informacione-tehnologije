@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<base th:href="@{/}"><!-- popuni href atribut vrednošću context path-a -->
+	<link rel="stylesheet" type="text/css" href="css/StiloviKorisnik.css"/>
+	<script src="webjars/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/lokacijaJS.js"></script>
+	<title th:text="#{index.pageTitle}"></title>
+</head>
+<body>
+	<div style="float:right">
+		<span th:text="${#locale.language}"></span>
+		<span th:text="#{lang.change}"></span>:
+		<select id="locales" name="locales">
+		    <option value=""></option>
+		    <option value="en" th:text="#{lang.eng}" th:selected="${#strings.equals(#locale.language,'en')}"></option>
+		    <option value="sr" th:text="#{lang.sr}" th:selected="${#strings.equals(#locale.language,'sr')}"></option>
+		</select>
+	</div>
+	<h2 th:text="#{index.heading}"></h2>
+	<ul>
+		<li><a href="IzvoriPodataka" th:text="#{index.dataSources}"></a></li>
+		<li><a href="Literals" th:text="#{index.literals}"></a></li>
+		<li><a href="Operators" th:text="#{index.operators}"></a></li>
+		<li><a href="Objekti" th:text="#{index.objekti}"></a></li>
+		<li><a href="" th:text="#{index.index}"></a></li>
+		<li><a href="Internacionalizacija" th:text="#{index.internacionalizacija}"></a></li>
+		<li><a href="fragmenti" th:text="#{index.fragments}"></a></li>
+		<li><a href="raspored" th:text="#{index.layout}"></a></li>
+	</ul>
+	<table class="korisnik" th:if="${session.prijavljeniKorisnik != null}"><!-- prikaži HTML element ako uslov nije zadovoljen -->
+		<tr><th th:text="#{index.loggedAs}"></th><td><a th:href="|Korisnici/Details?korisnickoIme=${session.prijavljeniKorisnik.korisnickoIme}|" th:text="${session.prijavljeniKorisnik.korisnickoIme}"></a>.</td></tr><!-- popuni href atribut i sadžaj elementa vrednostima -->
+		<tr>
+			<td colspan="2">
+				<ul>
+					<li><a href="Korisnici/Logout" th:text="#{index.loggOut}"></a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<table class="korisnik" th:unless="${session.prijavljeniKorisnik != null}"><!-- prikaži HTML element ako je uslov zadovoljen -->
+		<tr><th th:text="#{index.notLogged}"></th></tr>
+		<tr>
+			<td>
+				<ul>
+					<li><a href="registracija.html" th:text="#{index.registration}"></a></li>
+					<li><a href="prijava.html" th:text="#{index.loggIn}"></a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<ul>
+		<li><a href="Zanrovi" th:text="#{index.genres}"></a></li>
+		<li><a href="Filmovi" th:text="#{index.movies}"></a></li>
+		<li><a href="Projekcije" th:text="#{index.projections}"></a></li>
+		<li th:if="${session.prijavljeniKorisnik != null and session.prijavljeniKorisnik.administrator}"><a href="Korisnici">korisnici</a></li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html th:replace="~{fragments/base.html :: layout(~{::title},~{::link},~{::centralniDiv})}" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/StiloviTabela.css"/>
+	<title>Filmovi</title>
+</head>
+<body>
+	<div th:fragment="centralniDiv">
+		<form method="get">
+			<table class="tabela">
+				<caption>Filmovi</caption>
+				<tr>
+					<th>r. br.</th>
+					<th>naziv</th>
+					<th>žanr</th>
+					<th>trajanje</th>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<th><input type="search" name="naziv" th:value="${param.naziv}?: null"/></th>
+					<th>
+						<select name="zanrId">
+							<option value="">odaberi</option>
+							<option th:each="itZanr: ${zanrovi}" th:value="${itZanr.id}" th:text="${itZanr.naziv}" th:selected="${#strings.equals(itZanr.id, param.zanrId)}"></option>
+						</select>
+					</th>
+					<th>
+						od:<input type="number" min="0" th:value="${param.trajanjeOd}?: '0'" name="trajanjeOd"/><br/>
+						do:<input type="number" min="0" th:value="${param.trajanjeDo}?: '240'" name="trajanjeDo"/>
+					</th>
+					<th><input type="submit" value="Pretraži"/></th>
+				</tr>
+				<tr th:each="itFilm, status: ${filmovi}">
+					<td class="broj" th:text="${status.index + 1}"></td>
+					<td><a th:href="|Filmovi/Details?id=${itFilm.id}|" th:text="${itFilm.naziv}"></a></td>
+					<td>
+						<ul>
+							<li th:each="itZanr: ${itFilm.zanrovi}"><a th:href="|Zanrovi/Details?id=${itZanr.id}|" th:text="${itZanr.naziv}"></a></li>
+						</ul>
+					</td>
+					<td class="broj" th:text="${itFilm.trajanje}"></td>
+					<td>
+						<a th:href="|Projekcije?filmId=${itFilm.id}|">projekcije</a>
+					</td>
+				</tr>
+			</table>
+		</form>
+		<ul>
+			<li th:if="${session.prijavljeniKorisnik != null and session.prijavljeniKorisnik.administrator}"><a href="Filmovi/Create">dodavanje filma</a></li>
+		</ul>
+	</div>
+</body>
+</html>
