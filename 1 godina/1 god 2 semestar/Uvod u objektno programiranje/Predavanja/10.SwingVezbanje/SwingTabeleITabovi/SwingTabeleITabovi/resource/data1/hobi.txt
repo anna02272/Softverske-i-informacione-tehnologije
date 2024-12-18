@@ -1,0 +1,8 @@
+pl|Plivanje|true
+tr|Trcanje|true
+mk|Planinarenje|true
+ko|Kosarka|true
+fu|Fudbal|true
+ve|Veslanje|true
+od|Odbojka|false
+ru|rukomet|true

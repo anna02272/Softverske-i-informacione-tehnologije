@@ -1,0 +1,3 @@
+001|2000.0|Disk 1|false|Izvodjac 1|Zanr 1
+002|3500.0|Disk 2|false|Izvodjac 2|Zanr 2
+003|400.0|Test disk|false|Test izvodjac|Test zanr

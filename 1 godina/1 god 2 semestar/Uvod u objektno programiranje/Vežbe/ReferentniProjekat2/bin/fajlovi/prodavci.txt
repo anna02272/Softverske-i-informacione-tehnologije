@@ -1,0 +1,6 @@
+Peta|Petrovic|1|petarp|12345|false
+Sneza|Simic|0|sneza|123451|false
+Test|Prodavac|0|test|test|true
+Mile|Milic|1|milem2|8877|false
+Nad|d|0|d|234|true
+na|na|0|hnm|dfgh|true

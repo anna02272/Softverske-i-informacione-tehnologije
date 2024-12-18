@@ -1,0 +1,54 @@
+package main;
+
+import java.time.LocalDate;
+
+import biblioteka.Bibl;
+import biblioteka.Knjiga;
+import enumeracije.EnumJezik;
+
+
+public class BibliotekaMain {
+		private static final String KNJIGE_FAJL = "knjige.txt";
+		private static final String BIBLIOTEKA_FAJL = "biblioteka.txt";
+		private static final String ADMINISTRATOR_FAJL = "administrator.txt";
+		private static final String BIBLIOTEKAR_FAJL = "bibliotekar.txt";
+		private static final String CLANBIBLIOTEKE_FAJL = "clanBiblioteke.txt";
+		private static final String IZNAJMLJIVANJEKNJIGE_FAJL = "iznajmljivanjeknjige.txt";
+		private static final String PRIMERAKKNJIGE_FAJL = "primerakKnjige.txt";
+		private static final String TIPCLANARINE_FAJL = "tipClanarine.txt";
+		private static final String ZANR_FAJL = "zanr.txt";
+	
+	
+	
+	public static void main(String[] args) {
+		Bibl biblioteka = new Bibl();
+		biblioteka.ucitajKnjige(KNJIGE_FAJL);
+	
+
+		System.out.println("PODACI UCITANI IZ DATOTEKA:");
+		System.out.println("----------------------------------------------");
+		ispisiSvePodatke(biblioteka);
+		System.out.println("----------------------------------------------");
+		
+		System.out.println("Dodavanje test podataka...");
+		Knjiga testKnjiga = new Knjiga("12dsjs", "Na Drini Cuprija", "Originalni naslov Knjige", "Ivo Andric", 
+				LocalDate.parse("1945-02-02") ,"opis nana", EnumJezik.SRPSKI, false, );
+		biblioteka.dodajKnjigu(testKnjiga);
+		
+	
+		
+		System.out.println("Snimanje dodanih podataka...");
+		biblioteka.snimiKnjige(KNJIGE_FAJL);
+	}
+	
+	public static void ispisiSvePodatke(Bibl biblioteka) {
+		for(Knjiga knjiga : biblioteka.getKnjige()) {
+			System.out.println(knjiga + "\n");
+		}
+		
+		
+	}
+
+	
+
+}

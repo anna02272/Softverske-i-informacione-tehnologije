@@ -1,0 +1,7 @@
+001|Aleksandar|Arsic|RS1|budz|od;ru;pl;|true
+002|Gvozden|Gvozdenovic|RS13|samofi|pl;tr;ko;|true
+003|Igor|Igorovic|RS5|budz|fu;|true
+004|Marko|Markovic|RS3|sufi|tr;fu;|true
+005|Petar|Petrovic|RS4|budz|;|true
+006|Toma|Tomic|RS2|samofi|;|false
+010|N|NN|RS14|stip|;|false

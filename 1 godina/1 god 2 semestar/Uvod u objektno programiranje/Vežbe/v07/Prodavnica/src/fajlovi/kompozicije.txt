@@ -1,0 +1,2 @@
+Test kompozicija|84|003|false
+Test kompozicija|84|003|false

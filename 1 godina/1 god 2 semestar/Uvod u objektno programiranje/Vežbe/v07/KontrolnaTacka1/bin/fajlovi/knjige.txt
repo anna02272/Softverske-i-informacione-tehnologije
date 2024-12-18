@@ -1,0 +1,2 @@
+001|500.0|Knjiga 1|false|Autor 1|50|false
+002|1500.0|Knjiga 2|false|Autor 2|150|true

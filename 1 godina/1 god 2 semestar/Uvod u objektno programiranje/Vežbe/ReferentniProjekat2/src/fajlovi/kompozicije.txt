@@ -1,0 +1,5 @@
+Kompozicija 1|120|001|false
+Kompozicija 2|200|001|false
+Kokmpozicija 4|650|001|false
+Kompozicija 3|90|002|false
+Test kompozicija|84|003|true

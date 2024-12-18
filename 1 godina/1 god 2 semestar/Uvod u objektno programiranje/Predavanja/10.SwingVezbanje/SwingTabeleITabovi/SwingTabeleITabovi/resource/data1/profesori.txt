@@ -1,0 +1,3 @@
+007|Marijan|Marijanovic|docent|22000.0|predavac|true
+008|Zivka|Zivanovic|redovni profesor|40000.0|predavac|false
+009|Mirko|Mirkovic|docent|15000.0|asistent|true

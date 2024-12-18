@@ -1,0 +1,2 @@
+Test|Prodavac|0|test|test|false
+Test|Prodavac|0|test|test|false

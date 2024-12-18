@@ -1,0 +1,7 @@
+001|3000.0|Disk 1|true|Izvodjac 1|zanr 1
+002|3500.0|Disk 2|true|Izvodjac 2|Zanr 2
+003|400.0|Test disk|true|Test izvodjac|Test zanr
+004|4000.0|Referentni disk|false|Nije Mile|Nisu Ojkace
+1|3453.0|dsf|true|efrd|ref
+234|234.0|dsf|true|wdefgdwefrg|sadf
+34|344.0|ttt|false|tt|43

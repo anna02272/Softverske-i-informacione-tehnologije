@@ -1,0 +1,6 @@
+001|Aleksandra|Arsic|Z|RS1|2002|Budzet|plivanje;atletika;|
+002|Gvozden|Gvozdenovic|M|RS13|2003|Budzet|trcanje;|
+003|Igor|Igorovic|M|RS5|2004|Samofinansiranje|;|
+007|Marko|Markovic|M|RS3|2005|Sufinansiranje|;|
+021|Petar|Petrovic|M|RS4|2006|Sufinansiranje|;|
+022|Toma|Tomic|M|RS2|2007|Sufinansiranje|;|

@@ -1,0 +1,103 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import enumeracije.EnumJezik;
+
+
+
+public void dodajKnjigu(Knjiga knjiga) {
+	this.knjige.add(knjiga);
+}
+
+public void obrisiKnjigu(Knjiga knjiga) {
+	this.knjige.remove(knjiga);
+}
+public Knjiga pronadjiKnjigu(String id) {
+	for (Knjiga knjiga : knjige) {
+		if(knjiga.getId().equals(id)) {
+			return knjiga;
+		}
+	}
+	return null;
+}
+public ArrayList<Knjiga> sveNeobrisaneKnjige() {
+	ArrayList<Knjiga> neobrisane = new ArrayList<Knjiga>();
+	for(Knjiga knjiga : knjige) {
+		if(!knjiga.isObrisan()) {
+			neobrisane.add(knjiga);
+		}
+	}
+	return neobrisane;
+}
+
+
+public void snimiKnjige(String Knjige) {
+	try {
+		File file = new File("src/fajlovi/knjige.txt");
+		String content = "";
+		for (Knjiga knjiga : knjige) {
+			
+			content += knjiga.getId() + "|" + knjiga.getNaslovKnjige() + "|"
+					+ knjiga.getOriginalniNaslovKnjige() + "|" + knjiga.getPisac() +
+					"|" + knjiga.getGodinaObjavljivanja() + "|" +
+					knjiga.getOpis() + "|" + knjiga.getJezik() + "|"
+					+ knjiga.isObrisan() + "\n";
+		}
+		
+		BufferedWriter writer = new BufferedWriter(new FileWriter(file));
+		writer.write(content);
+		writer.close();
+	} catch (IOException e) {
+		System.out.println("Greska prilikom snimanja knjiga.");
+	}
+}
+
+public void ucitajKnjige(ArrayList<ZanrKnjige> sviZanrovi) {
+	try {
+		File file = new File("src/fajlovi/knjige.txt");
+		BufferedReader reader = new BufferedReader(new FileReader(file));
+		String line;
+		while ((line = reader.readLine()) != null) {
+			String[] split = line.split("\\|");
+			
+			String id = split[0];
+			String naslovKnjige = split[1];
+			String originalniNaslovKnjige = split[2];
+			String pisac = split[3];
+			int godinaObjavljivanja = Integer.parseInt(split[4]);
+			String opis = split[5];
+			int jezikInt = Integer.parseInt(split[6]);
+			EnumJezik jezik = EnumJezik.values()[jezikInt];
+			boolean obrisan = Boolean.parseBoolean(split[7]);
+			ZanrKnjige zanr = null;
+		    for (ZanrKnjige z: sviZanrovi ) {
+		    	if (z.getId().equals(split[8])) zanr = z;
+		    }
+			
+			Knjiga knjiga = new Knjiga(id, naslovKnjige, originalniNaslovKnjige, pisac, godinaObjavljivanja,
+					opis, jezik, obrisan, zanr);
+			knjige.add(knjiga);
+		}
+		reader.close();
+	} catch (IOException e) {
+		System.out.println("Greska prilikom snimanja podataka o knjigama");
+		e.printStackTrace();
+	}
+}
+private static String pripremaZaUpis(ZanrKnjige zanr) {
+    return String.format("%s|%s|%s", zanr.getOpis(), zanr.getId(), zanr.getOznaka());
+}
+
+public static void upisiZanr(ZanrKnjige zanr) {
+    try {
+        BufferedWriter zanrFajl = new BufferedWriter(new FileWriter("src/data/zanr.txt"));
+        zanrFajl.write(pripremaZaUpis(zanr));
+        zanrFajl.close();
+
+    }catch(IOException e) { e.printStackTrace(); }
+}
+
+

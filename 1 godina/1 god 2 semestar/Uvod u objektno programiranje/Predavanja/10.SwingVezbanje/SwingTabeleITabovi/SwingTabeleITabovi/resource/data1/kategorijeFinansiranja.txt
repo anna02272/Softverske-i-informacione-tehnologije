@@ -1,0 +1,4 @@
+budz|Budzet|Kod ove kategorije drzava finasira skolovanje|null|true
+samofi|Samofinansiranje|Kod ove kategorije skolovanje pada na trosak studenta|null|true
+sufi|Sufinansiranje|Kod ove kategorije drzava delimicno finasira skolovanje|budz|true
+stip|Stipendiranje|Kod ove kategorije firma finasira skolovanje|null|false
