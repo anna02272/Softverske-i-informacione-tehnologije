@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "58efc231-8ba6-4d6f-81a3-e8d5a4005ca5",
+		"name": "NoSQL-SIT-HDFS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18191707"
+	},
+	"item": [
+		{
+			"name": "HDFS Storage",
+			"item": [
+				{
+					"name": "WriteFile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fileName",
+									"value": "hello_es.txt",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/write",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"write"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReadWrittenFile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fileName",
+									"value": "hello_es.txt",
+									"type": "text"
+								},
+								{
+									"key": "isCopied",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/read",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"read"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CopyFile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fileName",
+									"value": "hello.txt",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/copy",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"copy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReadCopiedFile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fileName",
+									"value": "hello.txt",
+									"type": "text"
+								},
+								{
+									"key": "isCopied",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/read",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"read"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WalkRootDirectory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/walk",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"walk"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

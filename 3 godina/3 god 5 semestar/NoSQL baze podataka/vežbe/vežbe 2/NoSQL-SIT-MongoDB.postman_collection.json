@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "58efc231-8ba6-4d6f-81a3-e8d5a4005ca5",
+		"name": "NoSQL-SIT-MongoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18191707"
+	},
+	"item": [
+		{
+			"name": "Mongo Document",
+			"item": [
+				{
+					"name": "GetAllPatients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetPatientById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/637789386269baf146df2cd7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"637789386269baf146df2cd7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetPatientsByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/filter?name=Pera",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"filter"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Pera"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreatePatient",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Zika\",\r\n    \"surname\": \"Zikic\",\r\n    \"phoneNumbers\": [\"broj\"],\r\n    \"address\": {\r\n        \"street\": \"Kralja Milana\",\r\n        \"city\": \"Novi Sad\",\r\n        \"country\": \"Srbija\"\r\n    },\r\n    \"anamnesis\": [\r\n        {\r\n            \"symptom\": \"simptom1\",\r\n            \"intensity\": \"mild\",\r\n            \"startDate\": \"2022-11-08T19:02:18.855Z\"\r\n        }\r\n    ],\r\n    \"therapy\": [\r\n        {\r\n            \"name\": \"lek3\",\r\n            \"price\": 200\r\n        },\r\n        {\r\n            \"name\": \"lek2\",\r\n            \"price\": 200\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PatchPatient",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"John\",\r\n    \"surname\": \"Smith\",\r\n    \"phoneNumbers\": [\"noviji\", \"novi\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/63778b51048bfd0ec4e2a437",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"63778b51048bfd0ec4e2a437"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddPhoneNumber",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\"hello broj\"",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/phone/636aa7c58015074c80153888",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"phone",
+								"636aa7c58015074c80153888"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletePatientById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/63778afc048bfd0ec4e2a436",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"63778afc048bfd0ec4e2a436"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePhoneNumber",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\"noviji broj\"",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/phone/63778b51048bfd0ec4e2a437",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"phone",
+								"63778b51048bfd0ec4e2a437"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetReceiptForPatient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/receipt/638cce86d6816438f9daf463",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"receipt",
+								"638cce86d6816438f9daf463"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetReportForAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/report",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"report"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

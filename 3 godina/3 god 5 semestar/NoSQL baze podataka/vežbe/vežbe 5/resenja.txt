@@ -1,0 +1,104 @@
+KREIRATI KOMANDE KOJE PRAVE TABELE IZ ZADATAKA!
+
+"Recept" za modelovanje Cassandra tabela:
+
+1. Definisati ime tabele
+2. Navesti sve potrebne kolone da bi sve informacije bile prikazane
+    -> OPREZ: Cassandra nema mogućnosti JOIN operacije, sve potrebne informacije se moraju čuvati u jednoj tabeli
+3. Odrediti ključ particije
+    -> BITNO: ključ particije definiše koji podaci će se čuvati zajedno
+    -> NAJBOLJE: dobavljati podatke samo iz jedne particije
+4. Odrediti ključeve za sortiranje
+5. Po potrebi, dopuniti primarni ključ kolonama tako da se očuva jedinstvenost
+6. Optimizacije
+    6.1. TIMEUUID
+        -> ukoliko se za jedan entitet vezuju dve kolone, jedna tipa UUID i druga tipa TIMESTAMP => spojiti ih u jednu tipa TIMEUUID
+    6.2. Bucketing
+        -> razmatranje da li neka particija može postati prevelika (> 100 000 redova ili > 100 MB)
+        -> ukoliko je to slučaj, odraditi deljenje particija -> bucketing
+        -> dodati još neku, smislenu, kolonu ključu particije
+
+=== Zadatak 1 ===
+
+- Kao kupac, želim da pretražujem sve proizvode koji pripadaju određenoj kategoriji u rastućem poretku cene
+1. proizvodi_by_kategorija
+2. proizvod_id proizvod_naziv proizvod_cena kategorija_naziv
+3. kategorija_naziv
+4. cena ASC
+5. primarni ključ = kategorija_naziv (ključ particije) + cena (ključ za sortiranje) + proizvod_id (radi jedinstvenosti)
+6. nema mesta za optimizacije
+
+- Kao kupac, želim da vidim istoriju svojih porudžbina počevši od najskorije
+1. poruzdbine_by_kupac
+2. porudzbina_id porudzbina_datum_vreme porudzbina_ukupna_cena kupac_id
+3. kupac_id
+4. porudzbina_datum_vreme DESC
+5. primarni ključ = kupac_id (ključ particije) + porudzbina_datum_vreme (ključ za sortiranje) + porudzbina_id (radi jedinstvenosti)
+6. -> 6.1. -> porudzbina ima i id i datum_vreme nastanka
+=> porudzbina_id_datum_vreme porudzbina_ukupna_cena kupac_id
+primarni ključ = kupac_id (ključ particije) + porudzbina_id_datum_vreme (ključ za sortiranje)
+
+- Kao kupac, želim da vidim istoriju svojih ocenjivanja proizvoda
+ocene_by_kupac
+ocena kupac_id proizvod_id proizvod_naziv
+KP = kupac_id
+SK = nemamo potrebu za sortiranjem
+PK = kupac_id (KP) + proizvod_id (radi jedinstvenosti)
+
+- Kao kupac, želim da vidim sve ocene za određeni proizvod
+ocene_by_proizvod
+ocena proizvod_id proizvod_naziv kupac_id
+KP = proizvod_id
+SK = nemamo potrebe za sortiranjem
+PK = proizvod_id + kupac_id (radi jedinstvenosti)
+
+=== Zadatak 2 ===
+
+- Kao korisnik, želim da vidim sve svoje objave
+objave_by_korisnik
+objava_id objava_datum_vreme objava_sadrzaj objava_naslov objava_id korisnicko_ime
+KP = korisnicko_ime
+SK = nije navedeno, ali ima smisla sortirati po objava_datum_vreme DESC
+PK = korisnicko_ime + objava_datum_vreme + objava_id (radi jedinstvenosti)
+optimizacije:
+    -> 6.1. TIMEUUID => objava_datum_vreme + objava_id
+objava_id_datum_vreme objava_sadrzaj objava_naslov korisnicko_ime
+KP = korisnicko_ime
+SK = objava_id_datum_vreme
+PK = korisnicko_ime + objava_id_datum_vreme
+
+- Kao korisnik, želim da vidim sve komentare vezane za objavu
+komentari_by_objava
+objava_id komentar_id komentar_sadrzaj komentar_datum_vreme
+optimizacije:
+    -> 6.1. TIMEUUID => komentar_id + komentar_datum_vreme
+objava_id komentar_id_datum_vreme komentar_sadrzaj
+KP = objava_id
+SK = nije navedeno, ali ima smisla sortirati po komentar_id_datum_vreme DESC
+PK = objava_id + komentar_id_datum_vreme
+
+=== Zadatak 3 ===
+
+- Kao korisnik, želim da vidim merenja vezana za jednu lokaciju
+merenja_by_lokacija
+merenje_id_datum_vreme temperatura vlaznost lokacija
+KP = lokacija
+SK = nije navedeno, ali ima smisla sortirati po merenje_id_datum_vreme DESC
+PK = lokacija + merenje_id_datum_vreme
+optimizacije:
+    -> 6.1. TIMEUUID => vec smo primenili
+    -> 6.2. BUCKETING => senzori proizvode puno merenja i može lako doći do prekoračenja optimalne particije
+    (2 puta * 1 sat * 24 sata * 30 dana = 86 400 za merenja u mesec dana OD JEDNOG SENZORA)
+        -> particije delimo po mesecima
+merenje_id_datum_vreme temperatura vlaznost lokacija mesec
+KP = lokacija + mesec
+SK = nije navedeno, ali ima smisla sortirati po merenje_id_datum_vreme DESC
+PK = (lokacija + mesec) + merenje_id_datum_vreme
+
+- Kao korisnik, želim da vidim merenja vezana za jedan senzor
+=> slicno kao prethodni
+merenje_by_senzor
+merenje_id_datum_vreme temperatura vlaznost senzor_id mesec
+KP = senzor_id + mesec
+SK = nije navedeno, ali ima smisla sortirati po merenje_id_datum_vreme DESC
+PK = (senzor_id + mesec) + merenje_id_datum_vreme

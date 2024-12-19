@@ -1,0 +1,64 @@
+*Na Linux sistemima, docker-compose
+*Na Windows sistemima, docker-compose ili docker compose
+
+**Za sve docker-compose komande je neophodno je pozicionirati se u direktorijum gde se nalazi docker-compose.yml datoteka
+
+# kreiranje slika na osnovu docker-compose.yml fajla
+docker-compose build
+
+# pokretanje kontejnera na osnovu docker-compose.yml fajla
+docker-compose up
+
+# zaustavljanje i uklanjanje kontejnere i mreze na osnovu docker-compose.yml fajla
+docker-compose down
+
+# kreiranje slike na osnovu Dockerfile koji se nalazi u trenutnom direktorijumu
+docker build --tag ime_slike .
+
+# pokretanje kontejnera sa mapiranjem portova na osnovu slike sa imenom 'ime_slike'
+docker run -p 8080:8080 --name ime_kontejnera ime_slike
+*ako ne prosledimo --name, bice kreirano nasumicno generisano ime
+Dodatni parametri:
+    -d ili --detach ako zelimo da ga pokrenemo u pozadini
+    -i ili --interactive ako zelimo da ga pokrenemo u interaktivnom rezimu
+
+# izlistavanje svih aktivnih kontejnera
+docker container ls
+ILI
+docker ps
+Dodatni parametri:
+    -a ili --all izlistava neaktivne kontejnere
+
+# gasenje kontejnera po imenu
+docker stop ime_kontejnera
+
+# brisenje kontejnera po imenu
+docker container rm ime_kontejnera
+ILI
+docker rm ime_kontejnera
+
+# brisenje svih neaktivnih kontejnera
+docker container prune
+
+# izlistavanje svih lokalno prisutnih docker slika
+docker image ls
+
+# brisenje slike po imenu
+docker image rm ime_slike
+ILI
+docker rmi ime_slike
+
+# brisenje svih nekorsicenih slika
+docker image prune
+
+# izlistavanje svih volumes
+docker volume ls
+
+# brisenje volume po imenu
+docker volume rm ime_volumea
+
+# brisenje svih nekorsicenih volumes
+docker volume prune
+
+# povezivanje na aktivan kontejner
+docker exec -it ime_kontejnera sh

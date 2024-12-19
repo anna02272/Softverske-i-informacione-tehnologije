@@ -1,0 +1,67 @@
+cURL sintaksa
+-X {tip_zahteva} - definise koji tip zahteva se salje
+-d {podaci} - definise sta ce biti prosledjeno u telu zahteva;
+moze se koristiti uz inline podatke ili mogu biti prosledjeni podaci u formi zasebnog fajla;
+ako su podaci kompleksni i sadrze mnogo specijalnih karaktera, preporuka je proslediti ih u formi zasebnog fajla
+-d '{"name": "Zika"}' - inline podaci
+-d "@data.json" - zaseban fajl
+
+GetAllPatients
+curl -X GET http://localhost:8080/
+
+GetPatientById
+curl -X GET http://localhost:8080/637789386269baf146df2cd7
+
+GetPatientsByName
+curl -X GET http://localhost:8080/filter?name=Pera
+
+CreatePatient
+curl -X POST http://localhost:8080/ -d '{
+    "name": "Zika",
+    "surname": "Zikic",
+    "phoneNumbers": ["broj"],
+    "address": {
+        "street": "Kralja Milana",
+        "city": "Novi Sad",
+        "country": "Srbija"
+    },
+    "anamnesis": [
+        {
+            "symptom": "simptom1",
+            "intensity": "mild",
+            "startDate": "2022-11-08T19:02:18.855Z"
+        }
+    ],
+    "therapy": [
+        {
+            "name": "lek3",
+            "price": 200
+        },
+        {
+            "name": "lek2",
+            "price": 200
+        }
+    ]
+}'
+
+PatchPatient
+curl -X PATCH http://localhost:8080/63778b51048bfd0ec4e2a437 -d '{
+    "name": "John",
+    "surname": "Smith",
+    "phoneNumbers": ["noviji", "novi"]
+}'
+
+AddPhoneNumber
+curl -X PATCH http://localhost:8080/phone/636aa7c58015074c80153888 -d '"hello broj"'
+
+DeletePatientById
+curl -X DELETE http://localhost:8080/63778afc048bfd0ec4e2a436
+
+UpdatePhoneNumber
+curl -X PATCH http://localhost:8080/phone/63778b51048bfd0ec4e2a437 -d '"noviji broj"'
+
+GetReceiptForPatient
+curl -X GET http://localhost:8080/receipt/638cce86d6816438f9daf463
+
+GetReportForAll
+curl -X GET http://localhost:8080/report

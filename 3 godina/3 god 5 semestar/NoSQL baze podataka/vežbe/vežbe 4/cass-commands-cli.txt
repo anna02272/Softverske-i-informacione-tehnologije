@@ -1,0 +1,90 @@
+keyspace student
+-----------------
+CREATE KEYSPACE IF NOT EXISTS student
+WITH replication = {
+'class' : 'SimpleStrategy',
+'replication_factor' : 1
+};
+
+switch keyspace
+----------------
+use student;
+
+describe keyspaces;
+describe tables;
+describe ocene_by_student;
+
+
+ispiti_by_student
+-----------------
+CREATE TABLE IF NOT EXISTS ispiti_by_student 
+(student_id UUID, ime text, prezime text, indeks text, ocena int, datum date, id UUID, predmet text, 
+PRIMARY KEY ((student_id), datum, ocena, predmet)) 
+WITH CLUSTERING ORDER BY (datum ASC, ocena DESC);
+
+ispiti_by_predmet
+-----------------
+CREATE TABLE IF NOT EXISTS ispiti_by_predmet
+(predmet_id UUID, indeks text, ocena int, datum_id TIMEUUID, naziv text, ime text, prezime text, 
+PRIMARY KEY ((predmet_id, datum_id), indeks)) 
+WITH CLUSTERING ORDER BY (indeks ASC);
+
+CRUD
+
+CREATE
+
+INSERT INTO ispiti_by_student (student_id, ime, prezime, indeks, ocena, datum, id, predmet) 
+VALUES (uuid(), 'pera', 'peric', 'sv12/2019', 10, '2022-03-05', uuid(), 'web');
+
+INSERT INTO ispiti_by_student (student_id, ime, prezime, indeks, ocena, datum, id, predmet) 
+VALUES (PERIN_UUID, 'pera', 'peric', 'sv12/2019', 7, '2022-05-29', uuid(), 'analiza');
+
+INSERT INTO ispiti_by_student (student_id, ime, prezime, indeks, ocena, datum, id, predmet) 
+VALUES (PERIN_UUID, 'pera', 'peric', 'sv12/2019', 9, '2022-05-29', uuid(), 'algebra');
+
+INSERT INTO ispiti_by_student (student_id, ime, prezime, indeks, ocena, datum, id, predmet) 
+VALUES (uuid(), 'mika', 'mikic', 'sv23/2019', 8, '2022-03-10', uuid(), 'analiza');
+
+INSERT INTO ispiti_by_student (student_id, ime, prezime, indeks, ocena, datum, id, predmet) 
+VALUES (MIKIN_UUID, 'mika', 'mikic', 'sv23/2019', 10, '2022-02-08', uuid(), 'web');
+
+// sta ce se desiti s obzirom kako smo definisali model?
+INSERT INTO ispiti_by_student (student_id, ime, prezime, indeks, ocena, datum, id, predmet) 
+VALUES (MIKIN_UUID, 'mika', 'mikic', 'sv23/2019', 6, '2022-02-08', uuid(), 'algebra');
+
+
+INSERT INTO ispiti_by_predmet (predmet_id, indeks, ocena, datum_id, naziv, ime, prezime) 
+VALUES (uuid(), 'sv12/2019', 10, now(), 'web', 'pera', 'peric');
+INSERT INTO ispiti_by_predmet (predmet_id, indeks, ocena, datum_id, naziv, ime, prezime) 
+VALUES (WEB_UUID, 'sv23/2019', 10, now(), 'web', 'mika', 'mikic');
+
+
+INSERT INTO ispiti_by_predmet (predmet_id, indeks, ocena, datum_id, naziv, ime, prezime) 
+VALUES (uuid(), 'sv12/2019', 9, now(), 'algebra', 'pera', 'peric');
+INSERT INTO ispiti_by_predmet (predmet_id, indeks, ocena, datum_id, naziv, ime, prezime) 
+VALUES (WEB_UUID, 'sv23/2019', 10, now(), 'web', 'mika', 'mikic');
+
+
+READ
+// Koliko cvorova cemo kontaktirati da dobijemo odgovor na sledeci upit?
+SELECT * FROM ispiti_by_student;
+SELECT * FROM ispiti_by_student WHERE student_id = PERIN_UUID;
+SELECT * FROM ispiti_by_student WHERE student_id = MIKIN_UUID;
+
+UPDATE
+UPDATE ispiti_by_student SET ime='radovan'
+WHERE student_id = PERA_UUID
+and datum = '2022-05-29' and ocena = 9;
+
+DELETE
+DELETE FROM ispiti_by_student
+WHERE id = PERA_UUID;
+
+(uvek brisite sto vise moguce,
+ako treba da obrisete celu particiju, obrisite je odjednom, nemojte jedan po jedan red,
+ako treba da obrisete celu tabelu, obrisite je odjednom, nemojte jednu po jednu particiju)
+Zasto? -> Cassandra zapravo posmatra delete kao update gde postavi takozvani tombstone na mesto reda,
+i tek kada bude zapisivala svoje radne fajlove (sstabele), tada ce zapravo obrisati podatak
+
+// optimizacija -> uuid + datum = timeuuid
+// optimizacija -> backeting -> u tabeli predmet prebaciti datum_id da bude partition key

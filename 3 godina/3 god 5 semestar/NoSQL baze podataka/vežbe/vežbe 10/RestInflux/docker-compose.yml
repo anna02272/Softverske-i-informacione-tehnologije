@@ -1,0 +1,54 @@
+version: "3.1"
+
+services:
+  #Our service.
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    container_name: "temp-server"
+    hostname: "temp-server"
+    #Mapping ports
+    ports:
+      # <port_on_local>:<port_in_machine>
+      - 8080:8080
+    #Will be accessible through os.Getenv("PORT")
+    environment:
+      - PORT=8080
+      # NoSQL: environment variable holding connection URI for Influx database
+      - INFLUX_DB_URL=http://influx:8086
+      - INFLUX_DB_TOKEN=EMhFG1sdYNTJgpFja1a8ifoH-Se2x6jRzPKV1Ds3uQWV2ZPURK0WVPxVSqw3akE13x8NwxDwt74HqsE6PQ1Oug==
+      - INFLUX_DB_ORG=ftn
+      - INFLUX_DB_BUCKET=timeseries
+    # NoSQL: Our service will try to connect to InfluxDB before it is up
+    # in order to avoid that problem, we specify that it depends on influx service
+    # which defines the order of starting the containers
+    # Additionaly we specify that influx service needs to pass a healthcheck
+    depends_on:
+      influx:
+        condition: service_healthy
+
+  # NoSQL: InfluxDB
+  influx:
+    image: influxdb:latest
+    ports:
+      - 8086:8086
+    healthcheck:
+      # Docker healtcheck - checks if database is "alive" and ready to accept connections
+      test: "curl -f http://influx:8086/ping"
+      interval: 5s
+      timeout: 10s
+      retries: 5
+    environment:
+      - DOCKER_INFLUXDB_INIT_MODE=setup
+      - DOCKER_INFLUXDB_INIT_USERNAME=admin
+      # must be at least 8 characters long
+      - DOCKER_INFLUXDB_INIT_PASSWORD=nosqladmin
+      - DOCKER_INFLUXDB_INIT_ORG=ftn
+      - DOCKER_INFLUXDB_INIT_BUCKET=timeseries
+    volumes:
+      - influx_store:/var/lib/influxdb2:rw
+
+volumes:
+  influx_store:
