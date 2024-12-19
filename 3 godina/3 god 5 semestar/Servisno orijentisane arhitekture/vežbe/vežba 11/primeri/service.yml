@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-first-service
+spec:
+  # the service will route requests to pods with these labels
+  selector:
+    app: app
+  ports:
+    # the port of the service
+  - port: 8000
+    # the port on each node where where we can send requests to the service
+    # they will be routed to service/my-first-service:8000 in our case
+    nodePort: 30000
+    # port of the selected pods where traffic will be routed
+    # we reference it by its name
+    targetPort: my-port
+    protocol: TCP
+    name: my-service-port
+  type: NodePort

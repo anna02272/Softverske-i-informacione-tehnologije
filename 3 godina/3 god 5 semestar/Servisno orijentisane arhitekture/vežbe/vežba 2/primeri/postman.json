@@ -1,0 +1,594 @@
+{
+	"info": {
+		"_postman_id": "2208be5f-2ed0-4257-a925-e84869c6daff",
+		"name": "soa-lab2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11907613"
+	},
+	"item": [
+		{
+			"name": "1. Monolith - Create pera",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Username\": \"pera\",\n    \"Password\": \"pera\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. Monolith - Log  in as pera",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Username\": \"pera\",\n    \"Password\": \"pera\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/auth",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. Monolith - Create post as pera",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "ec54a4f2-66dd-4b4f-bbcd-45e4cb9b9613",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Content\": \"moj prvi post\",\n    \"OwnerId\": \"ec54a4f2-66dd-4b4f-bbcd-45e4cb9b9613\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. Monolith - Create mika",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Username\": \"mika\",\n    \"Password\": \"mika\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5. Monolith - Create laza",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Username\": \"laza\",\n    \"Password\": \"laza\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6. Monolith - Connect pera and mika",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "ec54a4f2-66dd-4b4f-bbcd-45e4cb9b9613",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"SourceUserId\": \"ec54a4f2-66dd-4b4f-bbcd-45e4cb9b9613\",\n    \"TargetUserId\": \"4519cc43-37bf-4bb5-8a2d-4ecb4d52f168\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/connections",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"connections"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7. Monolith - Get mika's connections",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "42b3b285-69f7-4f5c-8d0a-89258878ccec",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/users/42b3b285-69f7-4f5c-8d0a-89258878ccec/connections",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"42b3b285-69f7-4f5c-8d0a-89258878ccec",
+						"connections"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8. Monolith - Like post OK",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "4519cc43-37bf-4bb5-8a2d-4ecb4d52f168",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"UserId\": \"4519cc43-37bf-4bb5-8a2d-4ecb4d52f168\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/posts/0b33fef9-b43d-472f-a7b5-346001d2b3f9/likes",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"posts",
+						"0b33fef9-b43d-472f-a7b5-346001d2b3f9",
+						"likes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9. Monolith - Like post ERROR",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "62d911ec-88ba-4b4a-918d-47b30da7910b",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"UserId\": \"62d911ec-88ba-4b4a-918d-47b30da7910b\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/posts/28cdf8c3-ff17-4cb6-a268-a084eb464c27/likes",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"posts",
+						"28cdf8c3-ff17-4cb6-a268-a084eb464c27",
+						"likes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10. Monolith - Get feed for mika",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "4519cc43-37bf-4bb5-8a2d-4ecb4d52f168",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/users/4519cc43-37bf-4bb5-8a2d-4ecb4d52f168/homefeed",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"4519cc43-37bf-4bb5-8a2d-4ecb4d52f168",
+						"homefeed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "11. Monolith - Get feed for laza",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "50e4fa37-33b1-4cc9-8cac-9a78b45926cf",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/users/50e4fa37-33b1-4cc9-8cac-9a78b45926cf/homefeed",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"50e4fa37-33b1-4cc9-8cac-9a78b45926cf",
+						"homefeed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "12. Microservices - Create post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "c6e534bc-22be-4cbe-b3d7-22e13bfe2c73",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Content\": \"moj drugi post\",\n    \"OwnerId\": \"c6e534bc-22be-4cbe-b3d7-22e13bfe2c73\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8002/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "13. Microservices - Connect users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "c6e534bc-22be-4cbe-b3d7-22e13bfe2c73",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"SourceUserId\": \"c6e534bc-22be-4cbe-b3d7-22e13bfe2c73\",\n    \"TargetUserId\": \"fcb7c0d5-7e24-4c18-8501-a8433394772b\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8001/connections",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"connections"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "14. Microservices - Get pera's connections",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "c6e534bc-22be-4cbe-b3d7-22e13bfe2c73",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8001/users/c6e534bc-22be-4cbe-b3d7-22e13bfe2c73/connections",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"users",
+						"c6e534bc-22be-4cbe-b3d7-22e13bfe2c73",
+						"connections"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "15. Microservices - Like post OK",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "fcb7c0d5-7e24-4c18-8501-a8433394772b",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"UserId\": \"fcb7c0d5-7e24-4c18-8501-a8433394772b\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8002/posts/bdf363b7-f86e-4756-bed4-08cd5530a4d6/likes",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"posts",
+						"bdf363b7-f86e-4756-bed4-08cd5530a4d6",
+						"likes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "16. Microservices - Like post ERROR",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "c35d7415-2920-446b-901e-bebfec1eadc1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"UserId\": \"c35d7415-2920-446b-901e-bebfec1eadc1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8002/posts/bdf363b7-f86e-4756-bed4-08cd5530a4d6/likes",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"posts",
+						"bdf363b7-f86e-4756-bed4-08cd5530a4d6",
+						"likes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "17. Microservices - Get feed for mika",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "fcb7c0d5-7e24-4c18-8501-a8433394772b",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8002/users/fcb7c0d5-7e24-4c18-8501-a8433394772b/homefeed",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"users",
+						"fcb7c0d5-7e24-4c18-8501-a8433394772b",
+						"homefeed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "18. Microservices - Get feed for laza",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "c35d7415-2920-446b-901e-bebfec1eadc1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8002/users/c35d7415-2920-446b-901e-bebfec1eadc1/homefeed",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"users",
+						"c35d7415-2920-446b-901e-bebfec1eadc1",
+						"homefeed"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

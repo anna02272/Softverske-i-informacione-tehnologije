@@ -1,0 +1,79 @@
+version: "3.8"
+
+services:
+
+  query_service:
+    image: query_service
+    container_name: query_service
+    hostname: ${QUERY_SERVICE_HOST}
+    build:
+      context: .
+      dockerfile: ./query/Dockerfile
+    restart: always
+    ports:
+      - ${QUERY_SERVICE_PORT}:${QUERY_SERVICE_PORT}
+    environment:
+      PORT: ${QUERY_SERVICE_PORT}
+      ESDB_USER: ${ESDB_USER}
+      ESDB_PASS: ${ESDB_PASS}
+      ESDB_HOST: ${ESDB_HOST}
+      ESDB_PORT: ${ESDB_PORT}
+      ESDB_GROUP: ${ESDB_GROUP}
+    depends_on:
+      - esdb
+    networks:
+      - network
+
+  command_service:
+    image: command_service
+    container_name: command_service
+    hostname: ${COMMAND_SERVICE_HOST}
+    build:
+      context: .
+      dockerfile: ./command/Dockerfile
+    restart: always
+    ports:
+      - ${COMMAND_SERVICE_PORT}:${COMMAND_SERVICE_PORT}
+    environment:
+      PORT: ${COMMAND_SERVICE_PORT}
+      QUERY_SERVICE_HOST: ${QUERY_SERVICE_HOST}
+      QUERY_SERVICE_PORT: ${QUERY_SERVICE_PORT}
+      ESDB_USER: ${ESDB_USER}
+      ESDB_PASS: ${ESDB_PASS}
+      ESDB_HOST: ${ESDB_HOST}
+      ESDB_PORT: ${ESDB_PORT}
+    depends_on:
+      - esdb
+    networks:
+      - network
+
+  esdb:
+    image: eventstore/eventstore:21.10.8-buster-slim
+    hostname: ${ESDB_HOST}
+    environment:
+      - EVENTSTORE_CLUSTER_SIZE=1
+      - EVENTSTORE_EXT_TCP_PORT=${ESDB_UI_PORT}
+      - EVENTSTORE_HTTP_PORT=${ESDB_PORT}
+      - EVENTSTORE_INSECURE=true
+      - EVENTSTORE_ENABLE_EXTERNAL_TCP=true
+      - EVENTSTORE_ENABLE_ATOM_PUB_OVER_HTTP=true
+    ports:
+      - ${ESDB_PORT}:${ESDB_PORT}
+      - ${ESDB_UI_PORT}:${ESDB_UI_PORT}
+#    volumes:
+#      - type: volume
+#        source: eventstore-volume-data
+#        target: /var/lib/eventstore
+#      - type: volume
+#        source: eventstore-volume-logs
+#        target: /var/log/eventstore
+    networks:
+      - network
+
+#volumes:
+#  eventstore-volume-data:
+#  eventstore-volume-logs:
+
+networks:
+  network:
+    driver: bridge

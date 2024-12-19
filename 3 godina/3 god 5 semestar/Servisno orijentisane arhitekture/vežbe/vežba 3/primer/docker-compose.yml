@@ -1,0 +1,84 @@
+version: "3.8"
+
+services:
+
+  posts-service:
+    image: posts-service
+    hostname: ${POSTS_SERVICE_HOST}
+    build:
+      context: ./posts-service/
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      HOST: ${POSTS_SERVICE_HOST}
+      PORT: ${POSTS_SERVICE_PORT}
+      DB_HOST: ${POSTS_DB_HOST}
+      DB_PORT: ${POSTS_DB_PORT}
+      DB_USER: ${POSTS_DB_USER}
+      DB_PASS: ${POSTS_DB_PASS}
+      DB_NAME: ${POSTS_DB_NAME}
+      CONNECTIONS_SERVICE_HOST: ${CONNECTIONS_SERVICE_HOST}
+      CONNECTIONS_SERVICE_PORT: ${CONNECTIONS_SERVICE_PORT}
+    depends_on:
+      - posts-db
+    networks:
+      - network
+
+  connections-service:
+    image: connections-service
+    hostname: ${CONNECTIONS_SERVICE_HOST}
+    build:
+      context: ./connections-service/
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      HOST: ${CONNECTIONS_SERVICE_HOST}
+      PORT: ${CONNECTIONS_SERVICE_PORT}
+      DB_HOST: ${CONNECTIONS_DB_HOST}
+      DB_PORT: ${CONNECTIONS_DB_PORT}
+      DB_USER: ${CONNECTIONS_DB_USER}
+      DB_PASS: ${CONNECTIONS_DB_PASS}
+      DB_NAME: ${CONNECTIONS_DB_NAME}
+    depends_on:
+      - connections-db
+    networks:
+      - network
+
+  api_gateway:
+    build:
+      context: ./api-gateway/
+      dockerfile: Dockerfile
+    container_name: api-gateway
+    restart: on-failure
+    ports:
+      - ${GATEWAY_PORT}:${GATEWAY_PORT}
+    networks:
+      - network
+
+  posts-db:
+    image: postgres
+    container_name: posts-db
+    hostname: ${POSTS_DB_HOST}
+    restart: on-failure
+    environment:
+      POSTGRES_USER: ${POSTS_DB_USER}
+      POSTGRES_PASSWORD: ${POSTS_DB_PASS}
+      POSTGRES_DB: ${POSTS_DB_NAME}
+    networks:
+      - network
+
+  connections-db:
+    image: postgres
+    container_name: connections-db
+    hostname: ${CONNECTIONS_DB_HOST}
+    restart: on-failure
+    environment:
+      POSTGRES_USER: ${CONNECTIONS_DB_USER}
+      POSTGRES_PASSWORD: ${CONNECTIONS_DB_PASS}
+      POSTGRES_DB: ${CONNECTIONS_DB_NAME}
+    networks:
+      - network
+
+networks:
+  network:
+    driver: bridge

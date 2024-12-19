@@ -1,0 +1,70 @@
+version: "3.8"
+
+services:
+
+  ordering_service:
+    image: ordering_service
+    container_name: ordering_service
+    hostname: ordering_service
+    build:
+      context: ./ordering-service/
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      ORDERING_SERVICE_ADDRESS: ${ORDERING_SERVICE_ADDRESS}
+      JAEGER_ADDRESS: ${JAEGER_ADDRESS}
+      CATALOGUE_SERVICE_ADDRESS: http://catalogue_service:8000/
+    depends_on:
+      - jaeger
+    networks:
+      - network
+
+  catalogue_service:
+    image: catalogue_service
+    container_name: catalogue_service
+    hostname: catalogue_service
+    build:
+      context: ./catalogue-service/
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      CATALOGUE_SERVICE_ADDRESS: ${CATALOGUE_SERVICE_ADDRESS}
+      JAEGER_ADDRESS: ${JAEGER_ADDRESS}
+    depends_on:
+      - jaeger
+    networks:
+      - network
+
+  api_gateway:
+    build:
+      context: ./api_gateway/
+      dockerfile: Dockerfile
+    container_name: api_gateway
+    restart: on-failure
+    ports:
+      - "8000:8000"
+    depends_on:
+      - catalogue_service
+      - ordering_service
+    networks:
+      - network
+
+  jaeger:
+    image: jaegertracing/all-in-one:latest
+    ports:
+      - "6831:6831/udp"
+      - "16686:16686"
+    networks:
+      - network
+
+  collector:
+    image: otel/opentelemetry-collector:0.69.0
+    command: [ "--config=/etc/otel-collector-config.yaml" ]
+    volumes:
+      - ./api_gateway/otel-collector-config.yaml:/etc/otel-collector-config.yaml
+    networks:
+      - network
+
+networks:
+  network:
+    driver: bridge

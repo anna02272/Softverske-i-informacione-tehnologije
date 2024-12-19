@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "ddc4a5c9-6cfa-4986-84e0-2cdf7577bbf8",
+		"name": "soa-lab10",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11907613"
+	},
+	"item": [
+		{
+			"name": "create pera's account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"HolderName\": \"pera\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/accounts",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create mika's account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"HolderName\": \"mika\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/accounts",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get accounts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8001/accounts",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "make a payment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"PayerAccountNumber\": \"9d35d12c-9c7e-4db2-bbbc-3e2b14b75bd8\",\n\t\"PayeeAccountNumber\": \"3d355245-95de-4660-9786-71a4fc362415\",\n\t\"Amount\": 100\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/payments",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"payments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get accounts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8001/accounts",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "make a payment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"PayerAccountNumber\": \"9d35d12c-9c7e-4db2-bbbc-3e2b14b75bd8\",\n\t\"PayeeAccountNumber\": \"3d355245-95de-4660-9786-71a4fc362415\",\n\t\"Amount\": 100\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/payments",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"payments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get accounts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8001/accounts",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

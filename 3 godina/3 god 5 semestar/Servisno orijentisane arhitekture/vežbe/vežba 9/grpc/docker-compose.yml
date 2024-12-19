@@ -1,0 +1,51 @@
+version: "3.8"
+
+services:
+
+  greeter_service:
+    image: greeter_service
+    container_name: greeter_service
+    hostname: greeter_service
+    build:
+      context: ./greeter-service/
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      GREETER_SERVICE_ADDRESS: ${GREETER_SERVICE_ADDRESS}
+      JAEGER_ADDRESS: ${JAEGER_ADDRESS}
+    depends_on:
+      - jaeger
+    networks:
+      - network
+
+  api_gateway:
+    image: api_gateway
+    container_name: api_gateway
+    hostname: api_gateway
+    build:
+      context: ./api-gateway/
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      GREETER_SERVICE_ADDRESS: greeter_service:8000
+      GATEWAY_ADDRESS: ${GATEWAY_ADDRESS}
+      JAEGER_ADDRESS: ${JAEGER_ADDRESS}
+    depends_on:
+      - jaeger
+      - greeter_service
+    networks:
+      - network
+    ports:
+      - "8000:8000"
+
+  jaeger:
+    image: jaegertracing/all-in-one:latest
+    ports:
+      - "6831:6831/udp"
+      - "16686:16686"
+    networks:
+      - network
+
+networks:
+  network:
+    driver: bridge

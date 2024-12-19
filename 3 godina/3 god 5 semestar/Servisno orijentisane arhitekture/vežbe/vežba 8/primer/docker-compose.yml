@@ -1,0 +1,58 @@
+version: '3.1'
+
+services:
+  news-aggregator:
+    build:
+      context: ./news-aggregator
+      dockerfile: Dockerfile
+    restart: always
+    container_name: 'news-aggregator'
+    hostname: 'news-aggregator'
+    ports:
+      # <port_on_local>:<port_in_machine>
+      - "8000:8000"
+    networks:
+      - net
+
+  bbc:
+    build:
+      context: ./bbc
+      dockerfile: Dockerfile
+    restart: always
+    container_name: 'bbc'
+    hostname: 'bbc'
+    ports:
+      # <port_on_local>:<port_in_machine>
+      - "8001:8000"
+    networks:
+      - net
+
+  cnn:
+    build:
+      context: ./cnn
+      dockerfile: Dockerfile
+    restart: always
+    container_name: 'cnn'
+    hostname: 'cnn'
+    ports:
+      # <port_on_local>:<port_in_machine>
+      - "8002:8000"
+    networks:
+      - net
+
+  nyt:
+    build:
+      context: ./nyt
+      dockerfile: Dockerfile
+    restart: always
+    container_name: 'nyt'
+    hostname: 'nyt'
+    ports:
+      # <port_on_local>:<port_in_machine>
+      - "8003:8000"
+    networks:
+      - net
+
+networks:
+  net:
+    driver: bridge

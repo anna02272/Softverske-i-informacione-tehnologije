@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "cc60aca5-117c-4365-a376-7f55c4c04af7",
+		"name": "soa-lab9",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11907613"
+	},
+	"item": [
+		{
+			"name": "REST - get order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/ordering/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"ordering",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gRPC - greet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"pera\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

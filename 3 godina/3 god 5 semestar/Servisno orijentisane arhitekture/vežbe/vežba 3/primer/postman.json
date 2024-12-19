@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "b07c282d-6b4a-46ed-bb00-be34828320be",
+		"name": "soa-lab3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11907613"
+	},
+	"item": [
+		{
+			"name": "Create post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "c6e534bc-22be-4cbe-b3d7-22e13bfe2c73",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Content\": \"moj drugi post\",\n    \"OwnerId\": \"c6e534bc-22be-4cbe-b3d7-22e13bfe2c73\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/posts/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Connect users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "c6e534bc-22be-4cbe-b3d7-22e13bfe2c73",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"SourceUserId\": \"c6e534bc-22be-4cbe-b3d7-22e13bfe2c73\",\n    \"TargetUserId\": \"fcb7c0d5-7e24-4c18-8501-a8433394772b\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/connections/connections",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"connections",
+						"connections"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get pera's connections",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "c6e534bc-22be-4cbe-b3d7-22e13bfe2c73",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/connections/users/c6e534bc-22be-4cbe-b3d7-22e13bfe2c73/connections",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"connections",
+						"users",
+						"c6e534bc-22be-4cbe-b3d7-22e13bfe2c73",
+						"connections"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Like post OK",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "fcb7c0d5-7e24-4c18-8501-a8433394772b",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"UserId\": \"fcb7c0d5-7e24-4c18-8501-a8433394772b\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/posts/posts/c3648695-5cd3-4166-9693-c037b0ac9871/likes",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						"posts",
+						"c3648695-5cd3-4166-9693-c037b0ac9871",
+						"likes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Like post ERROR",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "c35d7415-2920-446b-901e-bebfec1eadc1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"UserId\": \"c35d7415-2920-446b-901e-bebfec1eadc1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/posts/posts/c3648695-5cd3-4166-9693-c037b0ac9871/likes",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						"posts",
+						"c3648695-5cd3-4166-9693-c037b0ac9871",
+						"likes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get feed for mika",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "fcb7c0d5-7e24-4c18-8501-a8433394772b",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/posts/users/fcb7c0d5-7e24-4c18-8501-a8433394772b/homefeed",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						"users",
+						"fcb7c0d5-7e24-4c18-8501-a8433394772b",
+						"homefeed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get feed for laza",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "c35d7415-2920-446b-901e-bebfec1eadc1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/posts/users/c35d7415-2920-446b-901e-bebfec1eadc1/homefeed",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						"users",
+						"c35d7415-2920-446b-901e-bebfec1eadc1",
+						"homefeed"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

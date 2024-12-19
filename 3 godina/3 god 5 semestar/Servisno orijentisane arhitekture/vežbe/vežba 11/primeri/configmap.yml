@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: db-config
+data:
+  # what happens if we update config map values:
+  # 1. config map consumed through env variables - pods won't see updates without a restart
+  # 2. config map consumed through volumes - pods will see updates without a restart
+  # NOTE: updates will be visible in the mounted volume after the kubelet sync period (default is 1 minute)
+  db.name: "test-db"

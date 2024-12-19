@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-first-deployment
+  labels:
+    app: app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: app
+  template:
+    metadata:
+      labels:
+        app: app
+    spec:
+      containers:
+      - name: k8s-app
+        image: docker.io/library/k8s-app:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8000
+          name: my-port
+        volumeMounts:
+        - name: config-volume
+          # container can read config files on this path
+          mountPath: /etc/config
+      volumes:
+        - name: config-volume
+          configMap:
+            # Name of the ConfigMap containing the files you want to add to the container
+            name: db-config
+            # Every key from the ConfigMap will be a file with its name set to key
+            # while values will be stored inside the files

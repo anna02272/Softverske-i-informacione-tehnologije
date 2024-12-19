@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-first-deployment
+  # # labels we can use to select this deployment
+  labels:
+    app: app
+spec:
+  replicas: 3
+  selector:
+    # pods matching these labels will be a part of this deployment
+    matchLabels:
+      app: app
+  template:
+    metadata:
+      # labels we can use to select this pod
+      labels:
+        app: app
+    spec:
+      containers:
+      - name: k8s-app
+        image: docker.io/library/k8s-app:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8000
+          # we can reference the port by this name
+          name: my-port

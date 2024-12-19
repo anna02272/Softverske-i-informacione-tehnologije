@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "c8b77b40-2bef-4724-ab8b-ad1df4b83dd3",
+		"name": "soa-lab8",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11907613"
+	},
+	"item": [
+		{
+			"name": "get news",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/articles?query=crown",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"articles"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "crown"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get news with timeout in cnn",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Timeout",
+						"value": "1500",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/articles?query=crown",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"articles"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "crown"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get news with timeout in nyt",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Timeout",
+						"value": "2500",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/articles?query=crown",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"articles"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "crown"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,170 @@
+# config map that stores mongo username, password and db name
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongo-creds
+data:
+  username: "user"
+  password: "pass"
+  dbname: "test-db"
+---
+# persistent volume
+# we chunk and reserve available disc space with persistent volumes
+# a persistent volume can be claimed by PersistentVolumeClaim resources
+# and only after that can it be used in pods
+# pv and pvc can be bound only if the requested space is smaller or equal
+# to the available space of the pv
+# bindings are ono-to one, meaning only one claim can be made per pv at a certain point
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: mongo-data
+spec:
+  accessModes:
+    # the volume can be mounted as read-write by a single node
+    - ReadWriteOnce
+  capacity:
+    # we reserved one gb of disc from the minikube vm node
+    storage: 1Gi
+  hostPath:
+    # root path for the volume in the minikube vm node
+    path: /data/mongo
+  storageClassName: standard
+---
+# persistent volume claim
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc
+spec:
+  accessModes:
+    - ReadWriteOnce 
+  volumeName: mongo-data
+  resources:
+    requests:
+      storage: 1Gi
+---
+# mongo deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: mongo
+  name: mongo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongo
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: mongo
+    spec:
+      containers:
+      - image: mongo
+        name: mongo
+        args: ["--dbpath","/data/db"]
+        env:
+        - name: MONGO_INITDB_ROOT_USERNAME
+          valueFrom:
+            configMapKeyRef:
+              name: mongo-creds
+              key: username
+        - name: MONGO_INITDB_ROOT_PASSWORD
+          valueFrom:
+            configMapKeyRef:
+              name: mongo-creds
+              key: password
+        volumeMounts:
+        - name: "mongo-data-dir"
+          # where the pv is 'visible' inside the container
+          mountPath: "/data/db"
+      volumes:
+      - name: "mongo-data-dir"
+        # we allow a pod to use a pv by referring to some pvc
+        # for a pv to be available to the pod, it has to be
+        # bound to the specified pvc
+        persistentVolumeClaim:
+          claimName: "pvc"
+---
+# service for accessing the mongo deployment
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: mongo
+  name: mongo-service
+spec:
+  ports:
+  - port: 27017
+    protocol: TCP
+    targetPort: 27017
+    nodePort: 32000
+    name: mongo-service-port
+  selector:
+    app: mongo
+  type: NodePort
+---
+# k8s-app deployment with mongo config injected through env vars
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-first-deployment
+  labels:
+    app: app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: app
+  template:
+    metadata:
+      labels:
+        app: app
+    spec:
+      containers:
+      - name: k8s-app
+        image: docker.io/library/k8s-app:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8000
+          name: my-port
+        env:
+        # Define the environment variable
+        - name: DB_NAME
+          valueFrom:
+            configMapKeyRef:
+              name: mongo-creds
+              key: dbname
+        - name: DB_USER
+          valueFrom:
+            configMapKeyRef:
+              name: mongo-creds
+              key: username
+        - name: DB_PASS
+          valueFrom:
+            configMapKeyRef:
+              name: mongo-creds
+              key: password
+        - name: DB_HOST
+          value: "mongo-service"
+        - name: DB_PORT
+          value: "27017"
+---
+# service for our k8s-app deployment
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-first-service
+spec:
+  ports:
+  - port: 8000
+    nodePort: 30000
+    targetPort: my-port
+    protocol: TCP
+    name: my-service-port
+  selector:
+    app: app
+  type: NodePort

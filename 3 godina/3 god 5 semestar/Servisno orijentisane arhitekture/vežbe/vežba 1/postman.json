@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "27a0341d-17e8-4cb5-a4ed-742e62dab6d8",
+		"name": "soa-lab1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11907613"
+	},
+	"item": [
+		{
+			"name": "get all active",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all active + deleted",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"name\": \"Latte\",\n    \"description\": \"Frothy milky coffee\",\n    \"price\": 2.45,\n    \"sku\": \"abc-abc-abc\",\n    \"createdOn\": \"2023-10-08 17:58:33.433664681 +0000 UTC\",\n    \"updatedOn\": \"2023-10-08 17:58:33.433667684 +0000 UTC\",\n    \"deletedOn\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": 3,\n        \"name\": \"Latte\",\n        \"description\": \"Frothy milky coffee\",\n        \"price\": 100.50,\n        \"sku\": \"abc-abc-abc\",\n        \"createdOn\": \"2023-10-08 17:58:33.433664681 +0000 UTC\",\n        \"updatedOn\": \"2023-10-08 17:58:33.433667684 +0000 UTC\",\n        \"deletedOn\": \"\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

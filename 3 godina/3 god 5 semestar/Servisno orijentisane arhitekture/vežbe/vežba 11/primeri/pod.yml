@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  # pod name
+  name: my-first-pod
+  # labels we can use to select this pod
+  labels:
+    app: app
+spec:
+  # container spec
+  containers:
+      # name
+    - name: k8s-ap
+      # image name
+      image: docker.io/library/k8s-app:latest
+      # if we want to run locally built images, we need to set imagePullPolicy to Never
+      # for this to work, the image must be built in advance and image name specified in
+      # this file has to match the name of the built image
+      # also, if you're using minikube, you first have to load the image with the command:
+      #   minikube image load {image-name}
+      imagePullPolicy: Never
+      ports:
+        - containerPort: 8000

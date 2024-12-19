@@ -1,0 +1,266 @@
+{
+	"info": {
+		"_postman_id": "ea9160fe-56ce-4a62-bf0c-7689967f31ac",
+		"name": "soa-lab6",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11907613"
+	},
+	"item": [
+		{
+			"name": "AC - Create new order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Order\": {\n        \"Id\": \"\",\n    \"CreatedAt\": \"2023-11-12T18:26:59.326Z\",\n    \"Items\": [\n        {\n            \"Product\": {\n                \"Id\": \"2\",\n                \"Color\": {\n                    \"Code\": \"G\"\n                }\n            },\n            \"Quantity\": 3\n        }\n    ]\n    },\n    \"ShippingAddress\": \"Adresa 123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/ordering/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"ordering",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AC - Get all orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/ordering/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"ordering",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AC - Get shipping info for all orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/shipping/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"shipping",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AC - Get inventory status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/inventory/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"inventory",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AC - Get order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/ordering/6360ed69e504b6e93f964228",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"ordering",
+						"6360ed69e504b6e93f964228"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AC - Get order details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/ordering/6360ed69e504b6e93f964228/details",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"ordering",
+						"6360ed69e504b6e93f964228",
+						"details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CQRS - Get all profiles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CQRS - Get homepage view for all profiles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/pageview",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"pageview"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CQRS - pera starts following mika",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Follower\": {\n        \"Id\": \"1\"\n    },\n    \"Follow\": {\n        \"Id\": \"2\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8001/",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CQRS - Get homepage view for all profiles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/pageview",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"pageview"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CQRS - Update pera's name",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Id\": \"1\",\n    \"Name\": \"jova jovic\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CQRS - Get homepage view for all profiles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/pageview",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"pageview"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

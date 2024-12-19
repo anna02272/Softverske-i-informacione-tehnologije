@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "70d8d62c-fee0-43ca-850e-0a628b1f56eb",
+		"name": "soa-lab7",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11907613"
+	},
+	"item": [
+		{
+			"name": "Get all orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/order",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get shipping info for all orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/shipping/order",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"shipping",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get inventory status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/inventory",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"inventory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"items\": [\n        {\n            \"product\": {\n                \"id\": \"623b0cc3a34d25d8567f9f82\",\n                \"color\": {\n                    \"code\": \"R\"\n                }\n            },\n            \"quantity\": 3\n        }\n    ],\n    \"address\": \"Adresa 123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/order",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/order/65578b4d2a648a3d919b3e0c",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"order",
+						"65578b4d2a648a3d919b3e0c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/order",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get shipping info for all orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/shipping/order",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"shipping",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get inventory status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/inventory",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"inventory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new order - fail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"items\": [\n        {\n            \"product\": {\n                \"id\": \"623b0cc3a34d25d8567f9f82\",\n                \"color\": {\n                    \"code\": \"R\"\n                }\n            },\n            \"quantity\": 15\n        }\n    ],\n    \"address\": \"Adresa 123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/order",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/order",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get inventory status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/inventory",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"inventory"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

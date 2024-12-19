@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-first-deployment
+  labels:
+    app: app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: app
+  template:
+    metadata:
+      labels:
+        app: app
+    spec:
+      containers:
+      - name: k8s-app
+        image: docker.io/library/k8s-app:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8000
+          name: my-port
+        env:
+        # Define the environment variable
+        - name: DB_NAME
+          valueFrom:
+            configMapKeyRef:
+              # ConfigMap containing the value you want to assign to DB_NAME
+              name: db-config
+              # Key associated with the value inside the db-config ConfigMap
+              key: db.name
