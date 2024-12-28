@@ -1,0 +1,6 @@
+go test -v ./...
+
+git commit, i git push na main ili master remote granu
+
+docker compose pull app
+docker compose up
