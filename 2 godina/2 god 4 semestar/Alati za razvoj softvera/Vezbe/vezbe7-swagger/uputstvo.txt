@@ -1,9 +1,0 @@
-1 - instalirati SwaggerUI pokretanjem instalacione skripte
-2 - pozicionirati se u root direktorijum projekta
-3 - pokrenuti: swagger generate spec -o ./swagger.yaml
-	- alat ce kreirati swagger.yaml fajl
-4 - pokrenuti: swagger validate swagger.yaml
-	- (nije obavezno da bi radilo al daje dobar ispis ako je nesto pogresno konfigurisano u komentarima sto je cest slucaj)
-5 - pokrenuti server komandom: go run . (ili kompajlirati prvo pa pokrenuti, ne znam kako ko vise voli :) )
-
-*Za sva dodatna pitanja i nedoumice: https://goswagger.io/
