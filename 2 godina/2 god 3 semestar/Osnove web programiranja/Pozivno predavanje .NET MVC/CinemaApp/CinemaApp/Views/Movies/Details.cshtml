@@ -1,0 +1,58 @@
+﻿@using CinemaApp.Models
+@using Resources
+@using CinemaApp.Helpers
+
+
+@model Movie
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    if (Request.QueryString["lang"] != null)
+    {
+        var language = Request.QueryString["lang"];
+        Culture = RenderHelper.GetLanguageCode(language);
+        UICulture = RenderHelper.GetLanguageCode(language);
+    }
+
+    ViewBag.Title = Culture == RenderHelper.Language.SerbianLatin
+        ? Model.NameSr
+        : Model.NameEn;
+
+    string description = Culture == RenderHelper.Language.SerbianLatin
+        ? Model.DescriptionSr
+        : Model.DescriptionEn;
+    
+}
+
+<main class="movie-details">
+    <h1>@ViewBag.Title</h1>
+    <div class="genres">
+        @foreach (var genre in Model.Genres)
+        {
+            string genreName = Culture == RenderHelper.Language.SerbianLatin
+                ? genre.NameSr
+                : genre.NameEn;
+
+            <strong> @genreName </strong>
+            @(Model.Genres.Last() != genre ? "|" : null)
+        }
+    </div>
+    <img src="/Content/Images/movies/@Model.ImageUrl" />
+    @if (!description.IsEmpty())
+    {
+        <p>
+            @description
+        </p>
+    }
+
+    <ul class="projekcije">
+        @foreach (var projection in Model.Projections)
+        {
+            <li class="btn">
+                <a href="#">
+                    @projection.ProjectionType | @Resources.Content.Hall @projection.Hall | @projection.DateAndTime.ToString("dd/MM/yyyy HH:mm") | @projection.TicketPrice rsd
+                </a>
+            </li>
+        }
+    </ul>
+</main>

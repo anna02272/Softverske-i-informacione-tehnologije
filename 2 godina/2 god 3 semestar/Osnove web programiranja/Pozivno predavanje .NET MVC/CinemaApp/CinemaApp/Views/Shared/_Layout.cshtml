@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Cinema App</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <a href="index.html"><img class="nav-logo-img senka" src="~/Content/Images/logo.png" /></a>
+        </section>
+        <form class="example" method="get" action="/Home/Index">
+            <input type="text" placeholder="@Resources.Content.Search..." name="title">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <br />
+        <nav class="senka primaryColorBackground">
+            <ul>
+                <li>@Html.ActionLink(Resources.Content.Home, "Index", "Home", new { lang = Resources.Content.LanguageCode }, null)</li>
+                <li>@Html.ActionLink(Resources.Content.AboutUs, "About", "Home")</li>
+                <li>@Html.ActionLink(Resources.Content.Contact, "Contact", "Home")</li>
+                <li class="@(Resources.Content.LanguageCode == "en" ? "checked" : null)">
+                    @Html.RouteLink("EN", new { lang = "en" })
+                </li>
+                <li class="@(Resources.Content.LanguageCode == "sr" ? "checked" : null)">
+                    @Html.RouteLink("SR", new { lang = "sr" })
+                </li>
+                <li>
+                    <button type="button" class="btn-filter" id="btn-filter"> @Resources.Content.ApplyFilters </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <aside id="filtering-form">
+        <select name="genreId">
+            <option value="0">Select genre:</option>
+            <option value="1">Sci-Fi</option>
+            <option value="2">Action</option>
+            <option value="3">Comedy</option>
+            <option value="4">Horror</option>
+            <option value="5">Adventure</option>
+            <option value="6">Fantasy</option>
+            <option value="7">Drama</option>
+            <option value="8">Crime</option>
+            <option value="9">Romance</option>
+        </select>
+        <input type="number" name="releaseYear" min="1888" max="2021" placeholder="Year" />
+        <input type="number" name="minDuration" min="0" max="390" placeholder="Min. duration" style="width: 180px;" />
+        <input type="number" name="maxDuration" min="0" max="390" placeholder="Max. duration" style="width: 180px;" />
+        <button type="submit" id="filterSubmit"> @Resources.Content.Search </button>
+    </aside>
+
+    @RenderBody()
+
+    <footer>
+        <hr />
+        <strong>Copyright &copy;@DateTime.Now.Year CinemaApp | VegaIT | FTN</strong>
+
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/myScripts")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

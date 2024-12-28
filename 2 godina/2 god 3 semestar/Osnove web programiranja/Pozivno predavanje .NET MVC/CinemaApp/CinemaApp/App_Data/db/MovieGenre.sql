@@ -1,0 +1,31 @@
+USE [CinemaDB]
+GO
+
+/****** Object:  Table [dbo].[MovieGenre]    Script Date: 12/30/2020 4:31:50 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[MovieGenre](
+	[MovieId] [int] NOT NULL,
+	[GenreId] [int] NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[MovieId] ASC,
+	[GenreId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[MovieGenre]  WITH CHECK ADD FOREIGN KEY([GenreId])
+REFERENCES [dbo].[Genres] ([Id])
+ON DELETE CASCADE
+GO
+
+ALTER TABLE [dbo].[MovieGenre]  WITH CHECK ADD FOREIGN KEY([MovieId])
+REFERENCES [dbo].[Movies] ([Id])
+ON DELETE CASCADE
+GO
+

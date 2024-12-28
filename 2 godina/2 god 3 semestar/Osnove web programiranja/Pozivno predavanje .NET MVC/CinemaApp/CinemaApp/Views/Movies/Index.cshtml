@@ -1,0 +1,73 @@
+﻿@using CinemaApp.Models
+@using Resources
+@using CinemaApp.Helpers
+
+
+@model Movie
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    if (Request.QueryString["lang"] != null)
+    {
+        var language = Request.QueryString["lang"];
+        Culture = RenderHelper.GetLanguageCode(language);
+        UICulture = RenderHelper.GetLanguageCode(language);
+    }
+
+    string description = Culture == RenderHelper.Language.SerbianLatin 
+        ? Model.DescriptionSr 
+        : Model.DescriptionEn;
+}
+
+<main class="movie-details">
+    <h1>@(Culture == RenderHelper.Language.SerbianLatin ? Model.NameSr : Model.NameEn)</h1>
+    <img src="/Content/Images/movies/lotr1.jpg" />
+    @if (!description.IsEmpty())
+    {
+        <p>@description
+
+        <br />
+            The Lord of the Rings is a film series of three epic fantasy adventure films directed by Peter Jackson, based on the novel written by J. R. R. Tolkien. The films are subtitled The Fellowship of the Ring (2001), The Two Towers (2002), and The Return of the King (2003). Produced and distributed by New Line Cinema with the co-production of WingNut Films, it is an international venture between New Zealand and the United States. The films feature an ensemble cast including Elijah Wood, Ian McKellen, Liv Tyler, Viggo Mortensen, Sean Astin, Cate Blanchett, John Rhys-Davies, Christopher Lee, Billy Boyd, Dominic Monaghan, Orlando Bloom, Hugo Weaving, Andy Serkis, and Sean Bean.
+            <br />
+            Set in the fictional world of Middle-earth, the films follow the hobbit Frodo Baggins as he and the Fellowship embark on a quest to destroy the One Ring, to ensure the destruction of its maker, the Dark Lord Sauron. The Fellowship eventually splits up and Frodo continues the quest with his loyal companion Sam and the treacherous Gollum. Meanwhile, Aragorn, heir in exile to the throne of Gondor, along with Legolas, Gimli, Boromir, Merry, Pippin, and the wizard Gandalf, unite to rally the Free Peoples of Middle-earth in the War of the Ring in order to aid Frodo by distracting Sauron's attention.
+            <br />
+            The three films were shot simultaneously and entirely in Jackson's native New Zealand from 11 October 1999 until 22 December 2000, with pick-up shots done from 2001 to 2004. It was one of the biggest and most ambitious film projects ever undertaken, with a budget of $281 million. The first film in the series premiered at the Odeon Leicester Square in London on 10 December 2001; the second film premiered at the Ziegfeld Theatre in New York City on 5 December 2002; the third film premiered at the Embassy Theatre in Wellington on 1 December 2003. An extended edition of each film was released on home video a year after its theatrical release.
+            <br />
+            The Lord of the Rings is widely regarded as one of the greatest and most influential film series ever made. It was a major financial success and is among the highest-grossing film series of all time with $2.981 billion in worldwide receipts. Each film was critically acclaimed, with high praise for their innovative special effects, acting, musical score, and emotional depth, and heavily awarded, the series winning 17 out of its 30 Academy Award nominations.
+        </p>
+    }
+
+    <ul class="projekcije">
+        <li class="btn">
+            <a href="#">
+                3D | Sala br. 1 | 11.00h
+            </a>
+        </li>
+        <li class="btn">
+            <a href="#">
+                3D | Sala br. 1 | 12.00h
+            </a>
+        </li>
+        <li class="btn">
+            <a href="#">
+                3D | Sala br. 2 | 13.10h
+            </a>
+        </li>
+        <li class="btn">
+            <a href="#">
+                2D | Sala br. 3 | 13.50h
+            </a>
+        </li>
+        <li class="btn">
+            <a href="#">
+                2D | Sala br. 4 | 17.30h
+            </a>
+        </li>
+        <li class="btn">
+            <a href="#">
+                3D | Sala br. 5 | 21.05h
+            </a>
+        </li>
+    </ul>
+</main>

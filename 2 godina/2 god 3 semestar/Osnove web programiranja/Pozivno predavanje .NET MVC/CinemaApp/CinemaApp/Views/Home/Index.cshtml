@@ -1,0 +1,69 @@
+﻿@using Resources;
+@using CinemaApp.Helpers;
+@using CinemaApp.Models;
+
+@model List<Movie>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    if (Request.QueryString["lang"] != null)
+    {
+        var language = Request.QueryString["lang"];
+        Culture = RenderHelper.GetLanguageCode(language);
+        UICulture = RenderHelper.GetLanguageCode(language);
+    }
+    ViewBag.Title = ViewBag.Title == "Filtering" ? Resources.Content.FilteredMovies : Resources.Content.MostPopularMovies;
+
+}
+<main class="container body-content">
+    @if (ViewBag.Title == Resources.Content.MostPopularMovies)
+    {
+        <div class="jumbotron" style="background-image: url('/Content/Images/movies/lotr1.jpg')">
+            <h1>Lord of the Rings</h1>
+            <h2>The Fellowship of the ring</h2>
+            <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+        </div>
+    }
+
+    <h1> @ViewBag.Title </h1>
+    @foreach (var movie in Model)
+    {
+        <a href="/Movies/Details/@movie.Id?lang=@Resources.Content.LanguageCode">
+            <article class="movie-item">
+                @if (movie.ReleasedYear == DateTime.Now.Year)
+                {
+                    <section class="novo"><b>@Resources.Content.New</b></section>
+                }
+                <img src="/Content/Images/movies/@movie.ImageUrl" />
+                <h3>@(Resources.Content.LanguageCode == "en" ? movie.NameEn : movie.NameSr)</h3>
+                <div class="tooltip">
+                    <i class="fas fa-star"></i>
+                    <span class="tooltiptext">@Resources.Content.AddToFavorites</span>
+                </div>
+            </article>
+        </a>
+    }
+
+    @if (Session["Visited"] != null)
+    {
+        <h1> @Resources.Content.VisitedMovies </h1>
+        foreach (var movie in (Session["Visited"] as List<Movie>).ToList())
+        {
+            <a href="/Movies/Details/@movie.Id?lang=@Resources.Content.LanguageCode">
+                <article class="movie-item">
+                    @if (movie.ReleasedYear == DateTime.Now.Year)
+                    {
+                        <section class="novo"><b>@Resources.Content.New</b></section>
+                    }
+                    <img src="/Content/Images/movies/@movie.ImageUrl" />
+                    <h3>@(Resources.Content.LanguageCode == "en" ? movie.NameEn : movie.NameSr)</h3>
+                    <div class="tooltip">
+                        <i class="fas fa-star"></i>
+                        <span class="tooltiptext">@Resources.Content.AddToFavorites</span>
+                    </div>
+                </article>
+            </a>
+        }
+    }
+
+</main>
