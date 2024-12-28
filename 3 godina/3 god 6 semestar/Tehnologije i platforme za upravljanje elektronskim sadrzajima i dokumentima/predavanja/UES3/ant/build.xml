@@ -1,0 +1,47 @@
+<project name="LuceneTest" default="jar" basedir="../">
+
+	<!-- Project settings -->
+	<property file="${basedir}/ant/build.properties" />
+	<property name="project.name" value="LeceneTest" />
+	<property name="src.dir" value="src" />
+	<property name="build.dir" value="build" />
+	<property name="lib.dir" value="lib" />
+	<!-- Compile classpath -->
+	<path id="compile.classpath">
+		<pathelement path="${classpath}" />
+	</path>
+
+	<!-- Remove classes directory for clean build -->
+	<target name="clean" description="Prepare for clean build">
+		<delete dir="${build.dir}/classes" failonerror="false"/>
+		<mkdir dir="${build.dir}/classes" />
+	</target>
+	
+		<!-- Check timestamp on files -->
+	<target name="prepare">
+		<tstamp />
+	</target>
+
+		<!-- Normal build of application -->
+	<target name="compile" depends="clean, prepare">
+		<javac compiler="modern" srcdir="${src.dir}" destdir="${build.dir}/classes">
+			<classpath refid="compile.classpath" />
+		</javac>
+	</target>
+
+	<!-- Build Project -->
+	<target name="build" depends="prepare, compile, jar" />
+
+	<!-- Rebuild Project -->
+	<target name="rebuild" depends="clean, prepare, compile, jar" />
+
+	<!-- Build WAR -->
+	<target name="jar" depends="compile">
+		<jar destfile="${build.dir}/lucene-test.jar" 
+			 	basedir="${build.dir}/classes"
+				duplicate="fail" 
+				index="true">
+			<zipfileset src="${lib.dir}/lucene-core-2.9.1.jar" includes="**/*.class"/>
+		</jar>
+	</target>
+</project>

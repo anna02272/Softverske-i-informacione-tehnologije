@@ -1,5 +1,0 @@
-﻿U prilogu se nalazi zip projekta.
-Podešavanja:
-"Create script" za bazu i sve tabele su unutar CinemaApp\App_Data\db foldera. 
-Prethodno je izgenerisano preko MS SQL Management studija i slična je struktura kao projekat u Springu koji je rađen na predavanima. 
-Takođe, ukoliko želite da koriste istu bazu sa podacima koju je Nikola koristio na prezentaciji, mogužete samo da importujete ".bacpac" fajl koji se nalazi unutar istog foldera, tako da imate obe varijante za kreiranje baze.

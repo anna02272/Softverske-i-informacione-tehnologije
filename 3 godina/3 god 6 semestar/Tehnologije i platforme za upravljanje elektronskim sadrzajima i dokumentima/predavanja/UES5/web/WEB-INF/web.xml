@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+   	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	
+	<welcome-file-list>
+		<welcome-file>PrepareSearch</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+		<servlet-name>PrepareSearch</servlet-name>
+		<servlet-class>rs.ac.uns.ftn.informatika.ues.webapp.servlet.PrepareSearch</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>Search</servlet-name>
+		<servlet-class>rs.ac.uns.ftn.informatika.ues.webapp.servlet.Search</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>Upload</servlet-name>
+		<servlet-class>rs.ac.uns.ftn.informatika.ues.webapp.servlet.Upload</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Upload</servlet-name>
+		<url-pattern>/Upload</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Search</servlet-name>
+		<url-pattern>/Search</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>PrepareSearch</servlet-name>
+		<url-pattern>/PrepareSearch</url-pattern>
+	</servlet-mapping>
+
+</web-app>

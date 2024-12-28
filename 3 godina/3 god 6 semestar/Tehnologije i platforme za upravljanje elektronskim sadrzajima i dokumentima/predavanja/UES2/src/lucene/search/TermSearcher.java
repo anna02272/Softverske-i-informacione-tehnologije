@@ -1,0 +1,60 @@
+package lucene.search;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ResourceBundle;
+
+import lucene.test.Indexer;
+
+import org.apache.lucene.document.Document;
+import org.apache.lucene.index.Term;
+import org.apache.lucene.search.IndexSearcher;
+import org.apache.lucene.search.Query;
+import org.apache.lucene.search.ScoreDoc;
+import org.apache.lucene.search.TermQuery;
+import org.apache.lucene.search.TopScoreDocCollector;
+import org.apache.lucene.store.Directory;
+import org.apache.lucene.store.SimpleFSDirectory;
+
+public class TermSearcher {
+	
+	public static void main(String[] args) throws Exception{
+		BufferedReader in=new BufferedReader(new InputStreamReader(System.in));
+		File indexDir;
+		String termin;
+		String polje;
+		if (args.length != 3) {
+			try{
+				ResourceBundle rb=ResourceBundle.getBundle("lucene.test.luceneindex");
+				indexDir=new File(rb.getString("indexDir"));
+				System.out.println("unesite polje za pretragu:");
+				polje=in.readLine();
+				System.out.println("unesite izraz za pretragu:");
+				termin=in.readLine();
+			}catch(Exception e1){
+				for(String arg :args)
+					System.out.println(arg);
+				throw new Exception("Usage: java " + Indexer.class.getName()+ " <indexDir> <naziv polja> <trazeni termin> or properties file needed");
+			}
+		}else{
+			indexDir = new File(args[0]);
+			polje = args[1];
+		 	termin = args[2];
+		}
+		if (!indexDir.exists() || !indexDir.isDirectory()) {
+			throw new Exception(indexDir +" does not exist or is not a directory.");
+		}
+		//pripremiti upit
+		//kreirati Term objekat za upit
+		Term t=null;
+		
+		//Kreirati Query objekat koji ce biti koristenu searcheru
+		Query query=null;
+		
+		//poslacemo ga u nasu klasu za izvrsavanje pretrazivanja i print rezultata
+		ResultRetriever rr=new ResultRetriever();
+		rr.printSearchResults(query, indexDir);
+	}
+}
